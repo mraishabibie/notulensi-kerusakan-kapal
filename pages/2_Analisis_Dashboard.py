@@ -105,7 +105,7 @@ with st.container(border=True):
         
         # Menggunakan ikon ringkas yang stabil dan tidak menyebabkan Type Error
         st.button(
-            "🔄", 
+            "✅", 
             on_click=toggle_all_vessels, 
             use_container_width=True
             # Hapus unsafe_allow_html=True
@@ -338,6 +338,7 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
+
 
 
 
