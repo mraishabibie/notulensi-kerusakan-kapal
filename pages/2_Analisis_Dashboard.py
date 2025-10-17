@@ -85,32 +85,45 @@ st.session_state.all_vessels_list = all_vessels
 
 with st.container(border=True): 
     # Kolom untuk menempatkan filter dan tombol kecil di sampingnya
-    col_filter_year, col_filter_vessel_select, col_btn_vessel, col_spacer_top = st.columns([1, 2.3, 0.4, 1.3])
+    # RASIO BARU: [1, 1.7, 0.4, 1.9] untuk Multiselect yang lebih kecil
+    col_filter_year, col_filter_vessel_select, col_btn_vessel, col_spacer_top = st.columns([1, 1.7, 0.4, 1.9])
     
     with col_filter_year:
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
     with col_filter_vessel_select:
-        # Menggunakan st.multiselect
+        st.write("Filter Kapal (Pilih 1 atau Lebih)")
+        
+        # --- KODE CSS UNTUK MEMBATASI TINGGI MULTISELECT ---
+        st.markdown(
+            """
+            <style>
+            .stMultiSelect div[data-baseweb="select"] {
+                max-height: 150px; 
+                overflow-y: auto;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        # Menggunakan st.multiselect dengan DEFAULT=all_vessels
         selected_vessels = st.multiselect(
-            "Filter Kapal (Pilih 1 atau Lebih)", 
+            label="", # Label dihapus karena sudah ada di st.write di atas
             options=all_vessels, 
-            default=all_vessels, 
+            default=all_vessels, # <--- PERUBAHAN DI SINI: Default memilih semua kapal
             key="filter_vessel_dashboard"
-
         )
     
     with col_btn_vessel:
-        # Spacer HTML untuk penyelarasan vertikal
+        # Tombol Select All / Clear Selection Kecil di samping kanan (Menggunakan Ikon)
         st.markdown("<div style='height: 33px;'></div>", unsafe_allow_html=True) 
-        
-        # Menggunakan ikon ringkas yang stabil dan tidak menyebabkan Type Error
         st.button(
-            "✅", 
+            "🔄", 
             on_click=toggle_all_vessels, 
             use_container_width=True
-            # Hapus unsafe_allow_html=True
         )
+
 
     # Filter data utama
     df_filtered = df.copy()
@@ -339,12 +352,3 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
-
-
-
-
-
-
-
-
-
