@@ -91,37 +91,13 @@ with st.container(border=True):
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
     with col_filter_vessel_select:
-        st.write("Filter Kapal (Pilih 1 atau Lebih)")
-        
-        # --- KODE UNTUK MEMBATASI TINGGI MULTISELECT DENGAN CSS ---
-        # 1. Suntikkan CSS untuk menargetkan multiselect container (Maksimal 150px tinggi)
-        st.markdown(
-            """
-            <style>
-            /* Menargetkan container multiselect */
-            .stMultiSelect div[data-baseweb="select"] {
-                max-height: 150px; /* Atur tinggi maksimum yang diinginkan */
-                overflow-y: auto;  /* Memastikan scrollbar muncul */
-            }
-            /* Opsional: Menjaga tombol dropdown di luar area scroll */
-            .stMultiSelect div[data-baseweb="select"] > div:first-child {
-                position: sticky;
-                top: 0;
-                background: white; /* Sesuaikan jika background Streamlit Anda bukan putih */
-                z-index: 1;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
-        
-        # 2. Letakkan widget st.multiselect di sini
+        # Menggunakan st.multiselect
         selected_vessels = st.multiselect(
-            # Menghapus label di sini karena sudah ada di st.write di atas
-            label="", 
+            "Filter Kapal (Pilih 1 atau Lebih)", 
             options=all_vessels, 
             default=all_vessels, 
             key="filter_vessel_dashboard"
+
         )
     
     with col_btn_vessel:
@@ -363,6 +339,7 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
+
 
 
 
