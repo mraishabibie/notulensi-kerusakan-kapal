@@ -257,7 +257,7 @@ with tab_kpi:
 
         st.info("Analisis **MTTR (Mean Time to Repair)** dihitung dari laporan yang sudah CLOSED dan diurutkan berdasarkan **waktu perbaikan tercepat**.")
 
-        st.markdown("##### 1. Efisiensi Perbaikan (MTTR) per Unit (Tercepat ke Terlambat)")
+        st.markdown("##### Efisiensi Perbaikan (MTTR) per Unit (Tercepat ke Terlambat)")
         
         # Tampilkan tabel MTTR
         st.data_editor(
@@ -281,3 +281,4 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED, sehingga MTTR per Unit tidak dapat dihitung.")
+
