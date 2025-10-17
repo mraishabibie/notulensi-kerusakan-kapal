@@ -84,43 +84,27 @@ st.session_state.all_vessels_list = all_vessels
 
 
 with st.container(border=True): 
-    # Kolom untuk menempatkan filter dan tombol kecil di sampingnya
-    # RASIO BARU: [1, 1.7, 0.4, 1.9] untuk Multiselect yang lebih kecil
-    col_filter_year, col_filter_vessel_select, col_btn_vessel, col_spacer_top = st.columns([1, 1.7, 0.4, 1.9])
+    # RASIO BARU: Filter Tahun dan Kapal dibuat dengan lebar yang berbeda
+    col_filter_year, col_filter_vessel_select, col_spacer_top = st.columns([1, 2.7, 1.3])
     
     with col_filter_year:
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
     with col_filter_vessel_select:
-        # PERBAIKAN 1: Tambahkan label multiselect di sini
-        st.write("Filter Kapal (Pilih 1 atau Lebih)")
+        # Menghilangkan st.write di sini untuk menyelaraskan multiselect dengan selectbox tahun
+        # Label akan diletakkan langsung di multiselect
         
-        # --- KODE CSS UNTUK MEMBATASI TINGGI MULTISELECT ---
-        st.markdown(
-            """
-            <style>
-            .stMultiSelect div[data-baseweb="select"] {
-                max-height: 150px; 
-                overflow-y: auto;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
-        
-        # Menggunakan st.multiselect dengan label kosong
+        # Menggunakan st.multiselect dengan DEFAULT=all_vessels
         selected_vessels = st.multiselect(
-            label="", # Label dihapus
+            "Filter Kapal (Pilih 1 atau Lebih)", # Label diletakkan di sini
             options=all_vessels, 
             default=all_vessels, 
             key="filter_vessel_dashboard"
         )
-    
-    with col_btn_vessel:
-        # PERBAIKAN 2: Ganti Spacer dengan label kosong pendek agar tombol sejajar dengan filter.
-        st.write("#") # Ini akan menciptakan spacer vertikal yang lebih pendek
+        
+        # PERBAIKAN: Tombol Select All diletakkan di bawah filter Kapal (di kolom yang sama)
         st.button(
-            "🔄", 
+            "🔄 Pilih Semua / Bersihkan", 
             on_click=toggle_all_vessels, 
             use_container_width=True
         )
@@ -353,4 +337,3 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
-
