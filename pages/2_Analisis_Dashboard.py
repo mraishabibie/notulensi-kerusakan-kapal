@@ -221,4 +221,119 @@ with tab_vessel:
         color_continuous_scale=px.colors.sequential.Viridis,
         orientation='h'
     )
-    fig_vessel_bar.update_layout(xaxis_
+    fig_vessel_bar.update_layout(xaxis_title="Jumlah Kerusakan", yaxis_title="")
+    st.plotly_chart(fig_vessel_bar, use_container_width=True)
+
+    st.markdown("##### Laporan OPEN Terbanyak per Kapal")
+    df_vessel_open = df_filtered[df_filtered['Status'] == 'OPEN']
+    vessel_open_counts = df_vessel_open.groupby('Vessel').size().sort_values(ascending=False).reset_index(name='Jumlah OPEN')
+    
+    st.data_editor(
+        vessel_open_counts,
+        column_config={
+            "Jumlah OPEN": st.column_config.NumberColumn(
+                "Jumlah OPEN",
+                format="%d", 
+                help="Total laporan yang masih OPEN",
+                width="small" 
+            )
+        },
+        column_order=['Vessel', 'Jumlah OPEN'],
+        hide_index=True,
+        use_container_width=True,
+        disabled=True 
+    )
+
+# --- TAB 3: TREN KERUSAKAN ---
+with tab_time:
+    st.subheader("Tren Laporan Kerusakan dari Waktu ke Waktu")
+    
+    df_filtered['Month'] = df_filtered['Date_Day'].dt.to_period('M')
+    
+    monthly_trend = df_filtered.groupby(['Month', 'Status']).size().reset_index(name='Jumlah')
+    monthly_trend['Month'] = monthly_trend['Month'].astype(str)
+    
+    fig_trend = px.line(
+        monthly_trend,
+        x='Month',
+        y='Jumlah',
+        color='Status',
+        title='Tren Laporan OPEN vs CLOSED per Bulan',
+        markers=True,
+        color_discrete_map={'OPEN':'red', 'CLOSED':'green'}
+    )
+    fig_trend.update_layout(xaxis_title="Bulan", yaxis_title="Jumlah Laporan")
+    st.plotly_chart(fig_trend, use_container_width=True)
+    
+    st.markdown("##### Timeline 15 Permasalahan Aktif (OPEN) Terlama")
+    
+    df_open_timeline = df_filtered[df_filtered['Status'] == 'OPEN'].copy()
+    
+    if not df_open_timeline.empty:
+        df_open_timeline['Duration'] = (datetime.now() - df_open_timeline['Date_Day']).dt.days
+        df_open_timeline = df_open_timeline.sort_values('Duration', ascending=False).head(15).copy()
+        
+        df_open_timeline['Current_Time'] = datetime.now()
+        
+        df_open_timeline['Label'] = df_open_timeline['Vessel'] + ' - ' + df_open_timeline['Permasalahan'].str.slice(0, 30) + '...'
+
+        fig_timeline = px.timeline(
+            df_open_timeline,
+            x_start="Date_Day",
+            x_end="Current_Time", 
+            y="Label",
+            color="Vessel",
+            title="Timeline Durasi 15 Laporan OPEN Terlama",
+            text="Duration"
+        )
+        fig_timeline.update_yaxes(autorange="reversed") 
+        fig_timeline.update_traces(textposition='inside', marker_line_width=0, opacity=0.8) 
+        fig_timeline.update_layout(xaxis_title="Tanggal", yaxis_title="")
+        st.plotly_chart(fig_timeline, use_container_width=True)
+    else:
+        st.info("Tidak ada laporan yang berstatus OPEN dalam kombinasi filter ini.")
+
+# --- TAB 4: METRIK EFISIENSI (MTTR) ---
+with tab_kpi:
+    st.subheader("🏆 Metrik Efisiensi Perbaikan (MTTR)")
+    
+    df_closed_mttr = df_filtered[df_filtered['Status'] == 'CLOSED'].copy()
+
+    if not df_closed_mttr.empty:
+        # 1. Hitung MTTR (rata-rata Resolution_Time_Days) per Unit
+        mttr_unit = df_closed_mttr.groupby('Unit')['Resolution_Time_Days'].mean().reset_index(name='MTTR (Hari)')
+
+        # 2. Hitung Jumlah Kerusakan (untuk konteks)
+        failure_counts = df_filtered.groupby('Unit').size().reset_index(name='Jumlah Kerusakan')
+        
+        # 3. Gabungkan dan sort
+        mttr_display = pd.merge(mttr_unit, failure_counts, on='Unit', how='left').fillna({'Jumlah Kerusakan': 0})
+        
+        # SORTING: Diurutkan dari yang tercepat (MTTR terkecil/Ascending)
+        mttr_display = mttr_display.sort_values(by='MTTR (Hari)', ascending=True).reset_index(drop=True)
+
+        st.info("Analisis **MTTR (Mean Time to Repair)** dihitung dari laporan yang sudah CLOSED dan diurutkan berdasarkan **waktu perbaikan tercepat**.")
+
+        st.markdown("##### 1. Efisiensi Perbaikan (MTTR) per Unit (Tercepat ke Terlambat)")
+        
+        st.data_editor(
+            mttr_display,
+            column_config={
+                "MTTR (Hari)": st.column_config.NumberColumn(
+                    "MTTR (Hari)",
+                    format="%.1f",
+                    help="Rata-rata Waktu yang dibutuhkan untuk menutup laporan (Semakin Kecil, Semakin Cepat Perbaikan)"
+                ),
+                "Jumlah Kerusakan": st.column_config.NumberColumn(
+                    "Total Kerusakan", 
+                    format="%d",
+                    width="small"
+                )
+            },
+            column_order=['Unit', 'MTTR (Hari)', 'Jumlah Kerusakan'],
+            hide_index=True,
+            use_container_width=True,
+            disabled=True
+        )
+    else:
+        st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
