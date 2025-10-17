@@ -80,18 +80,17 @@ valid_years = df['Date_Day'].dt.year.dropna().astype(int).unique()
 year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
 all_vessels = sorted(df['Vessel'].dropna().unique().tolist())
 
-# Simpan list kapal di session state agar bisa diakses callback
 st.session_state.all_vessels_list = all_vessels
 
 
 with st.container(border=True): 
-    # Mengurangi kolom agar tombol Select All bisa menyatu dengan filter kapal
-    col_filter_year, col_filter_vessel_main, col_spacer_top = st.columns([1, 2.7, 1.3])
+    # Kolom untuk menempatkan filter dan tombol kecil di sampingnya
+    col_filter_year, col_filter_vessel_select, col_btn_vessel, col_spacer_top = st.columns([1, 2.3, 0.4, 1.3])
     
     with col_filter_year:
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
-    with col_filter_vessel_main:
+    with col_filter_vessel_select:
         # Menggunakan st.multiselect
         selected_vessels = st.multiselect(
             "Filter Kapal (Pilih 1 atau Lebih)", 
@@ -99,10 +98,12 @@ with st.container(border=True):
             default=all_vessels, 
             key="filter_vessel_dashboard"
         )
-        
-        # PERBAIKAN: Tombol Select All / Clear Selection di bawah multiselect
+    
+    with col_btn_vessel:
+        # Tombol Select All / Clear Selection Kecil di samping kanan
+        st.markdown("<p style='font-size: 10px; margin-bottom: 0;'>&nbsp;</p>", unsafe_allow_html=True) # Spacer kecil
         st.button(
-            "☑️ Select All / Clear Selection", 
+            "All/Clear", 
             on_click=toggle_all_vessels, 
             use_container_width=True
         )
@@ -119,7 +120,6 @@ with st.container(border=True):
     if selected_vessels:
         df_filtered = df_filtered[df_filtered['Vessel'].isin(selected_vessels)]
     else:
-        # Jika tidak ada kapal yang dipilih, data filtered menjadi kosong
         df_filtered = pd.DataFrame()
 
 
