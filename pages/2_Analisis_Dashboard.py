@@ -100,16 +100,15 @@ with st.container(border=True):
         )
     
     with col_btn_vessel:
-        # Spacer HTML untuk penyelarasan (sekitar 33px untuk multiselect)
+        # Spacer HTML untuk penyelarasan vertikal
         st.markdown("<div style='height: 33px;'></div>", unsafe_allow_html=True) 
         
-        # Menggunakan span HTML untuk mengecilkan font label tombol
-        # PENTING: use_container_width=True dipertahankan untuk layout
+        # Menggunakan ikon ringkas yang stabil dan tidak menyebabkan Type Error
         st.button(
-            '<span style="font-size: 12px; line-height: 12px;">All/Clear</span>', 
+            "🔄", 
             on_click=toggle_all_vessels, 
-            use_container_width=True,
-            unsafe_allow_html=True # Diperlukan untuk memproses HTML di label
+            use_container_width=True
+            # Hapus unsafe_allow_html=True
         )
 
     # Filter data utama
@@ -339,6 +338,7 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
+
 
 
 
