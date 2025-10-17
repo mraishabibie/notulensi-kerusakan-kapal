@@ -273,7 +273,7 @@ with tab_kpi:
 
                 st.info(f"Analisis MTBF dilakukan selama periode **{total_period_days:,.0f} Hari** (dari {start_date.strftime('%d/%m/%Y')} hingga Hari Ini). MTTR hanya dihitung dari laporan yang sudah CLOSED.")
 
-                st.markdown("##### 1. Keandalan dan Efisiensi Perbaikan per Unit")
+                st.markdown("##### Keandalan dan Efisiensi Perbaikan per Unit")
                 
                 # Tampilkan tabel gabungan MTBF dan MTTR
                 st.data_editor(
@@ -302,3 +302,4 @@ with tab_kpi:
                 )
             else:
                 st.warning("Tidak ada laporan yang berstatus CLOSED, sehingga MTTR per Unit tidak dapat dihitung.")
+
