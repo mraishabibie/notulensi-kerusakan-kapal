@@ -1,0 +1,1139 @@
+Day,Vessel,Permasalahan,Penyelesaian,Unit,Issued Date,Closed Date,Keterangan,Status
+15/07/2025,ND,ME Cylinder no 2 bermasalah,Menunggu Spare Part,ME,20/04/2025,20/04/2025,Closed 20/04/2025,CLOSED
+15/07/2025,ND,Pompa HC,,LAINNYA,14/07/2025,14/07/2025,Closed 14/07/2025,CLOSED
+15/07/2025,UL,Kerusakan Pipa Boiler,Akan dilakukan pergantian pipa,Boiler,,,Menunggu pipa datang,OPEN
+15/07/2025,UL,Kerusakan AE no.3,Akan dilakukan pergantian AE no.3,AE,,,Menunggu unit ready untuk di pesan,OPEN
+15/07/2025,UL,Kerusakan Main Air Compressor 1 dan 2,Dilakukan perbaikan,Compressor,06/08/2025,,On Progress,OPEN
+15/07/2025,UL,Kerusakan ME Jacket Cooling,Dilakukan perbaikan,Cooling,16/06/2025,,On Progress,OPEN
+15/07/2025,MD,Kerusakan Shaft AE 2,"Akan dilakukan pergantian shaft, untuk sementara mengguanakan Genset darat",AE,01/06/2025,24/07/2025,Closed 24/07/2025,CLOSED
+15/07/2025,NW,Kerusakan Shaft AE 1,Dilakukan overhaul AE 1,AE,31/03/2025,,On Progress,OPEN
+15/07/2025,NW,Kerusakan Brake Luffing Crane no 3,Dilakukan Perbaikan,Crane,06/11/2025,,On Progress,OPEN
+15/07/2025,NW,Kerusakan Crane no 4 Blower Fan Mati,Dilakukan perbaikan,Crane,13/06/2025,,On progress,OPEN
+15/07/2025,NW,Kerusakan Hoisting Pump,,Pump,05/07/2025,06/07/2025,Closed 06/07/2025,CLOSED
+15/07/2025,FZ,Kerusakan Hand pump ballast v/v,To be Followed,Pump,,,On Progress,OPEN
+15/07/2025,SA,Rest Jib Crane no 1 Keropos,Perbaikan di Dock,Crane,30/04/2025,,On Progress,OPEN
+15/07/2025,SA,Kerusakan AE 2 Gear,Perbaikan di Dock,AE,14/06/2025,,On Progress,OPEN
+15/07/2025,AU,Kerusakan Valve WBT,Dilakukan perbaikan,Valve,21/05/2025,20/06/2025,Closed 20/06/2025 (Valve WBT masih proses perbaikan),CLOSED
+15/07/2025,MZ,Kerusakan Koneksi AIS ke ECDIS,Dilakukan perbaikan,Navigasi,21/05/2025,,On Progress,OPEN
+15/07/2025,MZ,Kebocoran Control Valve Stand Palka 4 dan 3,Dilakukan perbaikan,Valve,06/06/2025,,On Progress,OPEN
+15/07/2025,MZ,Kerusakan Electromotor Windlass kiri dan kanan,,Electromotor,14/07/2025,,On Progress,OPEN
+15/07/2025,NL,Kerusakan Monitor Inmarsat,Dilakukan perbaikan,Navigasi,22/05/2025,,On Progress,OPEN
+15/07/2025,NL,Kerusakan Vertical Ladder HC 1,Dilakukan perbaikan,Outfitting,06/03/2025,,On Progress,OPEN
+15/07/2025,NL,Kerusakan Radar S Band,Dilakukan perbaikan,Navigasi,15/06/2025,20/06/2025,Closed 20/06/2025,CLOSED
+15/07/2025,NL,Kebocoran dinding palka,,Palka,14/07/2025,14/07/2025,Closed 14/07/2025,CLOSED
+15/07/2025,MR,Kerusakan Pipa Hydraulic Power Pack,Dilakukan Progress,Hydraulic,,15/06/2025,Closed 15/06/2025,CLOSED
+15/07/2025,NZ,Kerusakan Gyro Compass (KODE E1) Man power Gyro Abnormal,Dipanggilkan teknisi,Navigasi,27/05/2025,,On Progress,OPEN
+15/07/2025,MY,Rumah Crane 1-4 keropos,Direpair,Crane,07/12/2025,04/08/2025,Closed 04/08/2025,CLOSED
+15/07/2025,BE,Tangki Ballast dan Bahan Bakar Bocor,Diperbaiki,Tangki,07/09/2025,,On Progress,OPEN
+15/07/2025,KR,Kerusakan Wire Hoisting,Direplace,Wire,14/07/2025,14/07/2025,Closed 14/07/2025,CLOSED
+15/07/2025,KE,Kebocoran Lunas Ballast Tank,Diperbaiki,Tangki,13/07/2025,15/07/2025,Closed 15/07/2025,CLOSED
+15/07/2025,KE,Kerusakan ME,Diperbaiki,ME,13/07/2025,14/07/2025,Closed 14/07/2025,CLOSED
+15/07/2025,GN,Kerusakan Jacket Cooling ME,,Cooling,10/07/2025,10/07/2025,Closed 10/07/2025,CLOSED
+04/08/2025,ND,Sheave Jib Hoisting Crane no.4 bergeser dari bearingnya,Dilakukan pergantian dengan spare.,Crane,,08/04/2025,Closed (08/04/2025),CLOSED
+15/05/2025,FZ,Tangki BBM Bocor (2C),Diperbaiki,Tangki,14/04/2025,28/04/2025,Closed 28/04/2025,CLOSED
+30/04/2025,KR,L.O Priming pump AE No.2 mengalami short pada elmot,Akan dilakukan rewinding,AE,,23/04/2025,Closed 23/04/2025,CLOSED
+26/05/2025,ND,ME Cyl Head no 2 bocor,Dilakukan perbaikan,ME,20/04/2025,26/04/2025,Closed 26/04/2025,CLOSED
+21/05/2025,UL,"GENSET Trouble, Rocker arm Cyl 7 Bengkok",Akan diganti dengan Hydraulic Jack Baru,LAINNYA,,07/05/2025,Closed 07/05/2025,CLOSED
+21/05/2025,UL,Crane no 3 Hydraulic brake hoisting rusak,Belum ada update lagi,Crane,,07/05/2025,Closed 07/05/2025,CLOSED
+15/05/2025,KY,Kerusakan Crane no 1 Baut brake hoisitng,,Crane,26/04/2025,28/04/2025,Closed 28/04/2025,CLOSED
+21/05/2025,NM,Kerusakan Bilges Palka no 2 sebelah kanan dan kiri,Menunggu Laporan Perbaikan,Palka,28/04/2025,19/05/2025,Closed 19/05/2025,CLOSED
+26/05/2025,MR,Kerusakan indicator kemudi,Dilakukan perbaikan (menunggu spare transistor),LAINNYA,30/04/2025,22/05/2025,Closed 22/05/2025,CLOSED
+15/05/2025,MR,Pipa Hydraulic Wich Bocor,Dilakukan Perbaikan,Hydraulic,04/05/2025,04/05/2025,Closed 04/05/2025,CLOSED
+26/05/2025,NE,Hatch Cover Palka no 3 Sobek (Deformasi),Dilakukan Perbaikan,Palka,04/05/2025,10/05/2025,Closed 10/05/2025,CLOSED
+22/05/2025,NZ,Crane no 3 tidak bisa Luffing up dan tekanan rendah,Dilakukan perbaikan,Crane,30/04/2025,23/05/2025,Closed 23/05/2025,CLOSED
+15/05/2025,KY,Shot Elmot no 1 Sea Water Service Pump AE 1,,AE,05/05/2025,05/05/2025,Closed 05/05/2025,CLOSED
+15/05/2025,NM,Kerusakan Jacket Cooling ME Cyl no 2,Dilakukan perbaikan,Cooling,05/05/2025,05/05/2025,Closed 05/05/2025,CLOSED
+15/05/2025,KR,ME Cyl no 6 Drop,Dilakukan perbaikan,ME,04/05/2025,06/05/2025,Closed 06/05/2025,CLOSED
+26/05/2025,KR,"Wire Hoisting & Luffing Crane 1, 3, 4 Serat putus",Dilakukan Perbaikan,Crane,25/04/2025,30/04/2025,Closed 30/04/2025,CLOSED
+21/05/2025,MZ,Cross Deck Palka no 3-2 terdapat Crack di frame bagian bawah (Docking),Pengecekan di Dock,Palka,05/05/2025,14/05/2025,Closed 14/05/2025,CLOSED
+21/05/2025,NW,Kerusakan Control Box HC 1,Belum ada update,LAINNYA,03/05/2025,14/05/2025,Closed 14/05/2025,CLOSED
+21/05/2025,FZ,Kerusakan LO p/p AE1,Laporan perbaikan belum dikirim,AE,,17/05/2025,Closed 17/05/2025,CLOSED
+21/05/2025,MU,Jacket Cooling 6 pecah,,Cooling,16/05/2025,17/05/2025,Closed 17/05/2025,CLOSED
+19/05/2025,NL,Kandas Di Morrossi,Sudah di rapatkan dan sudah selesai,LAINNYA,11/05/2025,12/05/2025,Closed 12/05/2025,CLOSED
+19/05/2025,KM,Kerusakan Slewing Hydraulic motor cc,,Hydraulic,13/05/2025,13/05/2025,Closed 13/05/2025,CLOSED
+05/06/2025,FZ,Kerusakan Grab Smag tidak bisa buka tutup,Dilakukan Perbaikan,Grab,,02/06/2025,Closed 02/06/2025,CLOSED
+27/05/2025,MU,Cylinder head no 1 Jacket Cooling pecah,To be followed,Cooling,16/05/2025,17/05/2025,Closed 17/05/2025,CLOSED
+30/05/2025,UL,Crane no 4 Hoisting rusak,Dilakukan perbaikan,Crane,21/05/2025,27/05/2025,Closed 27/05/2025,CLOSED
+26/05/2025,NW,Kerusakan Shift Bearing Crane no 4,,Crane,18/05/2025,19/05/2025,Closed 19/05/2025,CLOSED
+30/05/2025,MD,Baut Slewing Bearing Crane no 3 Patah,Proses perbaikan,Crane,26/05/2025,28/05/2025,Closed 28/05/2025,CLOSED
+05/06/2025,MU,AE no 1 Crank Shaft Bengkok,Dilakukan Perbaikan,AE,22/05/2025,03/06/2025,Closed 03/06/2025,CLOSED
+30/05/2025,NZ,Kerusakan Pipa WBT 2,Dilakukan perbaikan,Pipa,28/05/2025,29/05/2025,Closed 29/05/2025,CLOSED
+30/05/2025,NM,Kerusakan Water Jacket lower cylinder 6 ME (retak 25 cm bagian depan),Dilakukan perbaikan,ME,28/05/2025,29/05/2025,Closed 29/05/2025,CLOSED
+05/06/2025,SA,Kerusakan Slewing Crane no 4,Proses perbaikan,Crane,04/06/2025,04/06/2025,Closed 04/06/2025,CLOSED
+05/06/2025,BE,Kebocoran pada tangki COT 5P,Dilakukan perbaikan,Tangki,04/06/2025,05/06/2025,Closed 05/06/2025,CLOSED
+13/06/2025,MZ,Kerusakan Blower Aux ME no 1,Dilakukan perbaikan,ME,10/06/2025,11/06/2025,Closed 11/06/2025,CLOSED
+13/06/2025,NE,Kerusakan AE 2,Dilakukan perbaikan,AE,11/06/2025,12/06/2025,Closed 12/06/2025,CLOSED
+16/06/2025,MR,Kerusakan Pipa Hydraulic Power Pack,Dilakukan Progress,Hydraulic,14/06/2025,15/06/2024,Closed 15/06/2024,CLOSED
+16/07/2025,NW,Kerusakan Radar S-Band,Perlu diidatangkan teknisi (RH Magnetron > Seharusnya),Navigasi,16/07/2025,,On Progress,OPEN
+21/07/2025,KR,Jib Crane no 4 jatuh dan crack,Dilakukan perbaikan,Crane,21/07/2025,25/07/2025,Closed 25/07/2025,CLOSED
+21/07/2025,NL,Kerusakan Radar S-Band Power Down Lagi,Dilakukan perbaikan,Navigasi,21/07/2025,,On Progress,OPEN
+21/07/2025,GN,kerusakan AE no 2,Dilakukan perbaikan,AE,21/07/2025,25/09/2025,Closed 25/09/2025,CLOSED
+17/07/2025,SE,Kerusakan Air Clutch Pneumatic Valve No.1,Dilakukan perbaikan,Valve,21/07/2025,21/07/2025,Closed 21/07/2025,CLOSED
+22/07/2025,AU,"Kerusakan Boiler, kebocoran",Dilakukan perbaikan,Boiler,22/07/2025,19/07/2025,Closed 19/07/2025,CLOSED
+22/07/2025,AU,"Kerusakan Boiler, kebocoran",Dilakukan perbaikan,Boiler,22/07/2025,19/07/2025,Closed 19/07/2025,CLOSED
+28/07/2025,MY,Jacket Cooling pecah ME Cyl no 6,Dilakukan perbaikan,ME,28/07/2025,26/07/2025,Closed 26/07/2025,CLOSED
+28/07/2025,KR,Kerusakan ME Jacket Cooling Cyl no 1,Dilakukan Perbaikan,ME,28/07/2025,,On Progress,OPEN
+28/07/2025,GN,kerusakan AE no 3,Dilakukan perbaikan,AE,23/07/2025,29/08/2025,Closed 29/08/2025,CLOSED
+28/07/2025,AA,Portable Gas Detector rusak,,Safety Equipment,23/07/2025,,On Progress,OPEN
+28/07/2025,SM,Kerusakan Fire Pump 1 dan 2,Dilakukan perbaikan,FFA,28/07/2025,,On Progress,OPEN
+29/07/2025,AU,Kebocoran Boiler dibagian bnekas pengelasan,Dilakukan Perbaikan,Bolier,29/07/2025,19/07/2025,Closed 19/07/2025,CLOSED
+29/07/2025,AU,Kebocoran Boiler dibagian bnekas pengelasan,Dilakukan Perbaikan,Bolier,29/07/2025,19/07/2025,Closed 19/07/2025,CLOSED
+08/06/2025,HM,Air masuk ke palka No.3,Dilakukan perbaikan,Pipa,08/06/2025,,On Progress,OPEN
+08/06/2025,MD,Kerusakan Pump Crane No.2,Dilakukan perbaikan,Crane,08/06/2025,,Closed ,CLOSED
+08/06/2025,ND,Kerusakan Kemudi,Dilakukan perbaikan,Navigasi,08/06/2025,,On Progress,OPEN
+08/06/2025,ND,Battery Charger,Dilakukan perbaikan,Eletrical,08/06/2025,,On Progress,OPEN
+08/06/2025,KR,Kerusakan Crane No.1,Dilakukan perbaikan,Crane,19/07/2025,,On Progress,OPEN
+08/06/2025,KR,Kerusakan Crane No.1,Dilakukan perbaikan,Crane,31/07/2025,,On Progress,OPEN
+08/06/2025,KR,Kerusakan Crane No.3,Dilakukan perbaikan,Crane,08/06/2025,,On Progress,OPEN
+08/06/2025,KR,Wire Luffing Crane No.2,Dilakukan perbaikan,Crane,08/06/2025,14/07/2025,Closed 14/07/2025,CLOSED
+08/06/2025,KY,Kerusakan Boiler,Dilakukan perbaikan,Boiler,08/06/2025,05/08/2025,Closed 05/08/2025,CLOSED
+08/06/2025,MZ,Kerusakan Inferter Dan Elmot,Dilakukan perbaikan,Electromotor,13/07/2025,,On Progress,OPEN
+08/06/2025,MZ,Wire Hoisting Crane No.1,Dilakukan perbaikan,Crane,21/07/2025,,On Progress,OPEN
+08/06/2025,MZ,Wire Hoisting Crane No.4,Dilakukan perbaikan,Crane,07/02/2025,,On Progress,OPEN
+08/06/2025,MD,Main Engine Upper Cyl No.6,Dilakukan perbaikan,ME,26/07/2025,26/07/2025,Closed 26/07/2025,CLOSED
+08/11/2025,MF,Kerusakan HT,Permintaan HT Baru,Radio Comunication,08/11/2025,,On Progress,OPEN
+08/11/2025,MF,Kerusakan UPS,Permintaan UPS Baru,UPS Komputer,08/11/2025,,On Progress,OPEN
+20/08/2025,NT,Kerusakan Crane No.4,Dilakukan perbaikan,Crane,20/08/2025,29/08/2025,Closed 29/08/2025,CLOSED
+09/03/2025,NZ,Kebocoran Tank Top Palka 2,Dilakukan perbaikan,Cargo Hold,09/03/2025,,On Progress,OPEN
+22/09/2025,NZ,Kebocoran Tank Top Palka 1,Dilakukan perbaikan,Cargo Hold,22/09/2025,,On Progress,OPEN
+,KE,Kerusakan Linggi Haluan karenaTubrukan dengan Kapal keruk,Dilakukan perbaikan,Linggi Haluan,10/07/2025,,On Progress,OPEN
+10/08/2025,AU,Nakhoda dan Juru Mudi HIlang,DIlakukan Penyelesaian,Accident & Incident,10/03/2025,,On Progress,OPEN
+10/08/2025,MD,Jacket Cooling No.5 Bocor,Dilakukan perbaikan,Main Engine,10/06/2025,07/10/2025,Closed 07/10/25,CLOSED
+10/08/2025,ND,JIB Crane No.4 jatuh dan bengkok,Dilakukan Perbaikan,Crane,10/08/2025,,On Progress,OPEN
+13/10/2025,NE,AE 2 Rusak Blackout,Dilakukan Perbaikan,AE 2,13/10/2025,12/10/2025,Closed 12/10/2025,CLOSED
+16/10/2025,HD,Kerusakan Gyro Compass,dilakukan perbaikan,Compass,16/10/2025,,On Progress,OPEN
+20/03/2025,KR,Kerusakan vane pump hydraulik crane no.4,Dilakukan Perbaikan,Crane,17/10/2025,,On Progress,OPEN
+04/07/2025,KR,Laporan Kerusakan Economizer Boiler,Dilakukan Perbaikan,Boiler,17/10/2025,,On Progress,OPEN
+15/03/2022,NZ,Magnetic Contactor : SN 125 Panel Crane 1 damaged,,Crane,26/03/2022,26/03/2022,,CLOSED
+05/02/2022,NZ,"Bocor oli, rotor goyang turbine dan blower gesek(kocak), mesin stop priming oil jalan, oil masuk ke turbine side",,AE,15/03/2022,09/04/2022,,CLOSED
+21/04/2022,NZ,Smoke ditector dibeberapa sector kamar mesin dan akomodasi mengalami kerusakan,,LSA,05/02/2022,,,CLOSED
+14/05/2022,NZ,Roller Exhaust Tappet Cyl no 3 Rusak dan aus tidak bisa diputar,"Dilakukan perbaikan dengan pembongkaran unit exhaust V/V dan penggantian komponen yang mengalami kerusakan, termasuk lubricating quill (4 starboard dan 6 starboard), serta penggantian part seperti exhaust gas V/V, non-return valve, gasket bronze, dan joint ring. Selain itu, dilakukan juga pembersihan sisa kerak (scaving air) dan jalur air pendingin dari pipa ke cylinder liner.",ME,21/04/2022,21/04/2022,,CLOSED
+14/05/2022,NZ,"LO Pressure 2,5 kg/cm, minimum automatic device blackout",,ME,14/05/2022,14/05/2022,,CLOSED
+21/05/2022,NZ,"Sensor aoutomatic panel error tempetarur F,O in filter A/E (125-135° C) tidak terkontrol",,AE,14/05/2022,,,CLOSED
+11/06/2022,NZ,Pada saat M/E jalan F.W cooling temperature 90-95 C dan pressure turun 29 Kg/CM (Normal 3.99 KG/CM,,ME,21/05/2022,21/05/2022,,CLOSED
+12/07/2022,NZ,Router turbine dan blower macet,,AE,11/06/2022,,,CLOSED
+12/07/2022,NZ,"plate tank top tipis setiap habis bongkar, tank top aobek (bocor). Tank top sobek (bocor). Kebocoran ada 12 titik tempat yang bocor water ballast tank 3 p/s (tank top) deck 4 dan 5",,Hull & Structure,12/07/2022,12/07/2022,,CLOSED
+15/07/2022,NZ,ralling keropos dan putus . Tangga hilang 1 step,,Outfitting,12/07/2022,22/07/2022,,CLOSED
+21/07/2022,NZ,Pada saat M/E jalan F.W cooling temperature 90-95 C dan pressure turun 29 Kg/CM (Normal 3.99 KG/CM,,Accomodation,15/07/2022,15/07/2022,,CLOSED
+22/07/2022,NZ,plate v/v high pressure & low pressure patah,,Pipe,21/07/2022,,,CLOSED
+25/07/2022,NZ,berkarat,,ME,22/07/2022,,,CLOSED
+16/07/2022,NZ,PlateTank Top tipis setiap habis bongkar Tank Top sobek (bocor). Kebocoran ada 6 titik tempat yang bocor water ballast tank 3 p/s(tank top) Deck 4&5,,Grab,25/07/2022,26/07/2022,,CLOSED
+11/08/2022,NZ,"pada saat ME jalan FW cooling temperature 95-110° C dan pressure turun 9,9 kg/cm ( normal 3.99 kg/cm²).",,LSA,16/07/2022,16/07/2022,,CLOSED
+02/08/2022,NZ,hydraulic piston jack salah satunya bocor,,OWS,11/08/2022,08/12/2022,,CLOSED
+09/08/2022,NZ,safety clip & tali dalam keadaan rusak dan putus,,Pipe,02/08/2022,,,CLOSED
+23/08/2022,NZ,tidak ada arus masuk,,Purifier,09/08/2022,,,CLOSED
+26/08/2022,NZ,"bocor , keropos , dan patah",,Emergency Generator,23/08/2022,23/08/2022,,CLOSED
+09/09/2022,NZ,tidak bisa blow up dan suar kasar,,Fuel System,26/08/2022,26/08/2022,,CLOSED
+09/09/2022,NZ,motor starter short connection terbakar,,Emergency Generator,09/09/2022,,,CLOSED
+08/09/2022,NZ,"sesor diaphragm, sensor type REBLS 02.DC-24 V",,ME,09/09/2022,,,CLOSED
+06/09/2022,NZ,plate v/v high pressure & low pressure patah,,Accomodation,08/09/2022,,,CLOSED
+06/09/2022,NZ,Trouble M/E cylinder no 6 water gate (ring),,ME,06/09/2022,06/09/2022,,CLOSED
+03/10/2022,NZ,"Bocor oli, rotor goyang turbine dan blower gesek",,ME,06/09/2022,,,CLOSED
+14/10/2022,NZ,Oil Turbo A/E No 1 Bocor,,ME,03/10/2022,,,CLOSED
+23/10/2022,NZ,mesin induk mengalami kebocoran,,LSA,14/10/2022,15/10/2022,,CLOSED
+07/10/2022,NZ,"Trouble M/E stop mesin , kapal tidak bisa berlabuh jangkar karena kedalaman laut 5204 M hanya drifting.",,ME,23/10/2022,,,CLOSED
+12/01/2023,NZ,"EEBD dibagian Deck C telah mengalami rusak, low pressure.",,Boiler,07/10/2022,,,CLOSED
+02/01/2023,NZ,kebocoran pada oring,Penggantian Cyl. Liner No. 6 di Ganti dengan spare bekas,ME,12/01/2023,,,CLOSED
+05/02/2023,NZ,kebocoran pada pipa biler,"Pengecekan dan pergantian pada servo motor, cek semua komponen pada gocernor, penggantian oli baru governor",Boiler,02/01/2023,01/02/2023,,CLOSED
+26/06/2023,NZ,Cyl. Liner No 6 M/E Retak,Penggantian turbocharger dari spare part TDI,ME,05/02/2023,,,CLOSED
+27/06/2023,NZ,"Pada saat start terjadi overspeed, ditemukan Governor macet.",Mengganti dengan Spare yang lama,AE,26/06/2023,26/06/2023,,CLOSED
+27/08/2023,NZ,"Terdengar suara tidak normal dari turbocharger AE 1, shaft turbo charger oblak",Sudah mencoba mengganti Range S M ataupun D tetapi kedalaman tetap tidak bisa terbaca,Navigation,27/06/2023,27/06/2023,,CLOSED
+04/01/2022,NZ,Terjadi kebocoran di skat tanki,"Sudah dilakukan Pengecekan kabel connection dan Ais di Off dan On Kembali, tetapi masih tetap seperti sebelumnya.",Navigation,27/08/2023,,,CLOSED
+09/01/2022,AA,Valve suction rusak,dibuatkan valve suction untuk sementara,Compressor,04/01/2022,,,CLOSED
+11/01/2022,AA,Kebocoran pada cylinder head no.6 pendingin bocor dari sleeve injector,Mengganti cylinder head dengan spare ex recondisi dari Jakarta,Pump,09/01/2022,01/09/2022,,CLOSED
+14/01/2022,AA,Kebocoran pada cylinder head no.3 pendingin bocor dari exhaust seat valve,Mengganti cylinder head dengan spare ex recondisi dari Jakarta,AE,11/01/2022,01/11/2022,,CLOSED
+21/01/2022,AA,Shaft Clearance antara turbin dan semi float bearing sudah longgar,Menunggu spare part untuk turbocharger,AE,14/01/2022,,,CLOSED
+26/01/2022,AA,Bushing pump sudah longgar dengan shaft pump. Diameter dalam untuk Penekan gland packing sudah membesar,Melakukan overhaul pada auxiliary cool pump dan dibuatkan bushing pump,Pump,21/01/2022,,,CLOSED
+21/02/2022,AA,Shaft Rotor Turbin Patah,"Ganti/Pasang TC AE unit,",AE,26/01/2022,26/01/2022,,CLOSED
+22/02/2022,AA,"1. Pendingin bocor ke Piston dan oil crank case
+2. Lub. Oil tercampur dengan air pendingin",Melakukan overhaul pada Main Air Compressor No. 2,Compressor,21/02/2022,26/02/2022,,CLOSED
+04/03/2022,AA,"1. Pendingin bocor ke Piston dan oil crank case
+2. Lub. Oil tercampur dengan air pendingin
+3. Dudukan valve assy di Cylinder head tidak rata",Melakukan overhaul pada Main Air Compressor No. 1,Compressor,22/02/2022,,,CLOSED
+10/03/2022,AA,Lubricant Oil dari shaft seal/mechanical seal bocor,Dilakukan penggantian hydrolic motor hoisting menggunakan spare di kapal,Crane,04/03/2022,05/03/2022,,CLOSED
+11/03/2022,AA,Cylinder head mengalami keretakan dan air pendingin masuk ke oil carter karena terjadi kebocoran,Mengganti cylinder head menggunakan ex repair jakarta,AE,10/03/2022,03/10/2022,,CLOSED
+12/04/2022,AA,"1. Ketika runinng terjadi getaran sangat keras
+2. Main Bearing lengket dengan crank shaft
+3. Crank Shaft sudah tidak center",Melakukan overhaul untuk main air compressor No.1,Compressor,11/03/2022,,,CLOSED
+22/04/2022,AA,Exhaust spindle valve patah dan merusak piston,"Melakukan Overhaul pada A/E No. 3, Cyl. No.6 dan mengganti spare part yang rusak",AE,12/04/2022,,,CLOSED
+22/04/2022,AA,"1. Cylinder Head No.2 retak di body exhaust
+2. Cylinder Head No.3 retak di body lubang nozzle injector dan exhaust seat valve
+3. Cylinder Head No. 4 bocor di sleeve injector dan ulir draft rusak","Melakukan penggantian untuk cylinder head (3 unit), cylinder no 2,3,4",AE,22/04/2022,22/04/2022,,CLOSED
+24/04/2022,AA,terjadi short circuit antara gulungan stator dengan body elmot,Mengganti pompa dengan main cooling SW Pump,Pump,22/04/2022,,,CLOSED
+11/05/2022,AA,Terjadi kebocoran Lubricant oil ke pipa exhaust manifold sehingga menyebabkan exhaust manifold membara,Mengganti turbocharger type : RH 133,AE,24/04/2022,24/04/2022,,CLOSED
+16/05/2022,AA,"1. Starting motor tidak bisa berputar
+2. Gear motor rompal
+3. Control modul 24V Rusak",Untuk sementara starting auxiliary engine no.1 melepas starting motor auxiliary engine no. 3,AE,11/05/2022,,,CLOSED
+01/06/2022,AA,Air pendingin bocor dari sleeve dudukan injector dan exhaust seat,,AE,16/05/2022,16/05/2022,,CLOSED
+01/06/2022,AA,"Flexible joint exhaust cylinder 4,5,6 bocor (berlubang)",Flexible joint dibuka dan dicek,AE,01/06/2022,,,CLOSED
+01/06/2022,AA,Air pendingin bocor dari Exhaust Seat,Mengangkat cylinder head dan membuka section seat dan exhaust seat,AE,01/06/2022,,,CLOSED
+01/06/2022,AA,Air pendingin bocor dari Exhaust seat,Mencabut cylinder head untuk di cek seat dan spindle,AE,01/06/2022,,,CLOSED
+01/06/2022,AA,Air pendingin bocor dari Exhaust Seat,"Membuka cylinder head dan dilepas suction valve, exhaust valve, seat",AE,01/06/2022,,,CLOSED
+01/06/2022,AA,Air pendingin bocor dari Exhaust Seat,"Melepas cylinder untuk di cek exhaust valve, seat, dan spindle",AE,01/06/2022,,,CLOSED
+06/06/2022,AA,Flexible joint bocor (berlubang),Flexible joint dibuka dan dicek,AE,01/06/2022,,,CLOSED
+16/06/2022,AA,Upper jacket cooling cylinder no. 5 mengalami keretakan mengakibatkan kebocoran pada sistem pendingin,"Cylinder head dicabut, upper jacket cooling dilepas dan diinspeksi",ME,06/06/2022,06/06/2022,,CLOSED
+22/06/2022,AA,"Pada tanggal 15 Juni 2022 terejadi petir beberapa kali dan cukup kuat. Pada saat kapal berangkat radar akan dinyalakan, radar scanner tidak mau berputar. Pada saat radar dinyalakan tampilan radar tidak keluar. Pada keyboard menyala alarm ack tidak bisa direset. untuk radar no.1 pada tampilan layar tidak ada echo/tangkapan benda sekitar tidak keluar/tampilan radar kosong","1. Pengecekan scanner radar dan radar secara visual tidak ada bekas tersambar/terbakar
+2. Pengecekan main power, mematikan dan menyala kembali 
+3. Membaca manual book, mencari troubleshooting",Navigation,16/06/2022,,,CLOSED
+18/07/2022,AA,"Pada tanggal 22 Juni 2022, ketika hendak melakukan tes SSAS monthly, ditemukan data yang tertera pada display monitor bahwa tegangan antena mencapai 28 V yang normalnya tegangan antena 7.6 - 8.2V, Sehingga menyebabkan tidak bisa transmit dengan menggunakan Inm-C maupun melakukan tes SSAS","1. Pengecekan antena secara visual tidak ada bekas tersambar petir atau terbakar
+2. Mematikan main power supply dan menyalakan kembali",Navigation,22/06/2022,,,CLOSED
+02/08/2022,AA,Tanktop H.5 bagian kiri depan Bocor,Mendoubling tanktop H.5,Navigation,18/07/2022,19/07/2022,,CLOSED
+18/08/2022,AA,Bushing pump mengalami keausan berlebih menimbulkan getaran dan suara tidak normal,Hydraulic motor hoisting diganti dengan spare 1 unit,Crane,02/08/2022,08/02/2022,,CLOSED
+17/11/2022,AA,Upper jacket cooling cylinder no. 2 mengalami keretakan mengakibatkan kebocoran pada sistem pendingin,"Cylinder head dicabut, upper jacket cooling dilepas dan dipasang upper jacket spare",ME,18/08/2022,18/08/2022,,CLOSED
+29/12/2022,AA,Robor dan casing mengalami gesekan sehingga rotor dan casing terjadi kerusakan,,Crane,17/11/2022,17/11/2022,,CLOSED
+03/12/2022,AA,bBanyak kotoran menempel diturbin side,,ME,29/12/2022,,,CLOSED
+12/03/2022,AA,Rotor dengan casing mengalami gesekan sehingga rotor dan casing terjadi kerusakan,Hydraulic motor hoisting dinganri dengan spare 1 unit (rekondisi),Crane,03/12/2022,,,CLOSED
+08/01/2022,AA,Kerusakan permukaan crankpin dan crankpin bearing A/3E No. 3,Menghaluskan permukaan crankpin bearing dan mengecek keretakan menggunakan spot check,AE,12/03/2022,,,CLOSED
+26/03/2023,AA,Turbocharger suara kasar dan mendengung,,ME,08/01/2022,,,CLOSED
+27/03/2023,AA,Pada tanggal 26 Maret 2023 ditemukan ada dua titik kebocoran tanktop di palka 5.,Dilakukan pengelasan doubling plat pada kedua titik bocor serta dilakukan pengetesan pengisian air ballast dengan hasil baik (tidak bocor),Hull & Structure,26/03/2023,26/03/2023,,CLOSED
+28/03/2023,AA,Pada tanggal 27 maret 2023 ditemukan kebocoran di titik lainnya pada tank top palka 5,Dilakukan pengelasan doubling plat pada kedua titik bocor serta dilakukan pengetesan pengisian air ballast dengan hasil baik (tidak bocor),Hull & Structure,27/03/2023,27/03/2023,,CLOSED
+30/04/2023,AA,Pada tanggal 28 Maret 2023 dilakukan pengecekan semua tank tip dan ditemukan ada titik kebocoran tank top di palka no 2 dan palka no 5 kembali (terdapat 2 titik kebocoran di palka 5),Dilakukan pengelasan doubling plat pada kedua titik bocor serta dilakukan pengetesan pengisian air ballast dengan hasil baik (tidak bocor),Hull & Structure,28/03/2023,28/03/2023,,CLOSED
+26/05/2023,AA,Komputer kamar mesin mengalami crash beberapa kali dalam seminggu ketika digunakan. Terakhir kali tidak bisa masuk ke sistem Windows 10,Dilakukan pengecekan oleh 2/O dan disetting ulang pada menu input SSD beberapa kali. Namun SSD tidak mau terbaca dan gagal masuk ke windows 10. Sudah dikomunikasikan dengan tim IT kantor pusat. Untuk sementara PC Engine room menggunakan SSD PC dari KKM di kamar dan ditambahi SSD untuk penyimpanan di local disk D ditambahi RAM,Computer,30/04/2023,,,CLOSED
+10/06/2023,AA,Tidak bisa dibuka tutup secara otomatis dari anjungan.,Amprahan PCB Modul Decorder Elektrik Sudah di pasang di bosun store. Tidak bisa dibuka tutup dari anjungan,Pump,26/05/2023,,,CLOSED
+22/06/2023,AA,"UPS Pada ecdis dan kompiuter danaos serta email kapal keadaaannya sudah low battery tidak mau menyimpan daya, ketika adanya tegangan naik turun pada arus listrik",,Navigation,10/06/2023,,,CLOSED
+22/06/2023,AA,,,AE,22/06/2023,,,CLOSED
+17/11/2023,AA,,,AE,22/06/2023,,,CLOSED
+25/12/2023,AA,1. Yokohama fender pada sisi lambung kanan palka 2 tidak kuat menahan benturan antara tongkakng dan kapal sehingga pecah,,LSA,17/11/2023,,,CLOSED
+04/01/2024,AA,Saat pelayaran terjadi kebocoran pada pipa air boiler,,Pipe,25/12/2023,25/12/2023,,CLOSED
+09/02/2024,AA,Saat pelayaran terjadi kebocoran pada pipa air boiler,,Pipe,04/01/2024,01/04/2024,,CLOSED
+11/02/2024,AA,"Plat dinding palka no.5 sebelah kiri bocor pada saat pengisian ballast tangki 5 kiri dan kanan,yang di akibatkan karena plat sudah tipis dan berkarat","1. Melakukan pengisian air ballast sampai di bawah ketinggian dinding yang mengalami kebocoran,agar muatan tidak terjadi kerusakan 2. Melakukan pengelasan pada dinding palka 5 supaya ballast 5 kiri bisa di isi sampai penuh",Hull & Structure,09/02/2024,02/09/2024,,CLOSED
+15/02/2024,AA,,,Hull & Structure,11/02/2024,02/11/2024,,CLOSED
+21/02/2024,AA,1. Wilden pump sudah tidak kedap saat dilakukan pengetesan. 2. Adanya korosi saat dilakukan overhaul pada wilden pump,,Pump,15/02/2024,,,CLOSED
+19/03/2024,AA,Turing pada radar tidak dapat muncul serta tidak dapat setting auto dan manual. radar juga tidak dapat menangkap dan menampilkan objek. pada radar terdapat alarm check inter-sw yang menandakan interswitch malfunction,,Navigation,21/02/2024,,,CLOSED
+26/03/2024,AA,"Saat diisi ballast pada soundingan 3-4 meter keluar air dari plat tank top palka sebanyak 3 titik, diketahui karena adanya kebocoran pada tank top palka 5 air ballast",,Hull & Structure,19/03/2024,,,CLOSED
+16/04/2024,AA,Rotor turbo patah,Penggantian dengan 1 unit spare turbo rekondisi,AE,26/03/2024,,,CLOSED
+25/02/2022,AA,,,Crane,16/04/2024,,,CLOSED
+05/06/2022,ND,Bearing kering dan elmot terbakar,,Pump,25/02/2022,,,CLOSED
+27/06/2022,NE,Saat dilakukan bongkar terjadi kerusakan pada seating klep AE No.2,,AE,05/06/2022,,,CLOSED
+07/07/2022,NE,abnormal sound dicrane no.1 dikarenakan baling baling fan di lo coolernya rontok,,Crane,27/06/2022,28/06/2022,,CLOSED
+11/07/2022,NE,"Saat operasi ditemukan mesin es alarm abnormal, ditemukan mesin es tersebut salah satu fasenta short body",,Compressor,07/07/2022,,,CLOSED
+18/07/2022,NE,Terjadi abnormal pergerakan dicrane no.4 setelah dilakukan pengecekan ditemukan bahwa remote handle dihoisting hydraulic motor tidak bergerak dan bagian receiver nya ditemukan shaft gear career di receivernya putus,,Crane,11/07/2022,,,CLOSED
+22/07/2022,NE,Terdengar suara abnormal digrab crane no.4 setelah dilakukan pengecekan ditemukan serpihan material bush kuningan diroda bottom sheavenya,,Grab,18/07/2022,,,CLOSED
+01/08/2022,NE,Pipa rudder tank (RPT) terjadi kebocoran sehingga air masuk ke APT,,Pipe,22/07/2022,,,CLOSED
+01/08/2022,NE,"Gyro terus berputar pelan, dan tidak berhenti, master gyro juga berputar",,Navigation,01/08/2022,,,CLOSED
+01/08/2022,NE,Sobek pada selang yang mengakibatkan kebocoran pada saat dry powder digunakan,,Accomodation,01/08/2022,,,CLOSED
+01/08/2022,NE,Patahnya tutup tabung dalam mengakibatkan tercampurnya foam a dan foam b,,FFA,01/08/2022,,,CLOSED
+10/08/2022,NE,EEBD sudah dalam keadaan yang tidak baik sehingga idak bisa diisi ulang,,LSA,01/08/2022,,,CLOSED
+22/09/2022,NE,Saat muat batu bara dikaliorang mendapati bahwa hoisting bekerja secara abnormal sesaat,,Crane,10/08/2022,,,CLOSED
+01/11/2022,NE,Terjadi kerusakan system kelistrikan crane no.3 saat pemindahan terjadi fungsi limit untuk fluffing nya bekerja abnormal (area akan timbul bunyi alarm limit),,Crane,22/09/2022,,,CLOSED
+01/01/2023,NE,"Saat kapal discharge terjadi insiden Jib crane no.1 jatuh, terbentur lambung kanan, plat jib robek dan deformasi dengan kondisi grab (guven) terjatuh melintang kearah kanan kapal diatas muatan batu bara tongkang bahari abadi 3002 setelah pengecekan ternyata drum wire hoisting tersisa 26 lilitan, drum wire luffing tidak ada lilitan",,Crane,01/11/2022,,,CLOSED
+01/01/2023,NE,Reducting Gear Crane No 3 Rusak,Penggantian Reducting Gear dari Crane No 2 ke Crane No 3.,Crane,01/01/2023,,,CLOSED
+14/05/2023,NE,Reducting Gear Crane No 3 Rusak,Penggantian Reducting Gear dari Crane No 2 ke Crane No 3.,Crane,01/01/2023,,,CLOSED
+14/05/2023,NE,"Reciver Slewing Crane 1 dan 2 Rusak, tidak bisa bergerak kekanan dan kekiri (macet)",Mengganti reciver slewing Crane,Crane,14/05/2023,,,CLOSED
+30/06/2023,NE,"Reciver Slewing Crane 1 dan 2 Rusak, tidak bisa bergerak kekanan dan kekiri (macet)",Mengganti reciver slewing Crane,Crane,14/05/2023,,,CLOSED
+06/12/2023,NE,Main Engine Cylinder no 4 Upper Cover Pecah,"Stop Mesin, Stop Pompa Jaket Cooling, tutup semua Valve , menunggu mesin dingin sekitar 2 jam. Kemduian Cabut Cyl Head no 4, Cabut Upper Cover.",ME,30/06/2023,30/06/2023,,CLOSED
+09/12/2023,ND,"Metal jalan berputar, Shaft sudah oval. TB 169.55 DAN PS 169.98, Big end sudah oval",,AE,06/12/2023,,,CLOSED
+17/05/2024,ND,"Metal jalan berputar, Shaft sudah oval. TB 169.55 DAN PS 169.98, Big end sudah oval",,AE,09/12/2023,,,CLOSED
+05/05/2022,NE,Hydroulik Hoist motor tidak kuat hanya kuat mengangkat grabe tetapi tidak kuat apabila mengangkat grabe plus cargo setelah pengecekan kemungkinan cover hyd motor terkikis,,Crane,17/05/2024,,,CLOSED
+07/05/2022,SA,wire hoisting crane no.4 rantas dan hampir putus,,Crane,05/05/2022,05/05/2022,,CLOSED
+30/05/2022,SA,Pada saat kegiatan bongkar crane no.4 mengalami mati mendadak kemudia dilakukan pengecekan ditemukan oil mengalami over heat,,Crane,07/05/2022,,,CLOSED
+31/05/2022,SA,Mesin pendingin provetion mengalami kerusakan dimana high pressure naik menjadi 2kg menyebabkan mesin tidak bisa beroperasi,,Provision System,30/05/2022,,,CLOSED
+17/06/2022,SA,Wire hoisting crane no.3 rantas dan hampir putus,,Crane,31/05/2022,,,CLOSED
+11/08/2022,SA,kebocoran pada Bolt Break Gear Moto Hydraulic Slewing Crane No 3,dilakukan pengecekan pada crane no 3,Crane,17/06/2022,17/06/2022,,CLOSED
+13/11/2022,SA,Wire hoisting no.1 rusak dan putus saat pengoperasian,,Crane,11/08/2022,,,CLOSED
+24/11/2022,SA,Saat pengecekan rutin kapal ditemukan ketidaksamaan pada chain coupling cover/ tutup pecah,,Crane,13/11/2022,13/11/2022,,CLOSED
+24/11/2022,SA,Kondisi wire hoist kedua crane sudah rantas,,Crane,24/11/2022,,,CLOSED
+29/11/2022,SA,Kondisi wire hoist kedua crane sudah rantas,,Crane,24/11/2022,,,CLOSED
+30/11/2022,SA,Kondisi wire hoist crane no.4 rantas,,Crane,29/11/2022,,,CLOSED
+26/01/2023,SA,Saat menghidupkan crane no.4 tidak bisa hidup dan jib crane no.4 bergerak bergerak turun,,Crane,30/11/2022,,,CLOSED
+09/11/2023,SA,"Terjadi ketidakseimbangan pada hydraulic pump crane 3, roller bearing dan oil seal rusak",,Crane,26/01/2023,,,CLOSED
+30/03/2023,SA,Hydraulic bintang kiri low pressure sehingga tidak bisa berputar untuk mengangkat jangkar,"1. Membersihkan filter
+2. Test pressure gauge hydraulic pump
+3. Drain hydraulic motor
+4. Adjuster controller relief valv",Mooring System,09/11/2023,,,CLOSED
+14/05/2023,SA,"1. Pada saat awal pasang wire baru kondisi sudah rantas 1 rambut dan sudah kaku. 
+2. Wire Hoisting Crane no 4 Rantas RH347H 00M",Pergantian Wire,Crane,30/03/2023,,,CLOSED
+05/05/2023,SA,"AE No. 1 tiba-tiba bunyi kasar dan langsung di stop, AE No. 1 inproses stop bantalan crankpin bearing cyl No. 3 lepas dri crankshaft menggantam cover carter dan bantalan crank pin bearing keluar.",General Overhaul,AE,14/05/2023,,,CLOSED
+14/05/2023,SA,Ring piston patah,,AE,05/05/2023,14/05/2023,,CLOSED
+09/06/2023,SA,Bolt Conecting Rod Patah Upper/Lower,,AE,14/05/2023,14/05/2023,,CLOSED
+21/07/2023,SA,"Pada tanggal 09 Juni 2023 dilaksanakan maintenance antara lain Ganti filter, Ganti zinc anode. Setelah pemasangan zinc anode diadakan pengecekan secara visuals Shell temperature bagian dalam sudah keropos dan dilanjutkan test vakum shell temperature body bocor sehingga FWG tidak dapat digunakan",Memperbaiki atau ganti baru,FWG,09/06/2023,06/09/2023,,CLOSED
+22/07/2023,SA,Wire hoisting rantas runing hrs : 1181 hrs,,Crane,21/07/2023,,,CLOSED
+09/11/2023,SA,Wire luffing running hrs : 1961 hrs,,Crane,22/07/2023,,,CLOSED
+27/12/2023,SA,Motor Hydraulic sebelah kiri tidak bisa di hibob,,Mooring System,09/11/2023,,,CLOSED
+05/02/2024,SA,"18.50 LT FW keluar dari ME cyl no 4, setelah diperiksan, ditemukan Cyl cover bocor","GANTI BARU CYL COVER JACKET
+GASKET CYL HEAD
+SEATING EXH VALVE",ME,27/12/2023,27/12/2023,,CLOSED
+05/02/2024,SA,Pada LO pump di temukan Gear Shaft sudah sompel/patah gearnya dan sebahagian gear sudah terlihat aus.,Rutin check kondisi oil,AE,05/02/2024,,,CLOSED
+13/02/2024,SA,"Pukul 23.30 :T AE 2 di stop karena ada kelainan suara. Dilakukan pengecekan buka Cover untuk Check Gear dalam Carter sambil toren setelah memasukna Gear dalam Carter masih aman. Buka LO Pump untuk pengecekan Driving Gear, ditemukan Gear terlihat sompel/patah.","OverHaul LO Pump, pengelasan pada driving Gear untuk digunakan saat emergency",AE,05/02/2024,,,CLOSED
+23/02/2024,SA,Kerusakan Jib Crane no 4 sudah lama namun belum dilaporkan oleh Master sebelumnya,"1. Segera melaporkan ke kantor pusat dan dibuat berita acara, meminta advice untuk tindakan selanjutnya.
+2. Segere dilakukan perbaikan berupa Doubling pada posisi yang rusak.",Crane,13/02/2024,,,CLOSED
+03/04/2024,SA,Setelah melakukan pengangkatan sebanyak 2 kali dilakukan pengangkatan kembali yang ke tiga kalinya(full handle) crane tidak mampu dan terdengar kelainan suara pada hyd pump,,Crane,23/02/2024,,,CLOSED
+25/05/2024,SA,,,Boiler,03/04/2024,,,CLOSED
+23/06/2024,SA,"Spindle exhaust valve cyl no.1 macet, push rod bengkok dan baut crank pin bearing longgar, linear terbaret",,AE,25/05/2024,26/05/2024,,CLOSED
+25/07/2024,SA,Wire hosting deck crane no.1 gulungan keluar dari drum dan terjepit,,Crane,23/06/2024,,,CLOSED
+15/08/2024,SA,Ketika kegiatan muat dgn menggunakan 4 crane dan AE posisi diparalel 3 tiba tiba terdengar suara yang tidak lazim dari AE ditemukan cover carter cylinder no.4 jebol karena conetting rod yang jatuh ke carter,,AE,25/07/2024,,,CLOSED
+03/09/2024,SA,"Saat melakukan montly test sart yang ada dianjungan sart no.1 kondisi menyala tetapi indikasi daya battery akan habis, SART no.2 ada indikasi bahwa battery SART daya habis",,LSA,15/08/2024,,,CLOSED
+03/09/2024,SA,Anak tangga/step keropos,,Outfitting,03/09/2024,,,CLOSED
+04/11/2024,SA,Rantai yokohama fender sudah berkarat dan diameter mengecil sehingga rantai mudah putus,,LSA,03/09/2024,,,CLOSED
+04/04/2022,SA,hydraulic pump Luffing tidak bergerak sama sekali sementara hoisting dan slewing berjalan normal,,Pump,04/11/2024,,,CLOSED
+27/04/2022,ND,Terjadi kebocoran pada nok sealnya untuk ke 5 kalinya sehingga kita kehabisan stok spare nok seal,Parkir crane pada posisi yang aman dan di bongkar cover downmax,Crane,04/04/2022,,,CLOSED
+20/07/2022,ND,Kondisi gyro repeater di steering gear room sudah tidak ada,Request for supply gyro repeater untuk steering gear,Navigation,27/04/2022,,,CLOSED
+04/08/2022,ND,Cylinder no.5 piston ring kondisi telah patah pada no 3 & 4,Perbaiki / ganti piston ring 1 set dan piston crown 1 psc,ME,20/07/2022,21/07/2022,,CLOSED
+13/08/2022,ND,Wire banyak yang putus jam kerja 720 jam,Belum ada dari phak kapal,Crane,04/08/2022,18/08/2022,,CLOSED
+17/08/2022,ND,Pompa dowmax luffing telah lemah sehingga sudah tidak maksimal kemampuan kerjanya,,Crane,13/08/2022,,,CLOSED
+02/09/2022,ND,wirenya banyak yang putus,,Crane,17/08/2022,,,CLOSED
+07/11/2022,ND,"Pada saat melakukan dan pengecekan pada turbin charger M/E sisi turbinnya, ditemukan keahusan pada sisi turbin tersebut",Dilakukan pembersihan dan pengukuran pada clearence dan kemudian di laporkan ke departement teknik pusat lewat WA,ME,02/09/2022,24/09/2022,,CLOSED
+15/11/2022,ND,Crane tidak mampu buat hibob jib dengan beban muatan,,Crane,07/11/2022,11/07/2022,,CLOSED
+27/01/2023,ND,Hydraulic pump patah pada as couplingnya,Ganti hdraulic pump dengan spare bekas repair (spare baru belum ada),Crane,15/11/2022,16/11/2022,,CLOSED
+29/03/2023,ND,Terjadinya short connection pada beberapa breaker dikarenakan adanya air laut yang masuk kedalam ruang feeder panel 440V diduga dari kebocoran tangki cofferdam,,ME,27/01/2023,,,CLOSED
+15/04/2023,ND,MCCB untuk deck crane no.2 rusak tidak dapat di start,,Crane,29/03/2023,29/03/2023,,CLOSED
+19/04/2023,ND,LO pressure selalu drop,,AE,15/04/2023,,,CLOSED
+20/04/2023,ND,,"Pekerjaan C3 sedang dimaksimalkan agar kembali muat 3 gang,estimasi 2 jam lagi running",Crane,19/04/2023,,,CLOSED
+09/05/2023,ND,O-ring pada cyl brake hoiting rusak sehingga mengakibatkan kebocoran oli sektar 50 liter/jam,,Crane,20/04/2023,21/04/2023,,CLOSED
+27/06/2023,ND,Boiler tidak dapat hidup,,Boiler,09/05/2023,05/09/2023,,CLOSED
+01/07/2023,ND,Kebocoran oil seal pada reduction gear untuk luffing,"Melakukan pembongkaran / pencabutan reduction gear untuk mengambil sample oring seal tersebut, temuan setelah pengechekan, tidak memungkinkan di bongkar di atas kapal oleh crew",Crane,27/06/2023,,,CLOSED
+04/07/2023,ND,Tali tross depan selang jack hydarulic pada palka no.3 sebelah kanan bocor,Secepatnya melakukan penggantian hose hydraulic dengan spare part yang baru,Pipe,01/07/2023,07/02/2023,,CLOSED
+07/07/2023,ND,Kebocoran oil seal pada reduction gear untuk luffing,,Crane,04/07/2023,07/04/2023,,CLOSED
+13/07/2023,ND,House Pecah,1. Spare part di atas kapal tidak ada. 2. Mengambil hose hydraulic yang dari deck crane no.3 yang sedang rusak/ tidak beroperasi dan di pasang ke deck crane No.2,Crane,07/07/2023,07/07/2023,,CLOSED
+17/07/2023,ND,Jacket cooling cylinder No.2 pecah pada saat berlayar dari berau ke obimayor,1. Melakukan top overhaul untuk mengganti jacket cooling yang pecah. 2. Pekerjaan dilakukan dari tanggal 13-14 July 2023,ME,13/07/2023,14/07/2023,,CLOSED
+22/08/2023,ND,"Pada saat melakukan maintenance routine untuk pengecheck-an piston dan cleaning Under piston dan scavange ketika kapal tiba di Obi,kami menemukan jika Piston Ring no.1 sudah patah",,ME,17/07/2023,22/07/2023,,CLOSED
+16/08/2023,ND,BODY VANE PUMP RETAK/PECAH,,Crane,22/08/2023,22/08/2023,,CLOSED
+25/09/2023,ND,Monitor Engine Cont Consule di ECR tiba tiba mati,,Computer,16/08/2023,24/08/2023,,CLOSED
+09/10/2023,ND,Body Radiator bocor / retak,1. Mengirim radiator ke workshop guna perbaikan / pengelasan. 2. Memasang kembali dengan benar setelah radiator diperbaiki.,Crane,25/09/2023,25/09/2023,,CLOSED
+10/10/2023,ND,"Tiba tiba off dan secara auto berganti pada main LO Pump no.2 , pada panel utama sudah terbakar dan lengket yang mengakibatkan arus 1 fase merusak gulungan elmot dan berakhir terbakar",,Pump,09/10/2023,25/10/2023,,CLOSED
+10/10/2023,ND,,Mengganti dengan wire luffing baru,Crane,10/10/2023,,,CLOSED
+22/10/2023,ND,"Terdapat kerusakan berupa lubang dan karat, sehingga pada saat buang ballast TST air masuk ke dalam palka, posisi kerusakan terletak tepat di bawah plat valve out TST 2P","Dikarenakan posisi kerusakan terdapat di atas dan di ketinggian dan pengerjaan pengelasan terlalu over head, maka pipa yang bocor di ganti dengan pipa yang baru, di potong dari bawah dan digunakan shock pipa untuk pemasangan dan penyambungan pipa",Pipe,10/10/2023,10/10/2023,,CLOSED
+01/11/2023,ND,"1. Saat pompa sedang dalam pengoperasian,tiba - tiba off dan secara auto berganti pada main Lo pump no.2 (Safety device berfungsi dengan baik.) 2. Melakukan pengecheckan, dan ditemukan jika contactor pada panel utama sudah terbakar dengan lengket, yang mengakibatkan arus 1 fase merusak gulungan elmot dan berakibat terbakar.","1. Mengganti contactor dengan spare part yang baru. 2. Dengan bantuan teknisi dari jakarta,menggulung ulang kumparan elmot. 3. Mengganti bearing elmot. 4. Memasang kembali elmot setelah terlebih dahulu mensirlak gulungan. 5. Melakukan pengetest an selama 7 jam, dan hasilnya bagus. Ampere dan suhu elmot dalam keadaan normal.",ME,22/10/2023,,,CLOSED
+07/11/2023,ND,"DITEMUKAN RADIAL CLEARANCE SUDAH HIGH LIMIT, RADIAL CLEARANCE = 0,57 mm (RUNNING HOURS = 2042 Hours)",,AE,01/11/2023,11/01/2023,,CLOSED
+10/11/2023,ND,Ampere selalu tinggi (150-200Amp),,Pump,07/11/2023,,,CLOSED
+03/12/2023,ND,1. Ampere tiba - tiba naik 70 Amp dan pompa langsung ngetrip. 2.,"1. Melakukan pengecekan pada contactor di panel,temuan normal 2. Melakukan pengecheckan pada elmot,temuan tidak short,tetapi ukuran isolasi = 0 3. Membuka elmot (overhaul) untuk mencari tau penyebab isolasi menjadi 0,temuan: bearing elmot bagian bawah rusak dan ada kawat gulungan terbakar dan mengakibatkan putus. 4. Bagus",Pump,10/11/2023,,,CLOSED
+03/12/2023,ND,,,AE,03/12/2023,12/05/2023,,CLOSED
+05/12/2023,ND,"Pendingin air tawawr untuk AE No.2 selalu masuk angin dan mengakibatkan jacket selalu panas berlebihan, lalu pada cyl no.3 ada kebocoran air tawar",,AE,03/12/2023,,,CLOSED
+07/12/2023,ND,"1. Ketika selesai maintenance AE 1, dan sudah di running dalam keadaan tanpa beban (idle), dari main panel sekitar AE 1 ada suara abnormal terdengar 2. Saat dimulai untuk pararel, RPM dan frekwensi keadaan normal,tetapi AE.1 tidak bisa di pararel,walau ACB sudah dalam posisi close","1. Melakukan pengecheckan pada ACB control, kondisi bagus. 2. Melakukan pararel langsung dengan manual. Hasil tidak bisa pararel 3. Melakukan pengecheckan fuse - fuse relay, temuan hasil kondisi normal. 4. Melakukan pengecheckan UVT,temuan arus DC tidak ada. 5. Masih melanjutkan pekerjaan sesuai arahan electrician kantor. (Pak sarif), dan elect kapal masih terus komunikasi sambil action mengganti UVT.",AE,05/12/2023,,,CLOSED
+02/12/2023,ND,"1. Menemukan jika pendingin air tawar untuk AE No.1 selalu masuk angin,dan mengakibatkan jacket selalu panas berlebih (abnormal) 2. Melakukan observasi dengan membuka cover crank case cyl 1-6. 3. Hasil pengecheckan,ditemukan jika pada cyl no.3 ada kebocoran air tawar dari dalam liner. 4. Dipastikan penyebabnya karena ada kebocoran air tawar dari cylinder head no.3",1. Melakukan top overhaul dengan mengganti cyl head no.3 2. Melakukan tes pressure pada cyl head yang mau dipasang untuk memastikan tidak ada kebocoran.,AE,07/12/2023,,,CLOSED
+24/12/2023,ND,Tiba tiba over head crane tidak bisa bergerak kekanan atau kiri saat posisi over head travelling crane akan di secure ke posisi yang aman,,AE,02/12/2023,,,CLOSED
+24/12/2023,ND,"Crane no.1 tiba tiba mati, setelah dilakukan pengecekan ditemukan bahwa temp oli mencapai 78 derajat dan megger test oil ground hasilnya dibawah standar",,Crane,24/12/2023,,,CLOSED
+28/12/2023,ND,Turun pressure LO AE No.1 sudah dilakukan penggantian crank pin bearing cyl 1-6 tetapi ternyata masih turun (Start awal pressure oil 5.4 bar setelah dijalankan 30 menit pressure oli turun menjadi 2.7 bar,,AE,24/12/2023,,,CLOSED
+24/12/2024,ND,"Ship railing mengalami kerusakan dikarenakan terkena benturan grab pada pemuatan, crane 4 dalam kondisi mati dikarenakan AE drop sehingga grab yang ada di crane 4 mengayun dan menabrak ship railing",,Outfitting,28/12/2023,,,CLOSED
+20/01/2024,ND,"1. Untuk mengatasi turunya pressure L.O A.E telah dilakukan penggantian crank pin bearing cyl 1-6. 2. Tetapi setelah dilakukan penggantian crank pin bearing cyl 1-6 pressure oli masih turun. Start awal pressure oli 5.4 bar, setelah dijalankan 30 menit dengan beban 100KW pressure oli turun menjadi 2.7 bar.","1. Melakukan pengambilan clearence main bearing (locis). Ditemukan clearance mencapai 0.4 mm. Max allowance clearance adalah 0.25 mm. 2. Melakukan pengecheckan main bearing dan ditemukan main bearing yang digunakan sudah U 0.4 3. Membuat permintaan untuk main bearing U 0.4 4. Setelah main bearing di supply ke kapal TG. Petang pada tanggal 25 des 2023 kami segera melakukan penggantian main bearing No. 0,;1;2 & 3. 5. Setelah pemasangan main bearing selesai kami melakukan pemeriksaan sesuai S.O.P dari office. Dan ditemukan semua parameter dama kondisi normal.",AE,24/12/2024,,,CLOSED
+12/02/2024,ND,AIR BALAST DI WBT TIDAK BISA TERBUANG HABIS,,Pump,20/01/2024,,,CLOSED
+12/02/2024,ND,,,Crane,12/02/2024,,,CLOSED
+21/02/2024,ND,,,Crane,12/02/2024,,,CLOSED
+14/03/2024,ND,,,AE,21/02/2024,,,CLOSED
+18/03/2024,ND,"Center shaft grab jenus hilang karena lepas dari bush,dikarenakan safety plat untuk penahan center shaft hilang di karenakan baut penahan safety plat patah",Mencari spare part center shaft di kapal membuat laporan kerusakan membuat laporan permintaan spare part,Grab,14/03/2024,,,CLOSED
+23/04/2024,ND,,,ME,18/03/2024,,,CLOSED
+02/08/2024,ND,Dilakukan pengechekan Crane No. 3 lalu ditemukan adanya indikasi kebocoran pada Hydraulic system oil. Setelah melakukan pengetesan crane kami menemukan kebocoran pada Dowmax untuk Slewing dan suara kasar pada Dowmax Luffing,,Crane,23/04/2024,,,CLOSED
+22/09/2024,ND,"PANEL LISTRIK COOLING S.W.PUMP NO.1 TRIP, PADA SAAT TRIP INDIKATOR AMPERE PADA POSISI NORMAL ( 70 AMPERE )",,Pump,02/08/2024,,,CLOSED
+27/09/2024,ND,"Saat melakukan pengetesan water ingress dengan air sensor water ingress yang ada didalam palka akan tetapi water ingress monitor dianjungan tidak ada respon kemudian dilakukan pengecekan water ingress monitor dianjungan pada panel ingress monitor ""sensor failur""",,Computer,22/09/2024,,,CLOSED
+25/10/2024,ND,"Crane 1 patah, wire ropeluffing putus RH 1873H",,Crane,27/09/2024,,,CLOSED
+29/03/2022,ND,Radar power ditekan lalu muncul timer/waktu 02:00 menit radar blink/hitam pada monitor radar JRC,,Navigation,25/10/2024,,,CLOSED
+22/04/2022,KR,Wire hosting crane no.3 telah putus panjang area rangkaian kawat yang putus -+15 sampai 20 meter,Pergantian wire hosting crane no.3 dengan spare wire hosting,Crane,29/03/2022,30/03/2022,,CLOSED
+29/04/2022,KR,Internet tidak tersambung atau tida terkoneksi dengan aplikasi chart browser pada komputer anjungan,,Internet,22/04/2022,,,CLOSED
+28/06/2022,KR,Tiba tiba jacket cooling cover cylinder head no.5 menyemprotkan air dan tekanan jacket cooling me drop alarm slow down ME,Overhaul penggantian jacket cooling uper cyl head ME no.5,ME,29/04/2022,29/04/2022,,CLOSED
+17/07/2022,KR,Tak bisa login NCS ocean region,"Pengecekan kabel antena , kabel dari antena ke Inmarsat C",Navigation,28/06/2022,,,CLOSED
+16/07/2022,KR,"Saat sedang bongkar muatan suara permesinan terdengar kasar setelah dilakukan pengecekan bearing kocaka terhadap shaftnya, shaft rotor aus sehingga bearing kocak dan putaran electromotor tidak stabil dan bersuara kasar",,Crane,17/07/2022,17/07/2022,,CLOSED
+08/08/2022,KR,Shaft rotor aus sehingga bearing koclak dan putaran electromotor tidak stabil dan bersuara kasar,Cabut elektomotor pompa untuk di perbaiki kerusakan shaft rotor,Crane,16/07/2022,,,CLOSED
+10/07/2022,KR,Lilitan/kumparan stator electromotor short dengan body electromotor(low insulation),,Compressor,08/08/2022,08/08/2022,,CLOSED
+27/08/2022,KR,Motorhydraulic dowmax alami kerusakan,Dilakukan cleaning tangki expansinya dan filter oli hydraulik,Crane,10/07/2022,17/07/2022,,CLOSED
+13/09/2022,KR,Hydraulic oil berkurang di sebabkan karena adanya kebocoran di hydraulic pumpnya dari seal oil shaftnya,"Crane sudah dalam kondisi stop, drain hydrualic pipa pum tersebut",Crane,27/08/2022,27/08/2022,,CLOSED
+14/10/2022,KR,Masa kerja penggunaan wire rope hostingcrane no.3 mecapai 1214jam dengan batas penggunaan yaitu 1200 jam,,Crane,13/09/2022,13/09/2022,,CLOSED
+18/11/2022,KR,Membutuhkan renew wire rope hoisting crane no.1,,Crane,14/10/2022,14/10/2022,,CLOSED
+19/11/2022,KR,Membutuhkan Renew wire rope luffing deck crane no.3,,Crane,18/11/2022,18/11/2022,,CLOSED
+24/02/2023,KR,Membutuhkan Renew wire rope hoisting deck crane no.4,,Crane,19/11/2022,19/11/2022,,CLOSED
+25/02/2023,KR,"Loading muat ada kebocoran oil hdraulic dari crane no.3 kebocoran diketahui dari hoisting brake, kebocoran karena kerusakan rod packing dan wiper (nok seal)","Dilakukan penggantian dust wiper dan rod packing (seal nok), stopper hoisting, cabut / buka pin tuas kampas rem drum wire hoisting, bongkar dan pasang hoisting brake hydraulic untuk penggantian nok seal (dust wiper & rod packing)",Crane,24/02/2023,24/02/2023,,CLOSED
+26/02/2023,KR,"Pada saat berlayar di tangki bilge terjadi penambahan air laut dan penambahaanya dengan waktu yang tidak wajar, kemudian air laut di isap kembali sampai habis dan buka manhole,blower tangki untuk free gas setelah dilakukan pengecekan kedalam tangki bilge di ketahui kebocoran air laut tersebut",Menyiapkan peralatan yang dibutuhkan dan melakukan penyumbatan karet sendal di tindas dengan pelat dan ditekan oleh batang besi begel yang di kombinasi dengan ulir drat untuk menekan,Hull & Structure,25/02/2023,25/02/2023,,CLOSED
+20/04/2023,KR,Pecah cooling jacket upper cylinder no.3,,ME,26/02/2023,26/02/2023,,CLOSED
+13/06/2023,KR,Ada bunyi di slewing bearing,,Crane,20/04/2023,20/04/2023,,CLOSED
+26/06/2023,KR,1. Terdapat kawat yang patah/putus sebanyak lebih dari 20 kawat (wire) dalam area sepanjang 200cm secara acak. 2. Terdapat kawat yang patah/putus sebanyak lebih dari 3 kawat (wire) dalam 1 pilinan. 3. Terdapat 3 pilinan mengalami kawat yang patah/putus sebanyak 3 kawat (wire) dalam area sepanjang 30 X 33.5 m = 1005mm atau 100.5cm (33.5mm = diameter Wire Hoisting),Mengganti wire hoisting lama dengan wire hoisting spare yang baru,Crane,13/06/2023,,,CLOSED
+31/08/2023,KR,1. Running hours cylinder No.6 ( 8301 H ) 2. Ring piston aus 3. Kerak carbon di piston crown,"1. Melakukan overhaul cylinder No.6 2. Ganti ring piston set 3. Ganti o'ring jacket cooling 4. Pengecekan, pengukuran cylinder liner, piston groove,ring piston
+5. Melakukan kebersihan",ME,26/06/2023,27/06/2023,,CLOSED
+14/10/2023,KR,1. Saat crane beroperasi lampu alarm oil low level di swich board panelnya menyala. 2. Dilakukan pengecekan penyebab terjadinya hydarulic oil berkurang. 3. Dan di ketemukan hydraulic oil berkurang di sebabkan karena adanya kebocoran di hydraulic pumpnya dari seal oil shaftnya,"Dilakukan penggantian hydraulic pump (VANE PUMP) dengan uraian sebagai berikut : 1. Crane sudah dalam kondisi stop 2. Drain hydraulic oil yang di pipa hydraulic pump tersebut 3. Cabut dan buka pipa dan aksesoris yang menempel pada hydraulic pump tersebut 4. Cabut hydraulic pump dari pondasinya, di lanjutkan cabut roda couplingnya untuk di pasang kembali di hydraulic pump spare 5. Pemasangan kembali hydraulic pump spare pada dudukannya 6. Clearance center antara hydraulic pump dengan electromotor hydraulicnya di lanjutkan pemasangan chain kouplingnya 7. Test running operasi",Crane,31/08/2023,31/08/2023,,CLOSED
+17/10/2023,KR,1. Amper naik turun 39-40 A 2. Gyro spare terindikasi harus diganti,Dilakukan pengecekan dan berkordinasi dengan teknisi ( Pak Nardi ),Navigation,14/10/2023,,,CLOSED
+17/12/2023,KR,1. Pada saat kapal berlayar mesin slowdown 2. Setelah di cek pecah cooling jacket upper cylinder cover no.5 dan mesin induk langsung di stop 3. Penutupan valve in&out tresh water jacket cooling cylinder no.5,"Dilakukan perbaikan, penggantian spare part cooling jacket upper sebagai berikut : 1. Buka aksesoris cylinder cover no.5 cabut cylinder cover di lanjutkan persiapan cooling jacket upper dengan unit cylinder cover spare 2. Pemasangan kembali seperti semula dan pengecekan kebocorannya",ME,17/10/2023,,,CLOSED
+15/01/2024,KR,1. Pada saat kapal berlayar mesin slowdown 2. Setelah di cek pecah cooling jacket upper cylinder cover no.3 dan mesin induk langsung di stop 3. Penutupan valve in & out fresh water jacket cooling cylinder no.3,"Dilakukan perbaikan,penggantian spare part cooling jacket upper sebagai berikut : 1. Buka aksesoris cylinder cover no.3 cabut cylinder cover di lanjutkan persiapan cooling jacket upper dengan unit cylinder cover spare 2. Pemasangan kembali seperti semula dan pengecekan kebocorannya.",ME,17/12/2023,17/12/2023,,CLOSED
+29/01/2024,KR,1. Pada saat kapal berlayar mesin slowdown 2. Setelah di cek pecah cooling jacket uppert cylinder cover no.2 dan mesin induk langsung di stop 3. Penutupan valve in & out fresh water jacket cooling cylinder no.2,"Dilakukan perbaikan, penggantian spare part cooling jacket upper sebagai berikut : 1. Buka aksesoris cylinder cover no.2 cabut cylinder cover di lanjutkan persiapan cooling jacket upper dengan unit cylinder cover spare 2. Pemasangan kembali seperti semula dan pengecekan kebocorannya",ME,15/01/2024,15/01/2024,,CLOSED
+20/02/2024,KR,1. Kerusakan mesin bantu (Auxiliary Engine) No.2 yaitu : Suhu temprature gas buang tinggi 450 s/d 460 drajat saat beban kapal jalan dan parallel (beban 120 KW). 2. Kemudian Aux. Engine kami matikan untuk pengecekan. 3. Setelah pengecekan kerusakan di turbocharger yaitu: T/C ada kebocoran minyak lumas (oli) dari blower sidenya,Dilakukan Pengecekan pada turbo charger: 1. AE 2 sudah kondisi stop. 2. Buka filter udara di temukan oli keluar dari blower side. 3. Lepas turbo charge untuk persiapan pergantian untit turbo,AE,29/01/2024,29/01/2024,,CLOSED
+15/03/2024,KR,Pecah cooling jacket upper cylinder no.4 (Bekas rekondisi),,ME,20/02/2024,20/02/2024,,CLOSED
+15/03/2024,KR,Terlempar saat cuaca ekstrim datang tiba tiba kapal roling,,Accomodation,15/03/2024,,,CLOSED
+15/03/2024,KR,Terlempar saat cuaca ekstrim datang tiba tiba kapal roling,,Accomodation,15/03/2024,,,CLOSED
+15/03/2024,KR,Patah akibat cuaca ekstrem angin kencang,,Bridge System,15/03/2024,,,CLOSED
+15/03/2024,KR,Kerusakan padaa cover dan mungkin equipment dalamnya,,Computer,15/03/2024,,,CLOSED
+08/06/2024,KR,IDEM,,Accomodation,15/03/2024,,,CLOSED
+04/08/2024,KR,Kompressor mesin pendingin es (gandrum) secara tiba tiba tiba running dengan bunyi kasar setelah pengecekan ditemukan bahwa crank pink bearing connecting rod aus (kocak),,Compressor,08/06/2024,,,CLOSED
+31/08/2024,KR,Vane pump hydrolick retak,Oli crane diturunkan dan ditampung didrum lalu dinaikan kembali,Crane,04/08/2024,08/04/2024,,CLOSED
+14/11/2024,KR,"Display mati hidup sendiri, ngelag/lost tombol ais tidak mau dioperasikan",,Navigation,31/08/2024,,,CLOSED
+09/12/2024,KR,Sheave roller untuk hoisting wire pada grab guven pecah sehingga grab guven tidak dapat dioperasikan,,Grab,14/11/2024,,,CLOSED
+05/04/2022,KR,Saat pelayaran gresik-amapare dilakukan pengecekan lagi pada Hatch cover no.3 tetapi hasil nihil masih perlu dibantu crane,,Hatch Cover,09/12/2024,,,CLOSED
+13/04/2022,KY,"Electromotor terbakar , grab saat membuka dan menutup tidak bisa bekerja karena tidak ada tekanan oil dalam system","Cek kondisi counter balance,dilakukan penggantian electromotor",Grab,05/04/2022,,,CLOSED
+16/04/2022,KY,Terdengan bunyi seperti konseling listrik,Dilakukan pembukaan pada cover belakang dan di cek,Navigation,13/04/2022,,,CLOSED
+11/05/2022,KY,Jam kerja wire hoisting crane no.1 sudah melebihi 800 jam,Dilakukan penggantian wire hoisting crane no.1,Crane,16/04/2022,16/04/2022,,CLOSED
+17/05/2022,KY,Generator no.1 menunjukan ketidak normalan dari gas buang cylinder no.1 dan terlihat ada rembesan air dari sela pipa exhaust gas,Melakukan penggantian cylinder head,ME,11/05/2022,05/11/2022,,CLOSED
+02/06/2022,KY,Jam kerja luffing no. 2 sudah melebihi 200 jam,Mengganti wire luffing dengan yang baru,Crane,17/05/2022,,,CLOSED
+10/07/2022,KY,Targe tidak mucul di layar radar,Sudah dilakukan penyetelan pada tuner,Navigation,02/06/2022,,,CLOSED
+10/08/2022,KY,Terjadi kebocoran pada main pipa hydrolic hatch cover / windlass / mooring (pipa sisi tekan),Melakukan penggantian pipa hidrolic,Pipe,10/07/2022,07/10/2022,,CLOSED
+12/08/2022,KY,JIB tidak kuat menahan dan mengangkat beban muatan dari tongkang,Melakukan pengecekan dan terdapat serpihan teflon di filter,Crane,10/08/2022,,,CLOSED
+14/09/2022,KY,jacket cooling water guide cylinder no.5 bocor,overhaul dengan mengganti water guide,ME,12/08/2022,08/12/2022,,CLOSED
+10/09/2022,KY,"Pada waktu kapal sedang kegiatan muat di Muara Berau, deck crane no.3 tidak kuat Hibob jib/luffing saat angkat muatan","Melakukan pemeriksaan awal pada filter oli dan tekanan pompa hydraulic for luffing, slewing, hoist.
+Melakukan penggantian pompa hydraulic luffing deck crane no. 3 dengan spare baru yang ada di atas kapal",Crane,14/09/2022,14/09/2022,,CLOSED
+17/09/2022,KY,Retak pada water guide jacket cooling cyl cover no.1 ME,Melakukan overhaul cyl no.1 water guide,ME,10/09/2022,09/10/2022,,CLOSED
+23/09/2022,KY,Deck crane no.3 ada ganjelan pada gear slewing motor sehingga tidak bisa berputar ke kanan / kiri,Melakukan perbaikan gigi - gigi gearbox slewing motor,Crane,17/09/2022,17/09/2022,,CLOSED
+04/10/2022,KY,Pada saat kapal sedang hibob jangkar handle windlass p/side pada saat 2 sackle terakhir tidak dapat di gerakan naik / turun,Mengganti nockseal dan baut head handle yang sudah keropos,Mooring System,23/09/2022,23/09/2022,,CLOSED
+05/10/2022,KY,"AE 1 mengalami kebocoran intercooler pada pipa kapier sisi air laut dan masuk kedalam manifold bilas/isap dan ruang bakar sehingga mesin terganggu,akibat dari kebocoran air laut pada intercooler yang masuk kedalam ruang bakar membuat conecting rod bengkok dan menghantam liner hingga retak dalam cyl no.2","Melakukan penyumbatan pipa kapiler sisi air laut yang bocor / pecah (karena tidak ada spare intercooler, temporary hingga docking) dan melakukan general overhaul ganti liner, ganti connecting rod, ganti piston dan ring piston set",AE,04/10/2022,10/05/2022,,CLOSED
+20/10/2022,KY,"AE 2 mengalami kebocoran FW pendingin cyl head no.1 & 2, sehingga kinerja mesin terganggu",Melakukan penggantian Cylinder head yang bocor pendinginnya cly no .1 & 2,AE,05/10/2022,10/05/2022,,CLOSED
+21/10/2022,KY,"Pada pengecekan ulang pada hoisting wire crane no.3 , ditemukan beberapa titik yang retak",,Crane,20/10/2022,,,CLOSED
+24/10/2022,KY,Tekanan pada pompa hydraulic power pack menurun hingga tak kuat membuka hatch cover bagian depan. Sehingga proses buka palka terhenti dan tidak bisa lanjut & saat dilakukan pengetesan pompa yang akan dipakai untuk membuka palka terjadi kebocoran pipa hydraulic di palka 2 karena pipa yang korosi dan menipis,Melakukan overhaul ganti pompa hydraulic power pack dengan spare yang sudah disiapkan & melakukan penggantian dan pengelasan pipa hydraulic yang pecah di palka 2,Crane,21/10/2022,21/10/2022,,CLOSED
+24/10/2022,KY,Tidak bisa untuk menerima dan mengirim test SSAS,,Navigation,24/10/2022,,,CLOSED
+25/10/2022,KY,Sensor tidak bisa berfungsi dengan baik,,Navigation,24/10/2022,,,CLOSED
+26/10/2022,KY,Tidak bisa untuk menerima dan mengirim test SSAS & sensor SVDR tidak bisa berfungsi dengan baik,"Periksa dan cek kelistrikan, kabel dan antena dalam kondisi baik,cek pada monitor inmarsat C muncul ""satelit terminal not found pada layar kanan atas"" & pemeriksaan dan perbaikan SVDR yang dilakukan teknisi belum tuntas / selesai",Navigation,25/10/2022,,,CLOSED
+07/11/2022,KY,Beberapa titik mengalami retak retak,,Crane,26/10/2022,26/10/2022,,CLOSED
+20/11/2022,KY,,,Crane,07/11/2022,,,CLOSED
+05/04/2023,KY,"Saat dilakukan pengetesan valve sea chest emergency fire pump dan tekanan pompa pasca docking,terjadi kerusakan pompa bagian cover impeller yang mengalami patah baut pengikat karena korosi",Melakukan overhaul pompa untuk dilakukan perbaikan lebih lanjut di bengkel darat,Pump,20/11/2022,,,CLOSED
+30/04/2023,KY,"Saaat kapal selesai manuvre tiba - tiba terjadi kebocoran pada water guide RH = 6378,7 water guide rekondisi",Melakukan overhaul ganti water guide,ME,05/04/2023,04/05/2023,,CLOSED
+01/05/2023,KY,"Suara turbo kasar dan asap tebal pada cerobong. Setelah dilakukan pengecekan didapatkan ada bekas gesekan antara blower side dengan casing, ada bekas gesekan antara turbin side dan casing dan juga dipatkan antara shaft turbin dan bushing oblak (goyang)",Melakukan penggantian turbin dengan spare yang ada dikapal (ex turbo AE 1),AE,30/04/2023,30/04/2023,,CLOSED
+30/06/2023,KY,"pada tanggal 01 mei 2023 saat kapal melakukan loading muat di muara berau,AE Engine no.2 tiba - tiba didapatkan suara turbo kasar dan asap tebal pada cerobong. Setelah dilakukan pengecekan didapatkan shaft turbin patah",Melakukan penggantian dengan merakit turbo dengan spare turbine yang ada dikapal dan mengambil casing turbo ex AE 2,AE,01/05/2023,05/01/2023,,CLOSED
+20/09/2023,KY,"Pada saat kegiatan bongkar 4 gang di serang pada jam 03.10 AE NO.2 tiba - tiba nge-trip dan menginfokan ke perwiran jaga crane no.3 di stop untuk mengurangi bebean dan kerja menjadi 3 gang, setelah dilakukan pengecekan atau pemeriksaan terjadi adanya kerusakan di ALTERNATOR yaitu stator short body (terbakar)",Dilakukan pemeriksaan dan pengetesan alternator dengan mager test,AE,30/06/2023,,,CLOSED
+30/09/2023,KY,Saat kapal melakukan permuatan disangkulirang mendekati saat selesai kira kira jam 02:00 cargo crane no.3 tidak kuat saat angkat grab,,Crane,20/09/2023,25/09/2023,,CLOSED
+27/11/2023,KY,"Pada saat kapal melakukan pemuatan di tanjung petang, cargo crane No.3 tidak kuat mengangkat grab, dan kami tes tekanan oli hydraulic berkisar antara 5-10 Mpa, yang normalnya pada crane lain berkisar 14 Mpa","Kami sudah melakukan penggantian kedua motor hydraulic hoisting dan oli hydraulic pump hoisting, oleh karena itu, kami menduga dari bagian lain yang bermasalah, kami akan melakukan pengecekan control valve. Supaya tidak menggangu palka lain, kami akan stoper luffing dengan wire stoper di wire drum luffing",Crane,30/09/2023,30/09/2023,,CLOSED
+12/02/2024,KY,"Saat kapal melakukan pemuatan di muara pantai, AE No.3 beban terlepas dan terjadi black out, kemudian kami masukan lagi AE 2 ke jala-jala","Melakukan paralel dengan AE no.1 dan cek AE No.3,di jalankan dan saat mau lakukan paralel tidak bisa,kemudian ada alarm ACB abnormal,ternyata ACB pada main switch board,lampu UVT pada over current release tidak menyala,sehingga AE tidak bisa di paralel",AE,27/11/2023,,,CLOSED
+26/03/2024,KY,"Pada tanggal 12 februari 2024 jam sekitar 09:30 WITA saat kapal melakukan olah gerak berlabuh di morowali,ketika pompa SW M/E di matikan,karena suhu FW alarm temp rendah,dan saat pompa SW di hidupkan kembali,tidak bisa hidup.","Kami hidupkan pompa stand by SW,Fire pump dan setelah selesai olah-gerak manuver berlabuh,dilakukan pengecekan,pompa masih bisa di putar memakai tangan,akan tetapi saat kami cek di terminal pompa,ada satu kabel yang terbakar ,dan saat di cek short kami cek spare elmot ada yang bisa di pakai,karena PCD baut dan diameter as sama,tetapi elmot lebih besar. Karena name plate sudah tidak ada semua,kami lihat di buku utk pompa SW 30 KW,1750 RPM 440 Volt dan untuk spare elmot tidak ada name plate,akhirnya kami pasang dan test. Dan ampere saat start 60 dan setelah jalan 52 Ampere,sementara elmot asli nya sekitar 45 Ampere",Pump,12/02/2024,,,CLOSED
+18/04/2024,KY,"Pada tanggal 26 Maret 2024 sekita jam 00:30 WITA saat kapal berlayar sesudah full away jam 23:36 jacket water guide upper yang menempel pada cylinder head no.1 pecah. Cylinder head dan jacket water guide tersebut jam kerja sekitar 2.400 jam dan pada saat overhaul semua bagian lubang pendingin pada cylinder head tersebut sudah di bor/ dibersihkan, dan saat kapal berhenti selalu di panaskan dengan pre heating dengan suhu sekitar 75 drajat celcius. Dan pada saat kapal berlayar suhunya sekitar 81 drajat celcius","Kami laporkan ke perwira jaga dan nahkoda bahwa terjadi kerusakan pada mesin induk, dan kapal harus berhenti, dan setelah berhenti kami menyiapkan kunci - kunci dan peralatan untuk mengganti cylinder head tersebut. Karena telah tersedia spare 1 set, maka kami melepas cylinder head tersebut dan mengganti dengan spare yang siap pakai.",ME,26/03/2024,26/03/2024,,CLOSED
+29/05/2024,KY,Pada tanggal 18 April 2024 jam sekitar 21.49 WITA saat kapal proses tutup palka atas permintaan master jetty dikarenakan cuaca hujan deras dan kegiatan bongkar hanya 3 gang.,"Ganti pipa hydraulic 2,5 yang pecah",Hatch Cover,18/04/2024,,,CLOSED
+31/05/2024,KY,"Jacket water guide upper yang menempel pada cylinder head no.4 pecah. Cylinder head dan jacket water guide tersebut jam kerja dari overhaul terakhir dan di lakukan pembersihan sekitar 765 jam dan pada saat overhaul semua bagian lubang pendingin pada cylinder head tersebut sudah di bor / dibersihkan, dan saat kapal berhenti selalu di panaskan dengan pre heating dengan suhu sekitar 75 drajat celcius. Dan pada saat kejadian suhu FW sekitar 77 drajat celcius.","Kami laporkan ke perwira jaga dan Nahkoda bahwa terjadi kerusakan pada mesin induk, dan kapal harus berhenti, dan setelah berhenti kami menyiapkan kunci - kunci dan peralataan untuk mengganti cylinder head tersebut. Karena telah tersedia spare 1 set, maka kami melepas cylinder head tersebut dan mengganti dengan spare yang siap pakai.",ME,29/05/2024,,,CLOSED
+02/06/2024,KY,Saat pemeriksaan crane secara menyeluruh dicrane 2 ditemukan serpihan roller bearing dan dicek bagian bearing as wire drum luffing rusak,,Crane,31/05/2024,,,CLOSED
+08/06/2024,KY,"AE No.3 tekanan FW cooling low pressure dan karena sudah selesai manuver,maka kami matikan dan kami blow,tidak ada kebocoran air pendingin dari indicator cock,kemudia setelah makan malam kami,cek dan buka FW pump,kami temukan lock washer dan mur pengikat kendor,sehingga impeller longgar,kami bongkar dan ganti mouth ring,mechanik seal dan impeler,setelah selesai perbaikan pompa FW sekitar jam 03:15 tgl 2 juni 2024,kami blow untuk test running dan keluar air dari indicator cock cyl no.1",Kami laporkan ke perwira jaga dan nahkoda bahwa terjadi kerusakan pada AE No.3 dan kami lakukan penggantian cylinder head dengan spare yang tersedia,AE,02/06/2024,,,CLOSED
+08/06/2024,KY,. Master gyro compass mengalami error / berputar tidak stabil dan penunjukan arah haluan sejati tidak stabil . Pada layar indicator tertulis power flt,Saat keadaan rusak nahkoda berada di anjungan dan menginstuksikan kapal dikemudikan secara manual dengan menggunakan pedoman haluan standart compass,Navigation,08/06/2024,,,CLOSED
+08/06/2024,KY,". Saat kapal berlayar dari kaliorang menuju serang,GPS No.2 tidak menunjukan COG dan SOG pada tampilan layar",. Telah dilakukan restart ulang dan pengaturan ulang tapi masih belum menunjukan SOG dan COG,Navigation,08/06/2024,,,CLOSED
+13/06/2024,KY,. Magnetron life time habis Radar No.1 (X-band) . Tracball left and right button tidak berfungsi . Battry back up dead,Sementara digunakan Radar No.2,Navigation,08/06/2024,,,CLOSED
+05/07/2024,KY,"Saat crane no.3 digunakan untuk bongkar palka 4,terdengar bunyi kasar saat crane di swing ke kanan (ke arah tongkang bongkaran)","Pengechekan baut - baut slewing dengan kunci torsi,semua dalam keadaan kencang. Kemudian dicoba untuk digunakan bongkar muatan di palka 4,crane no.3 masih berbunyi kasar saat crane di swing kearah kanan. Selanjutnya di lakukan pengegrisan pada slewing bearing sambil crane di putar 360 drajat. Dilakukan pengecheckan pada karet penahan grease ternyata banyak yang sudah rusak / sobek. Setelah dilakukan pengegrisan sambil diputar 360 drajat,slewing bearing bunyi kasar hilang.",Crane,13/06/2024,,,CLOSED
+11/07/2024,KY,Ada kebocoran air dan steam diarea oulet economizer dan pipa drain di pegang panas,,Boiler,05/07/2024,07/06/2024,,CLOSED
+22/07/2024,KY,"Pompa power pack no.1 tidak mampu membuka palka, saat dicek tekanan hanya 12 MPA dicoba naikan tekanan tidak mau naik karena power pack nomer 2 juga suda lemah",,Pump,11/07/2024,,,CLOSED
+30/07/2024,KY,Jaket water guide upper yang menempel pada cylinder head no.3 pecah,,ME,22/07/2024,,,CLOSED
+13/07/2024,KY,,,Crane,30/07/2024,,,CLOSED
+15/08/2024,KY,"Ditemukan bunyi kasar pada slewing bearing saat kondisi swing kiri/kanan, sudah dicoba dengan memberikan grease tetapi selang 20-30 menit kembali menimbulkan bunyi kasar",,Crane,13/07/2024,,,CLOSED
+19/08/2024,KY,"Tangga spiral ambruk atau lepas dari penyanggga bagian atas, diindikasikan karena material sudah korosi berat",,Outfitting,15/08/2024,,,CLOSED
+25/11/2025,KY,Jacket water guide upper pada cylinder head no.1 pecah,,ME,19/08/2024,,,CLOSED
+26/03/2022,KY,"Hatch cover tidak mau membuka, Hatch cover yang bisa terbuka",,Hatch Cover,25/11/2025,,,CLOSED
+15/07/2022,NL,Lambung Kanan WBT 2 bocor karena benturan tongkang saat bongkar,,Hull & Structure,26/03/2022,26/03/2022,,CLOSED
+21/08/2022,NL,Pnael electrical rusak,,Crane,15/07/2022,,,CLOSED
+01/10/2022,NL,Hoisting wire putus,,Crane,21/08/2022,,,CLOSED
+16/10/2022,NL,Kerusakan pada ME exh gas cyl no.2 out turun menjadi 130 derajat celsius,,ME,01/10/2022,,,CLOSED
+12/03/2023,NL,"Terjadi kerusakan pada crane no.1, setelah dilakaukan pengecekan ditemukan elmot short body",,Crane,16/10/2022,,,CLOSED
+17/08/2023,NL,Jangkar tidak mau naik setelah dilakaukan pengecekan diketahui bearing pada gear pecah,,Mooring System,12/03/2023,13/03/2023,,CLOSED
+20/10/2023,NL,"AIS kapal tidak bisa diterima distation VTS dan kapal lain, tetapi masih bisa menerima dan menampilkan station kapal lain",,Navigation,17/08/2023,,,CLOSED
+01/03/2024,NL,Saat aktifitas bongkar TB United 1620 tiba tiba menabrak gangway sebelah kanan dan kondisi patah,,Outfitting,20/10/2023,,,CLOSED
+13/06/2024,NL,Tanggal 1/3/2024 saat kapal kegiatan muat di kaliorang. Kedapatan pada Crane no 3 tiba-tiba mati dan kemudian dilakukan pengecfekan karean terhjadi overheat.,"1. Amankan posisi Jib Crane serta Grab.
+2. Lakukan pengecekan pada system Hyd Crane, diinginkan agar temperatur turun dan sampai lampu High tem mati. Lalu dilakukan reset pada systemnya. Karena posisi grab masih menggantung maka grab tersebut diparkiran/dudukan untuk sementara pada ponton, lalu dilakukan dengan mengganti Filter LO dan Drain minyak bersihkan tangki ekspansinya sampai selesai. Selanjutnya diisi kembali LO nya sesuai batas. Lakukan pada cerat Udara pada systemnya hingga lancar, selanjutnya jalankan Crane hingga bisa beoperasi lagi,",Crane,01/03/2024,01/03/2024,,CLOSED
+27/06/2024,NL,Pin lengan batang penghubung dengan bucket terlepas,,Grab,13/06/2024,14/06/2024,,CLOSED
+23/09/2024,NL,Saat slewing bergerak mutar terdengar bunyi yang kasar sehingga crane sementara distop,,Crane,27/06/2024,,,CLOSED
+17/10/2024,NL,Saat kapal mau manover bergerak untuk keluar dari boy10 masin mau melakukan tes tiba tiba tidak mau ngeblow up,,ME,23/09/2024,23/09/2024,,CLOSED
+05/11/2024,NL,Terjadi kebocoran pada pipa bahan mesin induk cyl no.2,,ME,17/10/2024,,,CLOSED
+30/11/2024,NL,Terjadi Kebocoran pada fuel oil high pressure & exhaust gas buang ME Cyl no.6 rendah,,ME,05/11/2024,,,CLOSED
+08/02/2022,NL,Pada saat mau buka hatch cover power windlass tidak ada pressure (loose power),,Pump,30/11/2024,,,CLOSED
+26/05/2022,HD,TANGGAL 08 FEBRUARI 2022 JAM 12.20 STOP ME KARENA JACKET COOLING ME CYL. NO.3 UPPER PECAH,,ME,08/02/2022,,,CLOSED
+30/06/2022,HD,TANGGAL 26 MEI 2022 JAM 17.54 SAAT KAPAL MANUVER BERANGKAT DARI SERANG TERJADI KERUSAKAN YANG TERBACA DI MONITOR ENGINE CONTROL ROOM,,Computer,26/05/2022,,,CLOSED
+11/08/2022,HD,TANGGAL 30 JUNI 2022 JAM 12.30 SAAT KAPAL DALAM KEGIATAN BONGKAR MUATAN DI SERANG TERJADI KERUSAKAN CHAIN COUPLING CRANE NO.2,,Crane,30/06/2022,30/06/2022,,CLOSED
+27/09/2022,HD,"TANGGAL 11 AGUSSTUS 2022 , DI TABONEO , SAAT KAPAL MANOUVERE AKAN BERANGKAT KE WEDA , RPM MESIN INDUK 85 TERDENGAR SUARA KETUKAN PADA CYL. NO.3",,ME,11/08/2022,,,CLOSED
+18/04/2023,HD,"TANGGAL 27 SEPTEMBER 2022 , DI SERANG, SAAT KAPAL BERLABUH DISERANG DALAM RANGKA KEGIATAN BONGKAR BATUBARA, TERJADI KERUSAKAN PADA CRANE NO.2",,Crane,27/09/2022,,,CLOSED
+24/08/2023,HD,Kerusakan pada gear box hoisting sehingga crane no.1 tidak bisa digunakan untuk kegiatan muat,,Crane,18/04/2023,,,CLOSED
+02/01/2024,HD,"Ketika kapal melakukan perjalanan dari Taboneo - Bahadopi diketemukan adanya Penambahan Air Ballast pada DBT No. 1 Kanan, Setelah kapal selesai melakukan pem bongkaran di Bahadopi dilakukan pengecekan WBT No.1 kanan dan diketemukan adanya membujur sepanjang 30 cm pada pelat Bottom D11, Frame antara 178 - 179, L14",,Hull & Structure,24/08/2023,24/08/2023,,CLOSED
+02/01/2024,HD,,,Outfitting,02/01/2024,01/03/2024,,CLOSED
+03/02/2024,HD,Mengalami Kebocoran akibat terbentur excavator (rough handling operator) pada saat kegiatan discharging di jetty IWIP,,Hull & Structure,02/01/2024,01/02/2024,,CLOSED
+11/01/2022,HD,Telah hilang satu kapsul fender yokohama yang terpasang dilambung kanan kapal kerena terlepas dari sarangnya,,Cargo Operation,03/02/2024,,,CLOSED
+16/09/2022,MN,"Pada saat kapal melakukan manuver dari pelabuhan suralaya kondisi mesin utama masih dalam kondisi normal akan tetapi pada saat main engine sudah pada putaran penuh, tiba-tiba Cylinder No. 1 tidak ada pembakaran atau kompresi sehingga menyebabkan putaran mesin tidak normal (hunting)",Melakukan stop main engine dan dilakukan pengecekan serta perbaikan dengan melakukan penggantian beberapa part (push road suction valve fuel pump macet),ME,11/01/2022,01/11/2022,,CLOSED
+07/10/2022,MN,"Apabila dinyalakan powernya, maka alarm berbunyi terus menerus karena penunjukkan Oksigen yaitu 0.0%",Meminta supply portable gas detector,LSA,16/09/2022,,,CLOSED
+27/10/2022,MN,Electromotor E/R Vent Fan No. 2 Overload dan ditemukan penyebab mati karena lilitan di elmot sudah putus,Untuk saat ini electromotor E/R vent fan No. 1 (sebelah kanan) yang berjalan,Accomodation,07/10/2022,,,CLOSED
+11/11/2022,MN,,,Computer,27/10/2022,,,CLOSED
+10/12/2022,MN,Main engine tidak bisa maju dan mundur kemudian dicoba lagi main engine bisa maju namau tidak bisa mundur,Kapal ditarik menggunkaan kapal tunda untuk berlabuh di suralaya dan dilakukan perbaikan pada sistem pneumatik,ME,11/11/2022,11/11/2022,,CLOSED
+19/12/2022,MN,Pada saat kapal berlayar tanggal 10 desember 2022 pukul 00.05 lt dari muara berau menuju suralaya main engine tiba tiba slow down di karenakan water guide jacket upper cylinder head Main engine no.5 Retak sehingga menyebabkan kebocoran pada pendingin air tawar,"di lakukan penggantian water guide jacket upper cylinder head main engine no.5 ,joint ring dan O""ring",ME,10/12/2022,12/10/2022,,CLOSED
+01/02/2023,MN,Pada saat kapal akan sandar di pelabuhan Suralaya tanggal 19 Desember 2022 Echo Sounder tidak dapat dihidupkan dan terdapat Code-6047 pada VDR Operation Panel,Sudah dicek semua kelistrikan (fuse) dan tidak didapatkan kerusakan,Navigation,19/12/2022,21/12/2022,,CLOSED
+13/04/2023,MN,Australian ladder Cargo Hold No. 2 pada flateform upper dan lower mengalami kerusakan,,Main Deck,01/02/2023,02/02/2023,,CLOSED
+27/07/2023,MN,"Pada saat kapal berlayar tanggal 13 April 2023 dari M Berau ke Suralaya, main engine tiba-tiba slow down dikarenakan water guide jacket upper cylinder head main engine no. 5 pecah sehingga menyebabkan kebocoran pendingin air tawar",Dilakukan penggantian guide jacket upper cylinder head main engine no. 5,ME,13/04/2023,13/04/2023,,CLOSED
+06/08/2023,MN,"Pada saat pemeriksaan rutin Navtex merk Furuno model Nx-700 di temukan adanya kerusakan, Navtex tidak bisa menerima berita Navigasi","1.Cek Peralatan dengan cara Diagnostic test semua ok (Gbr).
+2. Cek D-sub Connector terpasang Bagus. 
+3. Cable Antena juga terpasang dengan bagus. 
+4. Cek broadcasting Schedule sudah
+sesuai.",Navigation,27/07/2023,,,CLOSED
+10/08/2023,MN,"Ditemukan wind speed dan Wind Direction Indicator tidak
+berfungsi","Kami sudah melakukan pengecekan pada arus listrik a/c wind speed Indicator di anjungan dan pada terminal cover di pesawat Wind Indicator, arus listrik berfungsi dengan normal, tetapi Wind Speed
+Indicator tetap tidak berfungsi.",Navigation,06/08/2023,,,CLOSED
+31/12/2023,MN,Turbo charge Main engine di atas Rpm 8200 terdengar suara abnormal,,ME,10/08/2023,,,CLOSED
+31/12/2023,MN,Terjadi kebocoran water guide jacket upper cylinder head ME No. 1,Melakukan penggantian O Ring,ME,31/12/2023,31/12/2023,,CLOSED
+16/04/2024,MN,Terjadi kebocoran pada pipa sea water cooling LO Cooler inlet Main Engine,Mengganti pipa sea water cooling LO Cooler inlet,ME,31/12/2023,31/12/2023,,CLOSED
+16/04/2024,MN,Manometer dan monitor diECR tidak dapat membaca tekanan yang sesuai pada tekanan LO ME,,ME,16/04/2024,16/04/2024,,CLOSED
+08/11/2024,MN,Pada actuator governor control unit terjadi limiter saat RPM masih dikisaran 94 dan sudah tidak bisa dinaikan kembali,,ME,16/04/2024,,,CLOSED
+17/11/2024,MN,Terdapat kebocoran pada bagian bawah pipa ballast dikamar mesin,,Pipe,08/11/2024,11/08/2024,,CLOSED
+24/04/2022,MN,"Valve ballast 5/6 kiri stug tidka bisa terbuka dan tertutup maksimal, saat membuang ballast 5/6 kiri ikut terbuang, dan memerlukan waktu yang lama lebih dari 12 jam",,Valve,17/11/2024,,,CLOSED
+26/04/2022,NW,"1. Tanggal 24 April 2022 terjadi kerusakan pada crane no. 2 dimana power cable grab tidak berfungsi
+2. Tanggal 25 April 2022 terjadi kerusakan pada crane no.3 sering stop sendiri saat proses luffing. Setelah dilakukan pengecekan ditemukan bahwa kondisi dudukan limit telah longgar/aus.","1. Mengecek Fuse dan Relay di panel
+2. Mengecek kondisi circuit breaker cable grab pada panel
+3. mengecek kondisi electro motor pada grab
+4. mengecek oli motor drum dan oli pada grab
+5. Mengecek kondisi cable power dari crane ke grab
+6. Mengecek dan adjust system limit box panel
+7. Mengecek dudukan limit pada system",Grab,24/04/2022,,,CLOSED
+04/05/2022,NW,Tiba tiba stop saat dioperasikan untuk loading cargo,,Crane,26/04/2022,26/04/2022,,CLOSED
+12/05/2022,NW,"1. A/C Accomodation tidak normal. Housing valve cyl. No. 2 dan 4 high temperature sementara suhu di ruangan semua kamar juga panas
+2. A/C Segera di stop dan dilakukan pengecekan","1. Mengecek system SW Cooling condensor (normal)
+2. Mengecek Level oli compressor (normal)
+3. Mengecek kondisi Freon (normal)
+4. Menampung Freon pada condensor
+5. Menutup Valve inlet dan outlet
+6. Drainage gas/freon pada compressor
+7. Membuka cover housing valve no.2 dan 4",Accomodation,04/05/2022,05/03/2022,,CLOSED
+01/07/2022,NW,"RPM Main engine tiba-tiba turun ke posisi slow speed dan alarm slowdown menyala. Dari control monitor tertampil ""Cyl. Cool. Fresh wateer High Temp.""","1. Mengecek sensor thermocouple cylinder cooling fresh water cyl. No. 3
+2. Mengecek sensor thermocouple cylinder cooling fresh water cyl. No. 2
+3. Melepas/Disconnect cable power sensor thermocouple cylinder cooling fresh water cyl. No. 3",ME,12/05/2022,05/12/2022,,CLOSED
+22/07/2022,NW,Mengalami kerusakan dan oli bocor dari sisi kedua lifting cylinder,,Grab,01/07/2022,07/08/2022,,CLOSED
+06/08/2022,NW,Oli bocor dari liffting hydraulic serta shell/plate/Bucket grab tidak dapat tertutup rapat Proses membuka pin steering arm sangat keras/macet dan membutuhkan waktu yang lebih lama,,Grab,22/07/2022,28/07/2022,,CLOSED
+09/10/2022,NW,AC ECR distop karena ada bunyi kasar. Setelah dicek ditemukan blade fan/impeller fan patah dan rontok,"- Mengecek electromotor fan
+- Membuka fan housing
+- Repair blade fan
+- Memasang kembali fan housing
+- test running hasilnya tidak dapat dipakai/ blade patah dan kembali rontok",Accomodation,06/08/2022,08/06/2022,,CLOSED
+09/11/2022,NW,Ketika Pressure Main L.O pump telah Normal Muncul Alarm aktif pada monitor Yaitu Alarm PISTON COOL. OIL NON FLOW Segera Kami cek Kondisi Piston Cool Oil Cyl.no.1 s/d 6 semuanya Normal (Mengalir pada Glass Floow Nya) .tapi alarm tetap saja aktif/tidak hilang. Pada saat proses reset Cable power thermocouple piston Cool.oil non flow kami lakukan Tiba-Tiba muncul pada monitor alarm PISTON COOL. OIL HIGH TEMP,,ME,09/10/2022,,,CLOSED
+24/12/2022,NW,Muncul Alarm aktif pada monitor Yaitu Alarm PISTON COOL. OIL NON FLOW. Segera Kami cek Kondisi Piston Cool Oil Cyl.no.1 s/d 6 semuanya Normal (Mengalir pada Glass Floow Nya) .tapi alarm tetap saja aktif/tidak hilang.,"1. Check Kondisi Sensor alarm Piston Cool Oil Non Flow Cyl.no.1 – 6
+2. Proses Maneuvering kapal dilakukan langsung dari Endine Side",ME,09/11/2022,,,CLOSED
+26/12/2022,NW,Kelainan pada AE No. 2 dimana temperature gas buang tiap culinder tinggi dan T/C LO Pressure low,"Checked Valve clereance cyl.1 s/d 6
+- Checked Injector Pressure cyl.1 s/d 6
+- Check Boshpump Cyl.1 s/d 6
+- Check Intrcooler
+- Ganti T/C AE no.2 dengan Bekas T/C
+AE no.3",AE,24/12/2022,24/12/2022,,CLOSED
+05/02/2023,NW,Saat maintenance rutin ditemukan percikan air dari dalam ruang burner auxiliary boiler. Air tersebut beraasal dari dari pipa/drum.,"1. Blow down boiler
+2. Gas free ruang burnner
+3. Prop pipa api boiler yang bocor.
+4. Las Pipa/Drum yang Bocor
+5. Running test boiler ( Normal ).",Boiler,26/12/2022,27/12/2022,,CLOSED
+05/02/2023,NW,Bagian tepi atau bibir daun palka no. 3 bagian depan bengkok pada saat bongkar karena tersenggol grab pada saat pengambilan di sisi tepi,"Melakukan report pada pihak pekerja/buruh//foreman. 
+Dilakukan penggantian pelat setelah selesai bongkar",Hatch Cover,05/02/2023,,,CLOSED
+06/02/2023,NW,Stipper bar bengkok mengakibatkan rantai jangkat terjepit gipsy,"Stopper rantai jangkar
+Lepas stipper bar yang bengkok
+Meluruskan stipper bar yang bengkok
+Jika perlu penambahan pelat pada stipper bar yang bengkok",Mooring System,05/02/2023,,,CLOSED
+19/02/2023,NW,"Pada saat perjalanan Weda tujuan Balikpapan, pukul 19.49 LT Alarm high temperature FW Cooling menyala. Setelah dilakukan pengecekan ditemukan Jacket Cooling Cyl. No. 5 Bocor","Menurunkan temperature secara manual pada temperature controller FW Cooling M/E
+Melakukan pengecekan pada sistem controller 
+Mengganti jacket cooling cyl. No. 5 M/E dengan spare baru",ME,06/02/2023,02/07/2023,,CLOSED
+09/03/2023,NW,Grab tidak normal saat membuka dan menutup bucket. Pada saat posisi menutup bucket dapat tertutup dengan full beberapa saat kemudian bucket terbuka dengan sendirinya. Power membuka juga lemah,"Melakukan pengecekan sistem elektrik power supply pada box panel crane (normal)
+Mengecek sistem elektrik power pada grab
+Dipindah/transfer
+repair control block dan hydraulic pump grab no. 2 dan no. 5",Grab,19/02/2023,24/02/2023,,CLOSED
+13/03/2023,NW,"Jam 01.20 LT pada saat kapal dalam perjalanan Main LO Pump No. 1 M/E yang sedang running tiba tiba trip dan secara langsung Main LO pump No. 2 running automatis
+Setelah kapal tiba di weda jam 03.00 LT kami lakukan pengecekan dan ditemukan electromotor main LO Pump no. 1 telah korsleting",Melakukan pengecekan isolation electro motor,ME,09/03/2023,03/09/2023,,CLOSED
+26/03/2023,NW,"Bagian tepi atau bibir daun palka no. 2 bagian depan terkena grab crane daari darat sehingga mengakibatkan bengkok atau rusak, lengan roda kanan kiri bengkok dan patah sehingga roda hatch cover tidak duduk pada rel dan palka tidak bisa ditutup",Reprt pada pihak pekerja atau buruh atau foreman,Hatch Cover,13/03/2023,18/03/2023,,CLOSED
+26/03/2023,NW,Anak tangga / step spiral ladder keropos bahkan sudah tidak ada lagi dari palka no. 1 sampai dengan palka no. 5,Spiral ladder tidak bisa digunakan lagi dan sementara menggunkan vertical ladder,Main Deck,26/03/2023,,,CLOSED
+14/04/2023,NW,Gypsi rantai jangkar kanan sudah longgar sehingga rantai jangkar tidak dapat duduk di tempatnya. Apabila rantai jangkar di area loncar loncat dan kalau rantai jangkar di heave up terbelit,Sementara menggunkan jangkar kiri,Mooring System,26/03/2023,,,CLOSED
+16/05/2023,NW,Controller system tidak stabil mengakibatkan temperatur FW cooling cepat berubah turun naik. Jacket cooling retak,Mengganti spare yang sudah ada (baru),ME,14/04/2023,15/04/2023,,CLOSED
+31/05/2023,NW,Grab tidak dapat menutup rapat sehingga muatan los,Penggantian control block dan hydraulic pump,Grab,16/05/2023,,,CLOSED
+02/07/2023,NW,Setelah membuka Hatch Cover pada saat handle posisi Netral Hatch Cover Melorot,Perbaikan/Pengecekan control stand hydraulic hatch cover,Hatch Cover,31/05/2023,,,CLOSED
+12/07/2023,NW,LO Leak from cover seating LO cooler,,AE,02/07/2023,07/03/2023,,CLOSED
+17/07/2023,NW,Fuel injection valve cyl no.6 leak,,AE,12/07/2023,13/07/2023,,CLOSED
+17/07/2023,NW,"Kebocoran pada lunas dibawah plate longitudinal no 2 kin kurang lcbih IOmm, Crack pada longitudinal no 7 kiri pada frame 103- 104, Crack pada longitudinal noz 
+kiri",,Hull & Structure,17/07/2023,,,CLOSED
+20/07/2023,NW,"Crack Longitudinal pada - longitudinal No.2 Fram104 dan 131-132, Longitudinal no.7 frame 131-132 (tempat)",,Hull & Structure,17/07/2023,,,CLOSED
+20/07/2023,NW,Elektro motor grab smag mengalami kebakaran,Elektro Motor yang rusak dilepas dan diganti,Grab,20/07/2023,,,CLOSED
+13/08/2023,NW,Transmitter dan Receiver,Sementara masih dilakukan pengecekan dan diganti mengggunakan grab smag,Grab,20/07/2023,22/07/2023,,CLOSED
+16/08/2023,NW,Pelat lunas pada tangki ballast 3 kiri mengalamai kebocoran,Melakukan sounding tangki setiap 6 jam dan pagi hari di pompa keluar,Hull & Structure,13/08/2023,,,CLOSED
+18/08/2023,NW,Pipa hydraulic palka 4 depan mengalami kebocoran sehingga palka 4 bagian depan tidak bisa dibuka,Dilakukan pengelasan pada bagian pipa yang bocor,Hatch Cover,16/08/2023,,,CLOSED
+29/08/2023,NW,"Crack pada long. No 7 kiri pada frame 103-104
+Crack pada long. No 2 kiri
+Crack pada long. No. 2 frame 103-104 dan 131-132
+crack pada long. No 7 frame 131-132 (2 tempat)","> dilakukan penyumbatan yang bocor dan dengan pemasangan plate siku dan disemen box
+> Pemasangan plate 10 mm sebagai penguat dan dilas pada longitudinal no 7 
+> Dilakukan pengelasan pada yang Crack dan dipasang plate 10mm pada satu sisi
+> Dilakukan pemasangan plate pada area longitudinal yang patah pada satu sisi",Hull & Structure,18/08/2023,,,CLOSED
+19/10/2023,NW,"ECDIS tidak bisa update peta, apabila CD AVSC dimasukan pada cd drive, ecdis akan mati dan menyala kembali dengan sendirinya",,Navigation,29/08/2023,,,CLOSED
+21/11/2023,NW,"Tidak dapat menyala saat di operasikan/di tes, di karenakan komponennya rusak/berkarat",,LSA,19/10/2023,,,CLOSED
+05/01/2024,NW,,,Outfitting,21/11/2023,,,CLOSED
+17/12/2024,NW,Pada saat Melakukan maintenance Pilot Burnner Aux.Boiler Ditemukan terdapat genangan air dalam ruang burner. Setelah kami melakukan pengencekan di temukan kebocoran dari pipa api boiler. Segera kami persiapkan untuk proses perbaikan. Blow down Boiler. Jam 07:30 Lt. lakukan gas free dengan portable exhaust Fan. Dipekirakan jam 10:00 dilakukan pengelasan sampai dengan selesai.,"1. Changed over MFO - MDO
+2. Gas free ruang burnner
+3. Blow down
+4. Las pipa api boiler yang bocor.",Boiler,05/01/2024,,,CLOSED
+24/05/2022,NW,Connecting rod bolt patah mengakibatkan piston dan connecting rod lepas mengenai crank shaft dan bodi menyebabkan kerusakan pada balance weight,,AE,17/12/2024,,,CLOSED
+15/06/2022,GN,Pada saat kapal melakukan ROCKING TEST JIB CRANE NO. 3 TERKENA UJUNG JIB CRANE N.4,,Crane,24/05/2022,30/05/2022,,CLOSED
+14/07/2022,GN,"PADA TANGGAL 15 JUNI 2022 PUKUL 15.30 , DI PANGKALANSUSU , SAAT KAPAL DALAM KEGIATAN BONGKAR MUATAN TERJADI KERUSAKAN HATCHCOVER PALKAH NO.1",,Hatch Cover,15/06/2022,,,CLOSED
+14/07/2022,GN,Grab janus no.5 tidak dapat dioperasikan karena adanya kebocoran pada piston rod (seal rusak),,Grab,14/07/2022,,,CLOSED
+16/07/2023,GN,"Grab smag no.4 tidak dapat dioperasikan : grab tidak dapat menutup karena pressure rod sebelah kanan dan kiri tidak rata disebabkan bush dan pin sudah aus, grab juga tidak dapat membuka karena batteray receiver dan battery transmitter tidak berfungsi (defective)",,Grab,14/07/2022,,,CLOSED
+25/07/2023,GN,Terdengar suara pada crane no.2 setelah pemeriksaan ditemukan bahwa kawat hoist pada crane no.2 putus dibagian drum,,Crane,16/07/2023,,,CLOSED
+01/09/2023,GN,Pada saat dilakukan pemeriksaan dan memberi grease dicrane no.4 ditemukan adanya beberapa rambut yang putus,,Crane,25/07/2023,,,CLOSED
+19/10/2023,GN,RDU abnormal disertai shaft revolution (RPM) main engine analog tidak berfungsi,,Steering System,01/09/2023,,,CLOSED
+25/03/2024,GN,Setelah kurang lebih 1 jam radar dioperasikan kemudian layar pada radar kedap kedip dan separuh gambar tidak muncul,,Navigation,19/10/2023,,,CLOSED
+25/03/2024,GN,Ditemukan sudah rantas (rusak),,Crane,25/03/2024,,,CLOSED
+27/04/2024,GN,Ditemukan sudah rantas (rusak),,Crane,25/03/2024,,,CLOSED
+16/07/2024,GN,Hoisting UP cargo melorot pada saat mengangkat muatan,,Crane,27/04/2024,27/04/2024,,CLOSED
+13/03/2022,GN,"HOISTING UP CARGO MELOROT PADA SAAT MENGANGKAT MUATAN, KARENA LAS-LAS AN SUPPORT ( BRACKET ) ANTARA SHAFT & DRUM HOISTING TERPUTUS.",,Crane,16/07/2024,,,CLOSED
+06/05/2022,SH,"AIS alarm berbunyi dan tiba tiba juga datanya yang terkoneksi Ecdis hilang, lalu pada monitor AIS berbaca ""AIS R4 Display lost connection between the r4 AIS transponder",,Navigation,13/03/2022,,,CLOSED
+31/05/2022,SH,Hardisk komputer email kapal hilang termasuk partisinya tidak terbaca di komputer,Komunikasi dengan IT Kantor Pusat meminta arahan namun data D komputer tetap tidak terbaca,Computer,06/05/2022,,,CLOSED
+14/06/2022,SH,Dilakukan penggantian hoisting wire crane no. 2 karena mengalami putus pada beberapa bagian,,Crane,31/05/2022,06/02/2022,,CLOSED
+29/11/2022,SH,Piston cylinder no.5 macet dan lengket di cylinder liner,Mencabut piston cylinder no.5 dan liner. Setelah itu diganti dengan menggunakan piston unit dan cylinder liner yang baru,AE,14/06/2022,15/07/2022,,CLOSED
+29/11/2022,SH,Saat pengecekan ditemukan Roller terkikis oleh wire. Dimungkinkan karena pemasangan posisi wie hoisting & luffing pada roller keliru.,Sementara tidak menggunakan roller.,Crane,29/11/2022,,,CLOSED
+29/11/2022,SH,Saat pengecekan ditemukan Roller terkikis oleh wire. Dimungkinkan karena pemasangan posisi wie hoisting & luffing pada roller keliru.,Sementara tidak menggunakan roller.,Crane,29/11/2022,,,CLOSED
+05/01/2023,SH,Saat pengecekan ditemukan Roller terkikis oleh wire. Dimungkinkan karena pemasangan posisi wie hoisting & luffing pada roller keliru.,Sementara tidak menggunakan roller.,Crane,29/11/2022,,,CLOSED
+06/05/2024,SH,Saat dilakukan pengecekan ditemukan wire putus beberapa urat,Mengganti wire hoisting crane no. 3 dengan yang baru,Crane,05/01/2023,,,CLOSED
+15/05/2024,SH,"Tidak bisa menyala Ketika di tekan tombol power ON/OFF, Setelah di check power supplynya ternyata tidak ada arus listrik",,Bridge System,06/05/2024,,,CLOSED
+06/08/2024,SH,Electro motor low insulation/electric short,,ME,15/05/2024,,,CLOSED
+08/09/2024,SH,Telah terjadi dan terdengar ada perubahan suara pada kompresor AC No.3 saat kompressor beroperasi/running,,Compressor,06/08/2024,08/06/2024,,CLOSED
+09/10/2024,SH,Telah terjadi overheat dan suara kasar pada kompressor AC no.2 saat kompressor beroperasi/running,,Compressor,08/09/2024,,,CLOSED
+23/07/2022,SH,Display pada layar SVDR tidak masuk kemenu utama,,Bridge System,09/10/2024,,,CLOSED
+14/09/2022,NT,"PADA TANGGAL 23 JULI 2022 PUKUL 11.25 , SAAT KAPAL DALAM PERJALANAN DARI MUARA PANTAI KE PAITON TERJADI KERUSAKAN ALARM PADA PANEL MONITOR SYSTEM",,Computer,23/07/2022,,,CLOSED
+31/08/2024,NT,Saat dilaksanakan test ME maju mundur tidak bisa sampai beberapa kali dan diblow up beberapa kali kemudian dilaksanakan test lagi tetap tidak bisa,,ME,14/09/2022,,,CLOSED
+14/09/2024,NT,Tekanan LO rendah 3.5 bar,,AE,31/08/2024,31/08/2024,,CLOSED
+14/09/2024,NT,"Lambung kiri kapal posisi di kiri palka 5 (berada sekitar frame 38, sekitar 8,30 meter di bawah garis main deck) mengalami deformasi / penyok sedalam 11-12 cm, dengan panjang 110 cm dan lebar 100 cm pada saat kegiatan loading di Muara Jawa dalam kondisi cuaca buruk sehingga terjadi benturan dengan sudut buritan tongkang yang putus tali trosnya",,Hull & Structure,14/09/2024,,,CLOSED
+14/09/2024,NT,Lambung kiri kapal posisi di kiri palka 2 sebagian catnya mengelupas akibat gesekan dengan tongkang BG.KSU 171 saat kegiatan loading di Muara Jawa dalam kondisi cuaca buruk sehingga mengakibatkan putusnya tali tros tongkang,,Hull & Structure,14/09/2024,,,CLOSED
+14/09/2024,NT,1 unit Fender Yokohama yang terpasang di lambung kiri kapal mengalami kebocoran akibat terjepit tongkang pada saat kegiatan loading di Muara Jawa,,Cargo Operation,14/09/2024,,,CLOSED
+26/09/2022,NT,Railing di main deck kiri palka 2 dan palka 5 sebagian mengalami kerusakan/bengkok akibat sentakan tali tros BG.KSU 171 pada saat kegiatan loading di Muara Jawa dalam kondisi cuaca buruk,,Outfitting,14/09/2024,,,CLOSED
+16/06/2022,AU,wire hoisting crane no 1 putus,,Crane,26/09/2022,,,CLOSED
+16/06/2022,AU,"Terjadi alarm ME cyl no.6 exh g dev temp, temperature gas buang cyl no.6 langsung turun menjadi 120 derajat celcius dan diikuti slow down ME",,ME,16/06/2022,,,CLOSED
+21/06/2022,AU,"Saat manuver departure mesin induk tiba tiba hunting Rpm nya, Temperatur gas buang mesin induk cyl no. 5 tiba tiba turun menjadi 117 derajat celcius dan cyl yang lainnya diatas 230 derajat celcius lalu dilakukan pengecekan ternyata exh.valve cyl no.5 tidak bisa menutup secara sempurna",,ME,16/06/2022,,,CLOSED
+26/06/2022,AU,Jarum menunjukan rusak sehingga tidak mengetahui tekanan yang sebenarnya,"Dilakukan pengecekan, tidak bisa di repair dan harus diganti baru",ME,21/06/2022,,,CLOSED
+22/07/2022,AU,Tidak dapat melakukan pengecekan air boiler dan pendingin mesin karena tidak tes kit alkaliniti dan tablet nitrite no1 dan no2,Menambahkan dosis chemical ke dalam air boiler dan pendingin mesin dengan dosis yang rendah karena tidak mengetahui dosis yang sebenarnya dibutuhkan,Boiler,26/06/2022,,,CLOSED
+29/07/2022,AU,"Tali rapuh, berambut banyak yang putus",Ganti tali tangga pandu yang baru,Outfitting,22/07/2022,,,CLOSED
+14/08/2022,AU,Sistem pelumasan pada turbo charge AE no.2 bocor ke turbin,Ganti Unit turbo dengan spare siap pakai,AE,29/07/2022,,,CLOSED
+14/08/2022,AU,"Wire Janus rantas, banyak anak wire pada putus",Ganti wire janus yang baru,Crane,14/08/2022,,,CLOSED
+15/08/2022,AU,Anak wire rusak banyak yang putus,Ganti Wire guven yang baru,Crane,14/08/2022,,,CLOSED
+18/08/2022,AU,"Pipa eduktor untuk hisap stripping ballast dan got palka bocor, kondisi pipa dan elbow sudah tipis",Pipa eduktor untuk sementara di doubling sambil menunggu suplay pipa elbow,Pipe,15/08/2022,,,CLOSED
+24/08/2022,AU,"Anak wire rusak banyak yang putus Rh tinggi 1139,8 Haur",Ganti Wire Hoisting yang baru,Crane,18/08/2022,,,CLOSED
+26/08/2022,AU,"Berkarat, Mur baut tidak berputar","Diblender, kasih wede, diputar baut mur, grease",Hatch Cover,24/08/2022,,,CLOSED
+26/08/2022,AU,Anak Wire rusak banyak yang putus,Ganti Wire Guven yang baru,Crane,26/08/2022,,,CLOSED
+29/08/2022,AU,Cpu tidak mau hidup pada saat tombol power di on,,Computer,26/08/2022,,,CLOSED
+31/08/2022,AU,"Wire Janus rantas, banyak anak wire pada putus",Ganti Wire Janus yang baru,Grab,29/08/2022,,,CLOSED
+31/08/2022,AU,ME FW pre heater bocor dari sisi steam karena plate sudah keropos dan gasket sudah rusak,,ME,31/08/2022,31/08/2022,,CLOSED
+26/09/2022,AU,Plat kedudukan roller patah dan roda roller hilang satu,,Grab,31/08/2022,,,CLOSED
+08/11/2022,AU,Saat ditengah tengah kegiatan muat ditemukan wire hoisting crane no.1 putus satu sreng,,Crane,26/09/2022,26/09/2022,,CLOSED
+21/03/2023,AU,kerusakan pada breaker luffing crane no 2 dimana brand brake luffing crane no.2 patah,,Crane,08/11/2022,,,CLOSED
+21/03/2023,AU,"Ada kebocoran pada heater, tube pada elemen pemanas pecah dan ada kebocoran pada elemen pemanas yang mengakibatkan short (konsleting)",Dilakukan pengecekan ditemukan kerusakan elemen pemanas,ME,21/03/2023,,,CLOSED
+21/03/2023,AU,Terjadi trip pada panel main LO No.1 pada saat distart terjadi bunga api pada panel main LO pump,Sudah dilakukan pengecekan pada panel,ME,21/03/2023,,,CLOSED
+27/05/2023,AU,Terjadi kekurangan Vacum pada FWG,"Sudah dilakukan penyogokan pada condesor, lalu dilakukan pergantian packing pada consider dan juga dilakukan pergantian packing pada sigh glass",FWG,21/03/2023,,,CLOSED
+30/03/2023,AU,Dilakukan pengecekan bahwa hasil magger test pada elmot LO Pump No.1 menunjukan nol (Elmot terbakar) bearing elmot mengalami kerusakan,Elmot LO Pump No.1 di lepas untuk digulung ulang didarat. dilakukan pergantian bearing elmot pengecekan pada ACB & kontraktor kondisi normal,ME,27/05/2023,27/05/2023,,CLOSED
+29/09/2023,AU,"Saat dipasang wire baru kondisi sudah rantas 1 rambut dan kaku, wire hosting crane no.4 rantas",,Crane,30/03/2023,,,CLOSED
+17/10/2024,AU,"Mac tidak mau menghisap dan kompresi, piston mac no.2 pecah pada bagian grove ring atas karena pelumasan pada cyl liner tidak jalan dikarenakan pipa kapiler buntu",,Compressor,29/09/2023,,,CLOSED
+22/10/2024,AU,"Cyl no.1 ditemukan kebocoran pada LO system cyl head dan cylinder no.2 ditemukan kebocoran pada pendinginan fresh water, kebocoran tersebut dikarena gasket rusak",Melakukan top overhaul AE No.3 cyl No.1&2 untuk mengganti cyl head dua set menggunakan set menggunakan spare yang ada diatas kapal,AE,17/10/2024,17/10/2024,,CLOSED
+22/10/2024,AU,"Kebocoran pada pendingin fresh water, kebocoran tersebut terletak pada seatting exhaust valve, dimana pada seatting exhaust valve terdapat 2 oring diduga oring tersebut sudah rusak",Melakukan top overhaul AE No.3 Cyl No.6 untuk mengganti cyl head satu set menggunakan spare yang ada diatas kapal,AE,22/10/2024,22/10/2024,,CLOSED
+29/11/2024,AU,"Mengalami kemacetan pada rotor, tidak dapat berputar dikarenakan banyaknya karbon yang masuk pada sudut sudut sisi turbin side",Mengganti turbo charger satu set dengan spare yang ada diatas kapal,AE,22/10/2024,22/10/2024,,CLOSED
+18/12/2024,AU,Terdengan suara berdecit sehingga dilakukan pengecekan pertama hasilnya normal tapi saat siang ditemukan sheave blok hoisting top crane 2 sudah tidak dalam keadaan berputar dan banyak ditemukan gram gram disekitar area tersebut,Menghentikan kegiatan muat dengan crane 2 agar mencegah terjadinya kerusakan lebih parah,Crane,29/11/2024,,,CLOSED
+31/12/2024,AU,"Kerusakan AE No.2 cyl No.1 yang disebabkan oleh ring piston yang sudah haus sehingga mengakibatkan lolosnya kompresi pada cyl no.1, pada pengecekan pertama ditemukan asap pembakaran pada carter cyl no.1 lalu pada pengecekan ruang udara bilas dan turbor charger AE 2",Melakukan overhaul AE No.2 cyl No.1 untuk mengganti cyl head satu set menggunakan spare dan ring piston set yang ada diatas kapal,AE,18/12/2024,18/12/2024,,CLOSED
+17/09/2022,AU,"Setelah pendingin ME diganti paking tiba tiba main air compressor no.1 ditemukan kebocoran pada bagian pendingin compressor no.1, kebocoran tersebut terletak pada bagian valve hp delevery stage 2 pada paking untuk pendingin jalur pipa angin pada bagian block mengalami kerusakan (robek) air masuk keruangan valve stage 2. Untuk main air compressor no.2 tiba tiba masuk angin sampai high temperature dan tidak mau ngisi pada botol angin",Langsung segera melakukan tindakan untuk melakukan overhaul MAC No.1 dan pengecekan pada MAC no.2 lalu mengganti pada bagian MAC no.1&2 dengan spare dikapal,Compressor,31/12/2024,31/12/2024,,CLOSED
+19/09/2022,ZS,Overload pada main LO Pump no.1,Karena pada posisi auto pada saat pompa no.1 mengalami overload maka otomatis pompa no.2 hidup/ beroperasi secara auto,Pump,17/09/2022,19/09/2022,,CLOSED
+08/01/2023,ZS,LO Main Pump No. 1 mari saat kondisi sedang running. Setelah dilakukan pengecekan secara menyeluruh ditemukan bahwa terdapat short circuit antara lilitan dan body electro motor,Dilakukan penggantian pada semua kabel pada lilitan electromotor,ME,19/09/2022,19/09/2022,,CLOSED
+25/04/2023,ZS,alarm MSB 440 low insulation menyala dan dilakukan pengecekan pada semua mesin dengan daya 440 volt. Ditermukan bahwa low insulation terjadi pada AC plant,"Dilakukan pemeriksaan pada mesin AC, semua fuse, dan output contactor namun alarm low insulation masih menyala. Selanjutnya dilakukan pada kompresor dan ditermukan bahwa low insulation alarm terjadi pada compressor no. 3 atau back up compressor.",Compressor,08/01/2023,,,CLOSED
+29/03/2023,ZS,Radio bisa menerima dari station lain tetapi station lain tidak bisa,"Dicoba dengan frequency yang berbeda masih tidak bisa untuk mengirim suara, mematikan MF/HF kemudian dihidupkan kembali namun masih tidak bisa, lalu juga mencoba mengatur tune muncul keterangan ""NG""",Bridge System,25/04/2023,,,CLOSED
+09/08/2023,HM,Pecah,Sementara diisolasi/ dilakban bening,Bridge System,29/03/2023,,,CLOSED
+07/11/2023,HM,Electro motor terbakar,,Compressor,09/08/2023,08/09/2023,,CLOSED
+09/02/2024,HM,Kebocoran tube evaporator sehingga air jaket cooling main engine keluar dari lubang evaporator sebanyak 1 pc,,FWG,07/11/2023,11/07/2023,,CLOSED
+07/03/2024,HM,Adanya penambahan air got,Dilakukan pembuangan air got di palka no: 4 kanan dan kiri buka sensor water ingress di palka no : 4 di lower stole dan buka menhole ballast tank no :3 kiri untuk pembuangan air dari pipa water ingress dilakukan sounding setiap jam,Bilge System,09/02/2024,02/09/2024,,CLOSED
+13/03/2024,HM,No Fuse breaker (NFB) pada panel ballast pump No.2 terbakar,Dilakukan magger test pada elmot dan panel electric,Electrical,07/03/2024,,,CLOSED
+13/03/2024,HM,Semua objek tidak terdeteksi dikarenakan magnetrom mulai tidak berfungsi lagi,Cek self test dan PV test dan sementara di non-aktifkan,Navigation,13/03/2024,,,CLOSED
+13/03/2024,HM,Error code 174 & 018,Cek semua komponen SVDR,Navigation,13/03/2024,,,CLOSED
+15/06/2024,HM,Kaca pecah dan wiper sudah tidak berfungsi,Sementara mengganti kaca dengan akrilik,General,13/03/2024,,,CLOSED
+08/08/2024,HM,Monitor tidak menyala,Sudah di cek oleh electrician tetapi belum di temukan permasalahannya,Navigation,15/06/2024,,,CLOSED
+23/08/2024,HM,Window Wiper tidak berfungsi dikarenakan Vanbelt sudah aus dan roda-roda roller nya sudah tidak span lagi,Dilakukan pengecekan dgn cara dibongkar untuk mengetahui kerusakan yang dialami diinstall ulang untuk dicoba dinyalakan lagi sebanyak 2 kali hasilnya vanbelt lepas dari jalurnya,Bridge System,08/08/2024,,,CLOSED
+19/10/2024,HM,"Ditemukan terkelupasnya lapisan cat disisi lambung kanan kapal pada area sekitar accomodation ladder/gangway kanan hingga palka no.7, terkelupasnya lapisan cat sisi lambung kanan kapal yang disebabkan oleh gesekan antara tali tambat serta wire dari FC asia bella dengan lambung kanan mv.hammada, Gesekan tali tambat serta wire terjadi pada seat FC",,Hull & Structure,23/08/2024,,,CLOSED
+21/10/2024,HM,Cover fairlead sudah tipis dan keropos.tidak bisa digunakan lagi,Membuat laporan kerusakan permintaan dibuat via danaos,Cargo Operation,19/10/2024,,,CLOSED
+29/12/2024,HM,"Kondisi rantai sudah berkarat, kondisi rantai sudah menitips, ukuran mata rantai memanjang karena setiap penggunaan hatch cover ada tekanan dan tarikan pada mata rantai yang tipis dan berkarat, diatas kapal tidak ada spare rantai yang memadai","Melakukan penyetelan pada turnbackle, dilakukan pemantauan kondisi rantai, membuat laporan kerusakan, membuat permintaan supply rantai",Hatch Cover,21/10/2024,,,CLOSED
+06/06/2022,HM,Radar tidak bisa menangkap target,"Dilakukan setting sesuai manual book, mengecek instalasi seperti kabel dan antena scanner, dilakukan PV test pada radar",Navigation,29/12/2024,,,CLOSED
+08/06/2022,KM,grab tidak bisa menutup,langsung diadakan pengecekan o/ Elec dan Masinis Jaga,Grab,06/06/2022,,,CLOSED
+08/06/2022,KM,"Distop karena power drop (turbo charge trouble, shaft T/C patah sehingga kegiatan hanya bisa satu gang saja",Mengganti T/C dengan new spare komplit,AE,08/06/2022,,,CLOSED
+08/06/2022,KM,Bearing Bush shaft T/C oversize,Repair T/C,AE,08/06/2022,,,CLOSED
+09/06/2022,KM,Grab tidak terbuka dan tertutup,"Memperbaiki kabel connector, mengganti joystick, periksa kelistrikan, mengganti power listrik",Grab,08/06/2022,,,CLOSED
+08/06/2022,KM,Olie bocor dari shaft seal,Menganti shaft seal,Crane,09/06/2022,,,CLOSED
+08/06/2022,KM,"Wire Hoisting Crane No.3 dan 4 yang sudah putus putus , dimana crane no.4 masih bisa digunakan meskipun masih sedikit putus putus, sedangkan crane no.4 sudah banyak yang putus putus dan keriting","Akan diganti apabila sudak tidak memungkinkan, akan diganti dengan spare wire yang ada",Crane,08/06/2022,,,CLOSED
+19/06/2022,KM,"Wire Hoisting Crane No.3 dan 4 yang sudah putus putus , dimana crane no.4 masih bisa digunakan meskipun masih sedikit putus putus, sedangkan crane no.4 sudah banyak yang putus putus dan keriting","Akan diganti apabila sudak tidak memungkinkan, akan diganti dengan spare wire yang ada",Crane,08/06/2022,,,CLOSED
+19/06/2022,KM,Piston ring stuck,"Overhauled, ganti piston ring",ME,19/06/2022,,,CLOSED
+04/09/2022,KM,Kebocoran olie pada piston,"Overhauled, ganti piston ring",ME,19/06/2022,,,CLOSED
+25/11/2022,KM,Motor Governor Trouble,Perbaikan motor governor dan kencangkan kabel elecric dipanel switch box AE No.3,AE,04/09/2022,,,CLOSED
+17/04/2023,KM,Tekanan LO turun dan trip setelah dilakukan pengecekan didapatkan kerusakan pada shaftgear LO Pump dan key,"Check sensor LO Pressure, check and clean filter duplex dan filter centrifugal, filter LO back wash, sticking of sasfety valve, spring sticking valve, buka LO Pump AE no.3 , perbaikan shaft gear dan key LO Pump AE no.3",AE,25/11/2022,25/11/2022,,CLOSED
+17/04/2023,KM,"UPS Ecdis Alarm terus menerus dan layar UPS Ecdis battery failure, terakhir pergantian 16 Januari 2018",Sudah dilakukan pengecekan dan restart namun UPS Ecdis Battery masih failure,Navigation,17/04/2023,,,CLOSED
+31/05/2023,KM,"BNWAS Battery Replace, terakhir pergantian 14 Maret 2021",Sudah dicoba pengaturan ulang tapi masih menunjukan battery replace,Navigation,17/04/2023,,,CLOSED
+08/06/2023,KM,ME gagal start karena WECS silinder no 2 & 3 alarm failure pada indocator WECS,Sudah dilakukan perbaikan ganti transmitter dan fuel quality sensor,ME,31/05/2023,31/05/2023,,CLOSED
+08/06/2023,KM,15V Short failur wiring abnormal teleg receiv potentio revo signal abnormal,"Reset ecr control system, reset power dari main switch board",Engine Propulsion,08/06/2023,06/08/2023,,CLOSED
+22/06/2023,KM,Inventer fuel oil tidak befungsi,Ganti inventer fuel oil,Engine Propulsion,08/06/2023,06/08/2023,,CLOSED
+22/06/2023,KM,Floating Bearing Turbocharger AE 2 Aus,Overhaul turbocharger ganti floating bearing dan oil,AE,22/06/2023,22/06/2023,,CLOSED
+11/06/2024,KM,Injection Valve Macet,"Overhaul Injection Valve, dibersihkan dan di test ulang",AE,22/06/2023,22/06/2023,,CLOSED
+25/07/2024,KM,"Kondisi tekanan LO AE No.3 turun mencapai tekanan 0,304 Mpa","Men-stop AE No.3 dan cleaning filter sentrifugal serta backwosh filter kemudian jalankan AE tetapi tekanan masih rendah 0,358 Mpa",AE,11/06/2024,,,CLOSED
+14/07/2024,KM,Terjadi kelainan turbo charge saat posisi running,"Check tappet clearance, check pressure fuel valve, check compression disetiap cyl, check fuel pump, check cyl head cyl no.1, check governoor, check sensor pick up, check reliev valve air",AE,25/07/2024,,,CLOSED
+11/08/2024,KM,"Setelah dilakukan pengecekan Semuanya Memory Check,Sensor Check All Ok ,untuk LINE CHECK NAV2 : Disconnect2, AXIS : Disconnect 
+
+",Sudah di lakukan pengecekan dan direstart tapi target tidak mau muncul,Navigation,14/07/2024,,,CLOSED
+22/09/2024,KM,Terjadi kerusakan atau patah pada body pin grab SMAG no.3 tidak bisa digunakan untuk membuka dan menutup,"Dilaksanakan greasing secara berkala pada grab grab smag dan janus yang ada dikapal, pengecekan kondisi pondasi grab secara rutin untuk mencegah keausan pada grab",Grab,11/08/2024,,,CLOSED
+24/09/2024,KM,Terjadi kerusakan atau patah pada body pin grab SMAG no.4 yang aus oleh upper arm pin sehingga grab smag no.4 tidak bisa digunakan untuk membuka dan menutup dan kondisi grab smag no.4 tidak dapat menutup dengan rapat sehingga muatan bocor,"Dilaksanakan greasing secara berkala pada grab grab smag dan janus yang ada dikapal, pengecekan kondisi pondasi grab secara rutin untuk mencegah keausan pada grab",Grab,22/09/2024,,,CLOSED
+14/10/2024,KM,Valve fire hydrant patah dikarenakan keropos dan berkarat dicross deck hatch coming no.1/2 & cross deck hatch coming no.3&4 P/side,Menutup Valve fire hydrant sementara agar air tidak mengalir keluar sambil menunggu supply permintaan fire hydrant ada untuk dilakukan pergantian 1 set,FFA,24/09/2024,,,CLOSED
+24/12/2024,KM,Terjadi kebocoran air pendingin,"Check kebocoran, Gnti cyl head dengan spare, cleaning ruang bakar",AE,14/10/2024,14/10/2024,,CLOSED
+24/12/2024,KM,"Saat kapal olah gerak daparture lalu melaksanakan perawatan AE No.1 agar normal dan aman dari hasil pekerjaan overhaul tersebut kita temukan kerusakan pada piston dan cylinder linear no.1,3, dan 4 penyebabnya adalah steel ball pada pin piston terlepas",Melakukan pergantian cylinder liner dengan spareyang baru 4pcs dan piston dengan spare yang baru 2 pcs lubang samping tempat steel ball dilas agar tidak terlepas dan merusak piston dan cylinder liner,AE,24/12/2024,,,CLOSED
+24/12/2024,KM,"Saat kapal olah gerak daparture lalu melaksanakan perawatan AE No.1 agar normal dan aman dari hasil pekerjaan overhaul tersebut kita temukan kerusakan pada piston dan cylinder linear no.1,3, dan 4 penyebabnya adalah steel ball pada pin piston terlepas",Melakukan pergantian cylinder liner dengan spareyang baru 4pcs dan piston dengan spare yang baru 2 pcs lubang samping tempat steel ball dilas agar tidak terlepas dan merusak piston dan cylinder liner,AE,24/12/2024,,,CLOSED
+28/05/2022,KM,"Saat kapal olah gerak daparture lalu melaksanakan perawatan AE No.1 agar normal dan aman dari hasil pekerjaan overhaul tersebut kita temukan kerusakan pada piston dan cylinder linear no.1,3, dan 4 penyebabnya adalah steel ball pada pin piston terlepas",Melakukan pergantian cylinder liner dengan spareyang baru 4pcs dan piston dengan spare yang baru 2 pcs lubang samping tempat steel ball dilas agar tidak terlepas dan merusak piston dan cylinder liner,AE,24/12/2024,,,CLOSED
+04/06/2022,MY,Pelat yang sudah tipis dan karat yang tebal,"Ketok / sandblast, meni dan cat silver",Main Deck,28/05/2022,,,CLOSED
+15/06/2022,MY,Pada saat pemberian grease rutin setelah kegiatan pemuatan ditemukan 2 helai wire hoisting putus / rantas,Melaksanakan penggantian dengan wire hoisting yang baru,Crane,04/06/2022,,,CLOSED
+18/06/2022,MY,Pada watu grab digunakan untuk mengambil muatan dari tongkang ke palka grane tidak bisa membuka dan menutup,"pengecekan kelistrikan, tambah oli, kelistrikan",Hatch Cover,15/06/2022,,,CLOSED
+05/08/2022,MY,"Master tidak bisa melakukan install ENC (Hang) loading terus menerus kemudia dicoba untuk restart dimonitor tertulis "" IBSSvc Service is not detected please reapair intallation and run this application again","Dilakukan percobaan restart ulang pengecekan, penggantian kabel LAN yang mati dan berkonsultasi dengan pak aziz (IT) untuk sementara kapal menggunakan track GPS yg dipadukan track router diradar",Navigation,18/06/2022,,,CLOSED
+28/08/2022,MY,Saat mau di turunkan wire kedapatan rantas tidak kuat menahan beban sekoci,"Penurunan dihentikan, lifeboat dilashing kembali",LSA,05/08/2022,,,CLOSED
+07/09/2022,MY,Battery Low,,Navigation,28/08/2022,28/08/2022,,CLOSED
+28/09/2022,MY,"Error sensor gyro, AIS,GPS,LOG",,Navigation,07/09/2022,09/07/2022,,CLOSED
+12/10/2022,MY,"Setelah selesai pemuatan, dilaksanakan pemeriksaan rutin dan pemberian grease pada grab janus, ditemukan wire rantas pada salah satu wirenya","Melakukan penggantian dengan wire yang baru, pada saat pemuatan diberi grease secara berkala",Grab,28/09/2022,,,CLOSED
+13/10/2022,MY,Lubang pengait segel pada grab mengalami pecah pelat menipis,Menggangti grab lain grab yang rusak dilepas dan ditempatkan pada posisinya,Grab,12/10/2022,,,CLOSED
+10/11/2022,MY,Setelah selesai pemuatan dilaksanakan rutin dan pemberian grease pada grab janus ditermuka wirenya rantas,Melakukan penggantian dengan wire yang baru dan diberi grease pada saat pemuatan diberi grease secara berkaitan,Grab,13/10/2022,13/10/2022,,CLOSED
+19/11/2022,MY,Pompa L.O PU MP nomor 1 main engine trip,Di adakannya pengecekan antara lain : 1. Mager test 2. Di bersihkan elmot gulungnya. 3. Ganti ball bearing 2 pcs. 4. Serlak,ME,10/11/2022,,,CLOSED
+20/11/2022,MY,Tampilan display radar x- band blank / garis tidak ada tampilan gambar di monitor,Konsultasi dengan pak nardi (teknisi) tentang kondisi radar. Info dari pak nardi kerusakan pada unit display nya. (last change magnetron 01/07/2019),Navigation,19/11/2022,,,CLOSED
+30/05/2023,MY,Di dalam system manovering actuator dalam komunikasi antara servoampare dengan main control unit masih terkunci tidak ada komunikasi line,Cek kabel yang ada hubungnnya dengan actuator cek servo ampare,ME,20/11/2022,,,CLOSED
+01/06/2023,MY,Crane nomor 3 tidak bisa di start dan setiap ngangkat muatan crane tiba - tiba mati,Diganti kompenen yang ada di papan swich board crane nomor 3,Crane,30/05/2023,,,CLOSED
+12/06/2023,MY,Crane nno.3 tidak bisa di start dan setiap ngangkat muatan crane tiba tiba mati,Diganti komponen yang ada di papan switch board crane no.3,Crane,01/06/2023,,,CLOSED
+16/06/2023,MY,Layar monitor radar x-band tidak mau menyala,"Dilakukan pengecekan power on dan off,fuse,instalasi kabel,inferter dan konsultasi dengan pak nardi (teknisi) tentang kondisi radar.Pada saat dilakukan pengecekan interveternya terdapat komponen yang sudah mengembung dan di komponen lai terdapat hitam bekas asap. (Last change magnetron 01/07/2019)",Navigation,12/06/2023,,,CLOSED
+11/07/2023,MY,Wire Rope hositing crane no. 3 mengalami rusak putus satu strengh,"Wire rope hoisting yang putus segera diganti dengan wire rope hoisting spare baru yang ada dikapal, wire rope hoisting yang baru dilumuri grease",Crane,16/06/2023,,,CLOSED
+12/07/2023,MY,Shaft pada pompa ejector pump bengkok dan rumah bearing electro motor sudah aus (longgar),1. Untuk shaft mohon dibuatkan di bengkel darat sesuai contoh 2. Untuk rumah bearing electro motor mohon untuk direapair di sesuaikan dengan outer bearing 6308 ZE,FWG,11/07/2023,,,CLOSED
+26/07/2023,MY,Lub oil HYD bocor dari dalam drum hoisting pada saat running. Kemungkinan seal box pada HYD. Motor hositing sudah rusak,Crane no.1 di parkir di atas ponton palka no.1 spare parts HYD motor hoisting dan seal box di kapal tidak ada,Crane,12/07/2023,,,CLOSED
+27/11/2023,MY,Gear Coupling sudah aus ( rusak ),Di repair / dibuatkan baru di bengkel darat,ME,26/07/2023,,,CLOSED
+26/12/2023,MY,"Pada saat kapal berlayar dari meulaboh ke serang dengan speed GPS 10 Knot, tiba - tiba speed indicator menunjukan tampilan ""0"" Knot","Dilakukan pengecekan pada manual book,ERR 00010000 : Comunication time out - error - Dilakukan pengecekan pada kabel - kabel di bagian belakang tidak ditemukan masalah",Navigation,27/11/2023,,,CLOSED
+12/02/2024,MY,"Pada tanggal 24 des 23,pada saat kapal dalam perjalanan dari muara jawa menuju suralaya,ECDIS tiba-tiba hang dan keluar dengan sendirinya,kemudian dicoba untuk restart ulang dilayar monitor tertulis ""NO BOOTABLE DEVICE - INSERT BOOT DISK AND PRESS ANY KEY""Media test failure,check cable","Dilakukan percobaan untuk me-nonaktifkan ecdis selama 24 jam lalu menyalakan kembali,setelah dinyalakan kembali,ecdis masih menunjukan tampilan yang sama ""NO BOOTABLE DEVICE - INSERT BOOT DISK AND PRESS ANY KEY"" Media test failure,check cable",Navigation,26/12/2023,,,CLOSED
+02/08/2024,MY,Clearence crank pin bearing sudah melewati batas maksimal. Crank pin bearing yang terpasang sudah under size,"Di ganti dengan crank pin bearing baru dengan under size 0,50 mm",AE,12/02/2024,,,CLOSED
+15/08/2024,MY,"Kondisi jib posisi parkir perlahan turun, analisa disc brake pada motor luffing rusak",Ganti baru satu unit motor luffing,Crane,02/08/2024,,,CLOSED
+27/09/2024,MY,"Ditemukan kondisi wire luffing rantas putus rambut kawat dibeberapa tempat di dua strand pada jarak 2,5 meter",Penggantian wire luffing dengan yang baru,Crane,15/08/2024,,,CLOSED
+07/08/2022,MY,Motor hoisting stack/rusak,Ganti baru dengan spare tersedia,Crane,27/09/2024,,,CLOSED
+27/08/2022,MH,pada saat main engine running suara dari turbocharger semakin terdengar surging dan tekanan pembakaran cylinder no. 2 tambah turun dari tekanan pembakaran awal kapal berlayar,"stop main engine untuk melakukan penggantian exhaust valve cylinder no.2 serta penyetelan ulang spill dan suction valve cylinder no. 2,4,dan 6",ME,07/08/2022,08/07/2022,,CLOSED
+08/09/2022,MH,Pada saat a/e no.3 running paralel dengan a/e no.2 untuk proses ballasting terjadi blackout yang disebabkan oleh trouble a/e no.3 dan setelah dilakukan pengecekan diketahui bahwa terjadi kerusakan pada cylinder no. 3,Stop aux engine dan langsung start genset untuk penerangan kapal serta melakukan pengecekan kondisi dari aux engine,AE,27/08/2022,,,CLOSED
+13/09/2022,MH,Patah pada pengait painter release sekoci bagian kiri bagian depan,Tali painter dikaitkan ke sekoci dengan segel,LSA,08/09/2022,09/09/2022,,CLOSED
+23/01/2023,MH,"Cover fire hose box berlubang/pecah, spanner holder, hose hanger dan nozzle holder patah","Cover fire hose dikaitkan dengan kawat, penambalan lubang atau bagian yang pecah",FFA,13/09/2022,,,CLOSED
+05/06/2023,MH,Pada pukul 13.00 LT A/E No. 1 temperatur lub oil panas serta main air compressor trip. Setelah dilakukan pengecekan sistem pendingin (fw cooler) tercampur dengan bahan bakar MFO,Karena kedua main air comp sudah tidak bisa di start dan kedua botol angin sudah habis maka dilakukan stop main engine. Selanjutnya dilakukan blow down / drain fw serta membersihkan air cooler kedua main air compressor.,AE,23/01/2023,23/01/2023,,CLOSED
+13/06/2023,MH,Jangkar tidak bisa di heave up karena coupling sisi hyd. Motor aus dan deformasi/renggang sehingga tidak bisa menggerakkan gear penggerak rantai jangkar,Dilakukan perbaikan sementara dengan menyatukan coupling sisi hydraulic motor dengan coupling sisi gear rantai jangkar dan di las/doubling,Mooring System,05/06/2023,06/05/2023,,CLOSED
+26/06/2023,MH,"Terjadi kebocoran pada body cyl head AE 2 cyl no.1 sisi dalam exh valve yang di sebabkan oleh material bahan yang sudah keropos/tipis, indikasi kebocoran diketahui pada saat AE 2 di matikan dan diblow lalu air keluar lewat valve indicator no.1","Diadakan pengecekan secara menyeluruh cyl no. 1 s/d 6, OH cyl no.1 menggantikan cyl head dengan ready spare, ukur cyl liner 0.74mm sudah oversize dari max limit 0.6mm, check kondisi oli carter, check piston, ring piston",AE,13/06/2023,,,CLOSED
+20/07/2023,MH,Bearing pada connecting rod 1st stage nya memakai spare bekas karena tidak ada spare di kapal. Connecting rod sudah deformasi/aus di dudukan bearing big end cylindrical roller,"> Diadakan overhaul ulang dengan mengganti bearing bekas pakai dikarenakan tidak ada spare di atas kapal
+> Meminimalisir jam operasional Main air starting no. 2 dengan memakai pesawat no.1
+> Menunggu supply spare part yang sudah dimintakan",ME,26/06/2023,,,CLOSED
+20/07/2023,MH,OWS Tidak bisa dioperasikan dikarenakan ada kerusakan pada sistem bilge alarm. Bilge alarm (FOCAS-1500 C) dibawa ke darat oleh teknisi,Menunggu tindak lanjur dari teknisi darat,OWS,20/07/2023,,,CLOSED
+20/07/2023,MH,Lampu display operator mati sehingga display tidak ada penerangannya,Mengoperasikan display modul dengan penerangan manual,Accomodation,20/07/2023,,,CLOSED
+24/08/2023,MH,Pada saat pindah compressor mesin es dari no. 2 ke no.1 diketahui bahwa mesin compressor tidak bisa mati secara automatis dikarenakan pressur switch tidak bekerja sebagaimana mestinya,Dipinjamkan pressure switch no.2,Accomodation,20/07/2023,,,CLOSED
+04/11/2023,MH,"Pada saat kapal persiapan olah gerak sandar dan diadakan test main engine diketahui bahwa alarm governor actuator active/nyala sehingga main engine tidak bisa dioperasikan dari control room , diketahui bahwa lampe led condition no.2 mati yang menindikasi serve drive abnormal","Manuver sandar dilakukan di engine side sampai selesai finish engine, diadakan pengecekan actuator governor ME setelah kapal sandar",ME,24/08/2023,,,CLOSED
+29/09/2024,MH,"Pada pukul 06.30 WIT ,pada saat kapal dalam perjalanan menuju Pelabuhan bongkar Morowali,diketahui bahwa alarm governor actuator active/nyala.","> Berkoordinasi dengan anjungan/mualim jaga
+> memindah pengoperasian main engine ke engine side
+> mengecek dan memantau parameter engine
+> pengoperasian main engin dari e/s dampai ke morowali",ME,04/11/2023,,,CLOSED
+13/01/2022,MH,"Penerimaan sudah tidak normal tidak dapat berkomunikasi dengan baik, kondisi yang bagus 70% hanya 1 pcs, tidak dapat tersambung ke VHF",,Bridge System,29/09/2024,,,CLOSED
+13/01/2022,RA,Wire hoisting no.1 limit working hrs,,Crane,13/01/2022,,,CLOSED
+09/02/2022,RA,"Baut conecting rod dan crankshaft bearing terlepas semua,piston macet di cylinder liner",Melakukan O/H cylinder No. 1 dan pengecekan kondisi dari A/E,AE,13/01/2022,14/01/2022,,CLOSED
+06/03/2022,RA,,,None,09/02/2022,02/10/2022,,CLOSED
+09/03/2022,RA,Wire hoisting crane no 4 mengalami rantas 15 meter,Pergantian dengan spare diatas kapal,Crane,06/03/2022,03/07/2022,,CLOSED
+17/03/2022,RA,"Overhaul dan mengganti punger barrel bosch pump (no defect, no cause)",,Fuel System,09/03/2022,03/09/2022,,CLOSED
+06/04/2022,RA,"Nonreturn Valve tidak kedap, tidak mau tertutup",,Pipe,17/03/2022,18/03/2022,,CLOSED
+15/04/2022,RA,scaner yang tidak mau memutar,Mencoba mengeck ke scaner di atas anjungan,Navigation,06/04/2022,,,CLOSED
+23/04/2022,RA,,Ganti carbon brush,Crane,15/04/2022,,,CLOSED
+24/04/2022,RA,packing pendigin bocor dan masuk ke piston serta carter LO,Mengganti ring piston di karenakan patah,ME,23/04/2022,,,CLOSED
+29/04/2022,RA,Ring piston patah dan packing sobek,Overhaul comp no.1,ME,24/04/2022,,,CLOSED
+29/04/2022,RA,solenoid tidak bekerja,Penggantian selenoid,Crane,29/04/2022,05/01/2022,,CLOSED
+30/04/2022,RA,"AE 1 jika running timbul getaran yang kuat dan telah berlangsung sudah lama, LO tekanannya turun",,AE,29/04/2022,29/04/2022,,CLOSED
+01/05/2022,RA,Slipring dan ebonite patah karena terbakar sehinnga perlu diadakan peggantian,Ganti carbon brush dan ebonit,Crane,30/04/2022,30/04/2022,,CLOSED
+12/06/2022,RA,Vane pump tek kurang,Penggantian vane pump,Crane,01/05/2022,05/01/2022,,CLOSED
+17/07/2022,RA,ME Cyl no.4 ring piston no.4 parah,Overhaul mengganti ring piston,ME,12/06/2022,,,CLOSED
+24/08/2022,RA,"Pipa shut blow keluar air dikarenakan kran tidak kedap,jacket cooling banyak lumpur mengakibatkan pendinginan tidak sempurna AE over heat (panas)",Sementara di blank,Boiler,17/07/2022,17/07/2022,,CLOSED
+29/08/2022,RA,packing head bocor,Ganti packing,ME,24/08/2022,24/08/2022,,CLOSED
+12/09/2022,RA,Connecting rod bolt patah sehingga mengakibatkan decksel dan block pecah,Overhaul ganti cylinder liner dan perbaiki cover deksel,AE,29/08/2022,,,CLOSED
+20/09/2022,RA,ACB lepas dari paralel,Start kembali AE dan kemudian parallel ulang,AE,12/09/2022,,,CLOSED
+08/11/2022,RA,"Main air comp saat mengisi botol angin sangat lambat,RPM ME turun tidak mai naik setelah di cek melalui monitor cyl 1,2,3 cyl oil non flow sehingga main engine mati dan tidak bisa di start",,ME,20/09/2022,,,CLOSED
+13/11/2022,RA,,,Crane,08/11/2022,11/08/2022,,CLOSED
+19/11/2022,RA,Kabel governor putus,Sambung kembali kabel dan ganti LO govenor,AE,13/11/2022,13/11/2022,,CLOSED
+20/11/2022,RA,Ring piston tipis dan ring no.3 patah,Dilakukan O/H M/E cyl no.5 dan ganti ring piston,ME,19/11/2022,19/11/2022,,CLOSED
+20/11/2022,RA,Metal piece rocker arm cyl no.2,Ganti rocker arm spare,AE,20/11/2022,20/11/2022,,CLOSED
+20/11/2022,RA,Kondisi crane banyak mengamali kropos dan berlubang serta wiper yang rusak,Untuk sementara ini melaporkan ke bagian teknik untuk menindak lanjuti karena cabin crane banyak sistem kelistrikan,Crane,20/11/2022,,,CLOSED
+20/11/2022,RA,Kondisi crane banyak mengamali kropos dan berlubang serta wiper yang rusak,Untuk sementara ini melaporkan ke bagian teknik untuk menindak lanjuti karena cabin crane banyak sistem kelistrikan,Crane,20/11/2022,,,CLOSED
+20/11/2022,RA,Kondisi crane banyak mengamali kropos dan berlubang serta wiper yang rusak,Untuk sementara ini melaporkan ke bagian teknik untuk menindak lanjuti karena cabin crane banyak sistem kelistrikan,Crane,20/11/2022,,,CLOSED
+18/12/2022,RA,Kondisi crane banyak mengamali kropos dan berlubang serta wiper yang rusak,Untuk sementara ini melaporkan ke bagian teknik untuk menindak lanjuti karena cabin crane banyak sistem kelistrikan,Crane,20/11/2022,,,CLOSED
+26/12/2022,RA,Cyl no.5 jacket cooling high temprstur,"Over haule,ganti exh valve,water guide jacket,piston,gland box,serta gasket, o ring lubricating quillwith accumulator",ME,18/12/2022,19/12/2022,,CLOSED
+31/12/2022,RA,"Compressi cyl no.3 lolos,pengunci pada cranpin bearing shell rata sehingga crankpin bearing berubah posisi yang mengakibatkan lubang pelumasan tertutup",Menunggu teknisi untuk perbaikan overhaul cyl no.3,AE,26/12/2022,,,CLOSED
+24/01/2023,RA,Bolt pondasi penyetelan V belt patah,Ganti Bolt,AE,31/12/2022,31/12/2022,,CLOSED
+05/02/2023,RA,"Kondisi rantainya sudah berkarat dan mengecil dan ada juga yang lepas,di atas kapal masih ada 4 pcs,kondisinya masih bagus tidak ada kebocoran",Rantai yang lepas sementara di ikat dengan kawat,Cargo Operation,24/01/2023,,,CLOSED
+18/02/2023,RA,,,ME,05/02/2023,,,CLOSED
+20/02/2023,RA,Ditemukan adanya air laut masuk ke ruang scaving,"Untuk cover intercooler yang retak sudah dilakukan devcon akan tetapi tidak kuat dan tetap bocor, semesntara ini untuk cover intercooler AE 1 diambilkan cover AE 2 agar bisa dilakukan pengetesan",AE,18/02/2023,,,CLOSED
+26/02/2023,RA,,,ME,20/02/2023,,,CLOSED
+26/02/2023,RA,Temperature scaving cylinder no.5 main engine menunjuk angka 150 celsius,Menunggu temperature scaving batas aman cover scaving trunk dan cover no.5 dibuka diperiksa kondisi piston ring no.1 sampai 4 kondisi bagus tidak ada patah hanya dengan menyemprotkan wd 40 untuk melancarkan pergerakan piston ring,ME,26/02/2023,,,CLOSED
+29/03/2023,RA,,,ME,26/02/2023,,,CLOSED
+01/04/2023,RA,"Setelah AE 2 dijalankan dan dimasukan paralel terdengar suara lain di ACB AE 2 kemudian blackout, setelah diperiksa terdapat bau angus dan ioler jaga melihat percikan bunga api dibagian altenator kemudia AE 2 langsung dimatikan",Langsung mematikan AE 2,AE,29/03/2023,,,CLOSED
+19/05/2023,RA,Tanktop DBT 2 kanan yang ada di palka 3 robek karena terbentur grab shore crane pada saat pembongkaran batu bara di pulau obi,Membuang ballast DBT 2 kanan sampai air tidak keluar dari tanki ballast DBT 2 kanan,Hull & Structure,01/04/2023,04/05/2023,,CLOSED
+28/05/2023,RA,Crankcase door AE No.3 dibuka untuk dilakukan pemeriksaan ternyata dijumpai crankpin bearing cylinder no.5 sudah bergerak memutar dari dudukannya. Sehingga diputuskan untuk membuka crankpin bearing no.5 untuk mengetahui kondisi sebenernya.,,AE,19/05/2023,,,CLOSED
+29/05/2023,RA,,,AE,28/05/2023,,,CLOSED
+01/06/2023,RA,Luffing tidak bisa dioperasikan naik dan turun,"Check solenoid,check limit switch,tes tekanan hydrolic ke brake dan adjust",Crane,29/05/2023,29/05/2023,,CLOSED
+14/06/2023,RA,wire hoisting crane no.3 ada kerusakan terdapat putus satu urat wire hoisting crane no.3 working hours : 1072..2 hours tanggal ganti : 17/05/2022,Menganti wire hoisting crane no.3 dengan sparepart baru,Crane,01/06/2023,,,CLOSED
+16/06/2023,RA,"BNWAS menyala da mati sendiri terus menerus tanpa riset. Kemudian alarm hidup terus tidak bisa di riset kemudian BNWAS dimatikan dihidupkan kembali,BNWAS tidak respons.","Tekan tombol push bottom riset, mematikan BNWAS dan menghidupkan kembali,check arus listrik pada BNWAS",Navigation,14/06/2023,,,CLOSED
+23/06/2023,RA,"Spindle EXH valve cylinder head AE No.3,spindle exhaust valve patah/mengalami kerusakan sehingga dilakukan top overhaul pada cylinder head no.4 untuk mengganti cylinder head yang mengalami kerusakan.",Menganti cylinder head yang mengalami kerusakan,AE,16/06/2023,,,CLOSED
+07/07/2023,RA,"Saat posisi kapal di laut jawa jam 18.30 radar no.1 tidak bisa scanner area sekitar ""ketika di check di luar scaner tidak mau memutar, dan setelah mencoba menghidupkan kembali radar dan di coba hiudpkan kembali radar dan di coba hidupkan tetapi scanner tidak berputar","Setelah terjadi kondisi yang tidak normal pada radar tersebut,mualim 2 mencoba konsultasi kepada master,dan sempat mengcheck ke scanner di atas kemungkinan ada masalah pada motor scaner / gear pada motor yang menyebabkan tidak bisa berputarnya scanner tersebut",Navigation,23/06/2023,,,CLOSED
+09/07/2023,RA,Pada saat crew deck melakukan kegiatan cleaning crane no.3 di bagian luar. Pada saat cleaning di temukan di bagian atas slewing bearing crane no.3 ada retakan bekas las - lasan lama sepanjang 160 cm. KKM sudah di informasikan dan di check di crane no.3,,Crane,07/07/2023,,,CLOSED
+26/07/2023,RA,"Pada saat kapal berlayar kemudi di auto, pada awalnya syncrone bagus, lama kelamaan perbedaan semakin membesar antara master gyro 020 drajat dan standard compass . 000 drajat",Telah di setting ulang secara manual namun perbedaan masih besar,Navigation,09/07/2023,,,CLOSED
+26/07/2023,RA,,,Crane,26/07/2023,,,CLOSED
+25/08/2023,RA,,,Crane,26/07/2023,,,CLOSED
+26/08/2023,RA,Ditemukan kerusakan pada tangga spiral pada pipa patah dan banyak yang keropos,Tangga spiral sementara tidak digunakan dan menggunakan tangga yang lurus didepan,Outfitting,25/08/2023,,,CLOSED
+26/09/2023,RA,Terdengar suara lain pada AE 2 setelah melakukan pemeriksaan ditemukan bahwa spindle exhaust v/v patah atau mengalami kerusakan pada cyl head no.4 harus dilakukan overhaul,Langsung dilepas beban dan mesin dimatikan,AE,26/08/2023,,,CLOSED
+10/10/2023,RA,Ada kebocoran pada area sekitar economiser boiler semakin kencang/besar,,Boiler,26/09/2023,,,CLOSED
+15/10/2023,RA,Indikasi awal yaitu temperatur udara scaving pada nomer 4 naik turun sampai melebihi alarm di 84 celcius kemudian turun lagi sampai 65 celsius,"Melakukan pemeriksaan underside piston ring, di jumpai piston ring stuck di nomor 2,3,4 karena waktu berlabuh di muara pantai lama, di putuskan untuk melakukan pemeriksaan lebih mendalam yaitu overhaul no.4 untuk melihat dan mengukur kondisi ring piston dan linernya",ME,10/10/2023,10/10/2023,,CLOSED
+15/10/2023,RA,"Rantai coupling gear utk elmot dan pompa hancur sehingga butuh perbaikan untuk melepas dan mengganti dua coupling yang rusak, lalu crane no 2 slewing gear bocor sehingga oli system masuk ke tempat pelumasan gear dan oli system keluar melalui tutup lobang oli, spare dowmax dikapal sudah tidak ada",,Crane,15/10/2023,,,CLOSED
+22/10/2023,RA,"Rantai coupling gear utk elmot dan pompa hancur sehingga butuh perbaikan untuk melepas dan mengganti dua coupling yang rusak, lalu crane no 2 slewing gear bocor sehingga oli system masuk ke tempat pelumasan gear dan oli system keluar melalui tutup lobang oli, spare dowmax dikapal sudah tidak ada",,Crane,15/10/2023,,,CLOSED
+27/10/2023,RA,Boiler keadaan running tiba - tiba mati dan dari area burner / ruang pembakaran keluar air dalam jumlah banyak.,"Melihat kedaan tersebut selanjutnya tekanan dan temperature steam diturunkan dan air boiler di blowdown,manhole dibuka dan selanjutnya difree gas sampai batas aman untuk masuk orang melakukan pemeriksaan bagian dalam boiler. Setelah kondisi aman selanjutnya dilakukan pemeriksaan dibagian pembakaran dan bagian ruangan air boiler. Dan ditemukan adanya robekan plat sekitar las-lasan sepanjang +_ 15 cm. Sehingga harus dilakukan pengelasan.",Boiler,22/10/2023,22/10/2023,,CLOSED
+03/11/2023,RA,Kebocoran Air Boiler yang keluar melalui economizer area depan,,Boiler,27/10/2023,,,CLOSED
+03/11/2023,RA,"Merk HT Icon V80 : Baru dipakai 2 jam langsung habis, suara tidak jelas, sering mati saat digunakan, HT Merk Motorola : baterai yang drop dan suara yang ga jelas karena spreaker rusak",Meminjamkan kepada jurumudi atau perwira yang berdinas jaga,Bridge System,03/11/2023,,,CLOSED
+16/11/2023,RA,"Ukuran kecil tidak bisa memanaskan nasi secara baik sehingga nasi sering basi dan menguning, rice cooker yang ada di salon ABK rice cooker tidak bisa digunakan",Menanak nasi dikompor dapur dan memasak nasi sedikit untuk sekali makan supaya tidak basi,Accomodation,03/11/2023,,,CLOSED
+25/11/2023,RA,"Pada saat kapal berlayar kemudi di auto, pada awalnya syncrone bagus, lama kelamaan perbedaan semakin membesar antara master gyro dan standard compass,dan ditemukan kebocoran air pada master gyro",Telah di setting ulang secara manual namun perbedaan masih besar,Navigation,16/11/2023,,,CLOSED
+25/11/2023,RA,Pada saat pengecekan rutin terdapat fire hose box yang di ketahui pintu buka tutup / cover nya sudah rusak dan tidak bisa digunakan secara semestinya,Dibuat laporan kerusakan fire hose box dan permintaan di kirim ke kantor pusat,FFA,25/11/2023,,,CLOSED
+08/12/2023,RA,Pada saat pengecekan rutin terdapat life buoy yang di ketahui pecah dan tidak layak pakai,dibuat laporan kerusakan alat keselamatan / life buoy dan permintaan di kirim ke kantor pusat,LSA,25/11/2023,,,CLOSED
+19/12/2023,RA,"pada saat pembongkaran di pelabuhan smelting gresik,gangway sebelah kanan di heave up,pada plat form nya patah di jumpai ada keropos pada bagian bawah gangway sehingga tidak bisa di heave up","Di catum sementara dan di bantu dengan dua takal,tidak bertahan lama dan patah kembali",Main Deck,08/12/2023,,,CLOSED
+06/01/2024,RA,Rantai rusak coupling gear pump rusak,Dilakukan perbaikan dengan melepas coupling gear motor dan pompa diganti dengan spare baru 1 set,Crane,19/12/2023,19/12/2023,,CLOSED
+13/01/2024,RA,Crankpin bearing rusak. Diameter shaft oval / tidak bulat.,"Overhaul cylinder No.5,check kondisi dari piston,ring dan liner,ukur diameter shaft crankpin bearing. Setelah dilakukan overhaul kondisi piston,ring dan liner baik. Kondisi shaft setelah di ukur oval / tidak bulat sehingga perlu dilakukan grinding agar crankpin bearing bisa di pasang sesuai standard clearence nya dan AE No.1 bisa dijalankan kembali.",AE,06/01/2024,01/06/2024,,CLOSED
+15/01/2024,RA,Saat mesin induk mulai diturning kurang lebih 10 menit dari proses turning tiba tiba elmot keluar asap dan kontractor trip sehingga turning gear dilepas kembali,,Steering System,13/01/2024,,,CLOSED
+03/02/2024,RA,Terjadi kebocoran pipa laut masuk consider dimana pipa tersebut satu jalur dengan pendingin auxiliar engine,,Pipe,15/01/2024,,,CLOSED
+29/03/2024,RA,Muncul alarm pada cylinder engine cylinder no.1,,ME,03/02/2024,,,CLOSED
+31/03/2024,RA,Pada saat crane no.4 sedang dipergunakan untuk aktifitas muat tiba tiba luffing tidak bisa digerakan naik dan turun,Diputuskan untuk membuka dawmex dan memeriksa penyebab nya,Crane,29/03/2024,29/03/2024,,CLOSED
+16/04/2024,RA,Ditemukan kebocoran intercooler pada sisi air laut diamana air laut masuk kedalam clean drain tank dalam jumlah besar,Dilakukan pengamatan da perhitungan besaran kebocoran dari intercooler tersebut,ME,31/03/2024,,,CLOSED
+24/04/2024,RA,Tiba tiba feed water pump boiler sebelah kanan trip setelah electromotor dicheck ternyata bearing rusak dan lilitan short,,Boiler,16/04/2024,,,CLOSED
+21/07/2024,RA,Pada saat crane No.4 sedang dipergunakan untuk aktifitas bongkar sekitar pukul 11.00 LT tiba - tiba slewing crane tidak bisa di putar ke kanan dan ke kiri,"Setelah dilakukan pengechekan pada domex dengan memasang manometer untuk melihat tekanan break,tekanan normal menunjukan 20 bar. Dan juga dengan memasang jack hydraulic dengan tekanan 30 bar, slewing tetap tidak mau bergerak. Untuk analisa lebih lanjut harus mencabut dowmex nya dan sekarang masih dalam proses mencabut dowmex slewing.",Crane,24/04/2024,05/02/2024,,CLOSED
+31/08/2024,RA,Pada saat main engine running dari cylinder No. 5 terjadi kebocoran fresh water cooling dari body exhoust valve dan temperatur exhoust gas tinggi,Dilakukakan pekerjaan perbaikan di tempat yang aman,ME,21/07/2024,,,CLOSED
+31/08/2024,RA,AE No.2 terjadi kerusakan patahnya baut connecting rod sehingga connecting rod yang kondisi sudah terlepas dari dudukannya berputar dan membentur liner dan body crankcase cylinder no.3 sehingga liner dan body crankcase sisi kanan pada AE 2 rusak/jebol kemudian connecting rod terlempar keluar dan membentur sidecover/deksel AE no.1 cyl no.1,"Untuk AE no.1 : mengganti side cover/deksel cyl no.1 lanjut cleaning LO sumptank baru running, sedangkan untuk AE no.2 : dilakukan penggantian piston , ring piston, cyl liner , connecting rod ass'y perbaikan pipa LO , cleaning LO sumptank , lepas LO cooler",AE,31/08/2024,,,CLOSED
+26/09/2024,RA,AE No.2 terjadi kerusakan patahnya baut connecting rod sehingga connecting rod yang kondisi sudah terlepas dari dudukannya berputar dan membentur liner dan body crankcase cylinder no.3 sehingga liner dan body crankcase sisi kanan pada AE 2 rusak/jebol kemudian connecting rod terlempar keluar dan membentur sidecover/deksel AE no.1 cyl no.1,"Untuk AE no.1 : mengganti side cover/deksel cyl no.1 lanjut cleaning LO sumptank baru running, sedangkan untuk AE no.2 : dilakukan penggantian piston , ring piston, cyl liner , connecting rod ass'y perbaikan pipa LO , cleaning LO sumptank , lepas LO cooler",AE,31/08/2024,,,CLOSED
+26/09/2024,RA,Main engine cyl liner no.5 retak,Dilakukan penggantian cyl liner yang retak dengan cyl liner spare (old spare) yang masih kayak,ME,26/09/2024,,,CLOSED
+30/09/2024,RA,Terjadi kebocoran pada water tube,Dilakukan pengecekan dan di lakukan prop pada pipa yang bocor,Boiler,26/09/2024,,,CLOSED
+08/10/2024,RA,Saat perjalanan tiba tiba oiler jaga patroli melihat adanya kebocoran air boiler yang keluar melalui economizer area bagian depan dan belakang,,Boiler,30/09/2024,,,CLOSED
+14/10/2024,RA,Bearing fan rusak dan shaft tidak balance,Dilakukan pengecekan,Accomodation,08/10/2024,,,CLOSED
+14/10/2024,RA,Crankpin Bearing cylinder no.1 AE No. 4 Aus dan crankshaft ada goresan,"Dilakukan manual grinding dengan autosol dan tali pada permukaan crankshaft, ganti crankpin bearing, cleaning LO sumptank",AE,14/10/2024,14/10/2024,,CLOSED
+17/10/2024,RA,Body/dinding LO Hyd sumptank retak 100 cm,Dilakukan pengelasan,Grab,14/10/2024,14/10/2024,,CLOSED
+17/10/2024,RA,Dowmax hyd pump luffing bekerja lambat sekali pada saat jib digerakan naik turun (tanpa beban) dan tidak mampu mengangkat beban grab serta muatan,Saat ini deck crane no.1 belum bisa digunakan untuk kegiatan muat jika akan digunakan maka solusinya dengan memindahkan dowmax hyd pump deck crane lain ke deck crane no.1,Crane,17/10/2024,,,CLOSED
+23/06/2022,RA,Oli hydraulic deck crane no.4 dalam waktu satu jam berkurang 30 liter disebabkan terjadi kebocoran pada nok seal,Dilakukan penggantian nok seal yang rusak dengan spare,Crane,17/10/2024,17/10/2024,,CLOSED
+12/07/2022,UL,Pada saat kapal berjalan normal alm got kamar mesin berbunyi dan diperiksa got kamar mesin bertambah banyak diketahui adanya kebocoran pipa iasp eductor,"Tutup valve isap sebelah kirim dan debit air berkurang, untuk mempersingkat pipa isap eductor dilepas dan dilakukan penutupan diproob sehingga kedap kebocoran",Pipe,23/06/2022,23/06/2022,,CLOSED
+22/08/2022,UL,Dilakukan perbaikan system hydraulic lalu juga memeriksa piston liner dan dilaksanakan pergantian,Sehubungann belum berhasil akan melaksanakan pemeriksaan,None,12/07/2022,,,CLOSED
+15/09/2022,UL,Gyro compass mengalami salah penunjuk arah dan suara pada bola gyro sangat kasar dan gyro tidak bekerja dengan baik sekarang kapal menggunakan kemudi manual mengikuti arah magnetic compass,Sudah dicek pada master gyro,Navigation,22/08/2022,,,CLOSED
+25/09/2022,UL,Kerusakan crane no.4 pompa dowmax torque tidak bertenaga setelah diadakan pemeriksaan ada kelainan pada pompa torque,Melakukan penggantian pompa torque baru penggantian oli crane no.4 sebanyak 210 liter,Crane,15/09/2022,15/09/2022,,CLOSED
+25/09/2022,UL,Jacket cooling (lower) no.3 bocor,Renwed unit jacket cooling (lower),ME,25/09/2022,,,CLOSED
+17/10/2022,UL,Main jacket cooling (lower) cyl no.3 bocor,Welding jacket cooling (lower) cyl no.3,ME,25/09/2022,25/09/2022,,CLOSED
+18/10/2022,UL,Main jacket cooling (Upper) cyl no.3 bocor,Penggantian jacket cooling (upper) dan upper cyl. 3,ME,17/10/2022,17/10/2022,,CLOSED
+24/11/2022,UL,Main jacket cooling (Upper) cyl no.6 bocor,Penggantian jacket cooling (upper) dan upper cyl. 6,ME,18/10/2022,18/10/2022,,CLOSED
+25/12/2022,UL,Main jacket cooling (Upper) cyl no.4 bocor,Penggantian jacket cooling (upper) dan upper cyl. 4,ME,24/11/2022,,,CLOSED
+25/12/2022,UL,Jebol,Mengganti dengan pipa railing dan plat yang baru,Outfitting,25/12/2022,,,CLOSED
+25/12/2022,UL,Patah,Melakukan Perbaikan,Valve,25/12/2022,,,CLOSED
+25/12/2022,UL,Jatuh Kelaut/Hilang,,Grab,25/12/2022,,,CLOSED
+06/04/2023,UL,M O B Pin smoke terbuka dan habis,"Di ambil di taruh di deck, memjaga jangan sampai jatuh ke laut",LSA,25/12/2022,,,CLOSED
+30/05/2023,UL,Pompa torque untuk luffing rusak,Luffing pump yang rusak dilepas dan menunggu spare pompa untuk mengganrikan luffing yang rusak,Crane,06/04/2023,,,CLOSED
+06/06/2023,UL,Main jacket cooling (upper) cyl. No.1 retak,Penggantian jacket cooling (upper) dan upper cyl. No. 1,ME,30/05/2023,30/05/2023,,CLOSED
+06/06/2023,UL,Pada crane no.3 dan no. 4 slewing hyd. Pump nock seal bocor,> Crane no. 3 dilakukan penggantian nock seal slewing,Crane,06/06/2023,06/06/2023,,CLOSED
+25/06/2023,UL,Pada crane no.3 dan no. 4 slewing hyd. Pump nock seal bocor,> Crane no. 3 dilakukan penggantian nock seal slewing,Crane,06/06/2023,06/06/2023,,CLOSED
+07/07/2023,UL,"Pompa torque untuk luffing rusak, tidak bisa bergerak","Mengganti pompa torsi luffing, ganti vane pump, relief valve, cleanign tangki, cleaning filter, ganti LO Hydrolik, ganti LO gearbox",Crane,25/06/2023,26/06/2023,,CLOSED
+07/07/2023,UL,"Pompa torque slewing, Pompa Torque Slewing 
+Dan Radiator Dipindahkan ke Crane no.4","Penggantian nock seal pada pompa slewing, pengiriman sparepart",Crane,07/07/2023,07/08/2023,,CLOSED
+25/07/2023,UL,"Pompa torque slewing, Pompa Torque Slewing 
+Dan Radiator Dipindahkan ke Crane no.4","Penggantian nock seal pada pompa slewing, pengiriman sparepart",Crane,07/07/2023,07/08/2023,,CLOSED
+14/09/2023,UL,RPM Hunting mengakibatkan slow down pada M/E Cyl. No. 6 serta exhaust tempterature mengalami overheat high temp.,Melakukan penggantian exhaust valve yang lama dengan spare,ME,25/07/2023,25/07/2023,,CLOSED
+16/10/2023,UL,Cover penutup shaft staffa pecah dan shaft staffa bergeser keluar,Melepas staffa (hoisting motor) untuk diturunkan dan direpair,Crane,14/09/2023,14/09/2023,,CLOSED
+18/10/2023,UL,Pengoperasian crane bongkar di tanjung merpati wire hoisting keluar dari sheave block dan wire bergersek dengan as sheave block yang berakibat wire rantas,Diganti dengan wire hositing yang baru dan dilakukan pengawasan,Crane,16/10/2023,,,CLOSED
+12/02/2024,UL,Mesin induk tidak bisa di start secara manual dari engine side,Memeriksa semua bagian bagian yang berhubungan dengan sistem udara manuver ME yang terdapat diunit box engine side,ME,18/10/2023,19/10/2023,,CLOSED
+12/02/2024,UL,Adanya udara di dalam sistem pendingin AE sehingga tempt CFW menjadi over heating,"1. Check CFW pump AE No.1 2. Mengganti CYL head AE No.1,2,3",AE,12/02/2024,14/02/2024,,CLOSED
+18/03/2024,UL,Adanya udara di dalam sistem pendingin AE sehingga tempt CFW menjadi over heating,"1. Check CFW pump AE No.1 2. Mengganti CYL head AE No.1,2,3",AE,12/02/2024,14/02/2024,,CLOSED
+31/03/2024,UL,,,Boiler,18/03/2024,,,CLOSED
+07/04/2024,UL,,,ME,31/03/2024,,,CLOSED
+27/04/2024,UL,Dowmax luffing yang rusak mengakibatkan JIB crane no.1 tidak bisa naik turun,Memindahkan dowmax dicrane 2 ke crane 1 sambil menunggu sparepart dan kapal dimuat menggunakan 3 crane,Crane,07/04/2024,,,CLOSED
+30/04/2024,UL,Lolosnya compresi cylinder No.1 karena ring piston macet yang di sebabkan lubricating oil tidak keluar / naik ke batang piston sebagai pendingin piston dan pelumas,O/H CYL No.1 AE 2,AE,27/04/2024,,,CLOSED
+04/05/2024,UL,Tiba tiba mengalami ledakan pada crank case door cylinder no.1 dan menyebabkan trip shut down sehingga ACB AE No.3 otomatis lepas dengan sendirinya,Langsung mengecek AE 3 dan ternyata crank door AE 3 cyl no.1 sudah jebol pipi engkolnya keluar dan batang pistonnya lepas,AE,30/04/2024,,,CLOSED
+30/07/2024,UL,Main engine mengalami shut down karena salah satu cyl malfungsi yaitu cyl no.6 water cooling jacket upper pecah sehingga pendinginnya bocor.,OH ME cyl no.6 ganti cooling jacket upper,ME,04/05/2024,05/04/2024,,CLOSED
+08/09/2024,UL,Pompa downmax deck crane mengalami kerusakan crane tidak bisa swing,Penggantian sparepart baru pompa downmax slewing,Crane,30/07/2024,,,CLOSED
+21/09/2024,UL,,,ME,08/09/2024,09/08/2024,,CLOSED
+25/12/2022,UL,Mengalami kebocoran pendinginan air tawar pada salah satu upper jacket cooling cyl no.1 sehingga water cooling jacket uppernya pecah,"Memeriksa, mengganti, mengoverhaul main engine upper jacket cooling",ME,21/09/2024,,,CLOSED
+04/05/2023,MR,M O B Pin smoke terbuka dan habis,"Di ambil di taruh di deck, memjaga jangan sampai jatuh ke laut",LSA,25/12/2022,,,CLOSED
+21/05/2023,MQ,Spiral Ladder palka 3 jatuh karena sudah keropos,Menganggkat tangga spiral kemudian melakukan perbaikan dengan manufaktur tangga spiral yang baru oleh ABD,Outfitting,04/05/2023,23/05/2023,,CLOSED
+22/05/2023,MQ,Main Engine tidak bisa start diakibatkan tidak ada pengapian di masing-masing cylinder,"Dilakukan pergantian injector dan ditemukan solenoid yang sudah tidak berfungsi dengan baik, kemudian dilakukan penggantian solenoid.",ME,21/05/2023,21/05/2023,,CLOSED
+07/06/2022,MQ,Spiral Ladder Jatuh karena keropos,Dilakukan perbaikan tangga spiral palka 7 oleh ABD,Outfitting,22/05/2023,,,CLOSED
+13/06/2023,MQ,Spiral lader palka 2 jatuh karena keropos,Perbaikan oleh ABD,Outfitting,07/06/2022,,,CLOSED
+16/06/2023,MQ,Spiral lader sudah goyang karena pipa utama keropos,"Tangga dipotong dan dikeluarkan dari palka 1, kemudian diganti tangga baru",Outfitting,13/06/2023,,,CLOSED
+26/06/2023,MQ,Peralatan GPS tidak ada arus DC,Sudah dipasang Accu baru tapi tidak ada arus di panel GPS,Navigation,16/06/2023,,,CLOSED
+29/07/2023,MQ,VHF no 1 dan 2 tidak dapat membaca GPS,Sementara pengisian data dilakukan manual,Navigation,26/06/2023,,,CLOSED
+16/02/2024,MQ,Plat Tank Top Palka No 2 Bocor karena terkena Grab darat,Dilakukan pengelasan sementara oleh pihak darat (IMIP) agar ballast bisa diisi kembali dan tidak bocor,Hull & Structure,29/07/2023,29/07/2023,,CLOSED
+08/02/2023,MQ,"Kemudi pada saat Hand Kekanan, Steering bergerak sendiri ke kiri hingga mencapai 40","Dilakukan Emergency Steering
+Dicoba lagi menggunakna Hand (Beberapa Uji Coba) namun kemudi tetap lari ke kiri
+Dicoba menggunakan NFU kemudi berjalan normal",Steering System,16/02/2024,,,CLOSED
+26/02/2023,MZ,Elmot condition short power,"Ganti dengan spare, cek connection cable and merger test, cek & change unit elmot",Grab,08/02/2023,,,CLOSED
+03/04/2023,MZ,,,Grab,26/02/2023,,,CLOSED
+31/05/2023,MZ,Sheave block di falling block crane no.4 tidak mau berputar di karenakan bearing sheave rusak / macet,Mengganti sheave lama dengan sheave yang baru,Crane,03/04/2023,,,CLOSED
+26/06/2023,MZ,Oli hydraulic bocor dari shaft piston (shaft yang rompal atau dikarenakan oli hydrualic sudah bercampur lumpur ) indikasi awal kebocoran seal kits,"Buka shaft piston dan ganti seal kits yang baru, shaft yang baret / terluka dibagian atau dilapping",Grab,31/05/2023,31/05/2023,,CLOSED
+09/09/2023,MZ,"Elmot putaran berat dan lgsg trip off, secara visual bearing bagian luar gear goyang dan rusak",Cek kondisi elmot Buka dan lepas gear pump unit,Mooring System,26/06/2023,,,CLOSED
+21/11/2023,MZ,,,Boiler,09/09/2023,,,CLOSED
+24/12/2023,MZ,,,Compressor,21/11/2023,,,CLOSED
+30/01/2024,MZ,,,Crane,24/12/2023,,,CLOSED
+18/04/2024,MZ,"Block peluncurnya pada sheave covernya menipis karena bergesekan dengan cover block,sehingga bearing pada As nya longgar dan tidak sepan sehingga mengakibatkan bearingnya rusak",Dilakukan penggantian bearing dan sheave cover,Crane,30/01/2024,,,CLOSED
+26/06/2024,MZ,,,Crane,18/04/2024,,,CLOSED
+21/07/2023,MZ,Tekanan pompa jatuh dan suara kasar di area pompa,,AE,26/06/2024,,,CLOSED
+10/08/2023,MU,Jacket cooling (upper) retak,"> Melaporkan ke nakhoda hal trouble motor induk
+> Melakukan stop engine dan mengecek trouble
+> Mengganti dengan spare 1 pcs new",ME,21/07/2023,21/07/2023,,CLOSED
+31/08/2023,MU,Jacket cooling (upper) retak,"> Melaporkan kepada nahkoda terkait trouble M/E Cyl. No. 4
+> Stop engine dan melakukan pengecekan kerusakan
+> Mengganti dengan spare 1 pcs new",ME,10/08/2023,,,CLOSED
+09/10/2023,MU,Jacket cooling pecah,"> Laporan ke nahkoda terkait trouble motor induk
+> Engine stop dan cek trouble
+> Mengganti dengan spare 1 ps ex cyl. No. 5 kondisi retak/doubling plat",ME,31/08/2023,,,CLOSED
+31/10/2023,MU,Wire hoisting crane no. 4 putus strand saat pemuatan,Dilakukan penggantian pada hoisting yang putus dengan wire rope yang baru,Crane,09/10/2023,,,CLOSED
+01/11/2023,MU,Terdengar bunyi dari crane no.1 sangat kasar,,Crane,31/10/2023,,,CLOSED
+20/12/2023,MU,Mesin Induk tidak bisa dilakukan starting,Dilakukan pengecekan dan penggantian starting valve. Dilakukan pengetesan ulang namun belum bisa dan dilakukan start melalui engine side,ME,01/11/2023,,,CLOSED
+27/02/2023,MU,Kelelahan bahan dan Running hours 5108.5 hrs,"> Stop M/E & laporkan ke anjungan mengenai kerusakan.
+> Tutup keran fw to jacket cooling, & keran bahan bakar.
+> Adakan pendinginan M/E ± 30 menit
+> Buka aksesoris M/E cylinder No.3 dan flexible exh manifold.
+> O/H, cabut cylinder head.
+> Cek kondisi jacket water cooling / pecah & bocor.
+> Ganti dengan spare yang sudah siap untuk di pasang",ME,20/12/2023,20/12/2023,,CLOSED
+10/10/2023,BE,"1. Tenaga main engine turum RPM menunjukan naik turun,asap cerobong berkeluk hitam tebal. 2. Main engine mati sendiri 3. Ruang scaving ada penumpukan jelaga sisa pembakaran","1. Buka cover scaving cyl no.1-2-3-4-5-6. 2. Blow up aux.blower ME untuk mendinginkan ruang scaving. 3. Setelah dingin cleaned ruang scaving skrap jelaga, kerak carbon sisa gas buang, balur solar sampai bersih kering. 4. Cerat pipa system bahan bakar keluarkan MFO sampai abis di pipa,ganti supply bahan bakar HSD untuk memulai start ME.",ME,27/02/2023,,,CLOSED
+25/07/2024,BE,1. Kerusakan pada body cover blower korosi. 2. Kerusakan pada elmot tidak bergerak (putar) 3. Kerusakan body rumah elmot (korosi) impeller blower tidak center.,"Buat engsel pembuka dipasang antara flangs body rumah blower sementara untuk check dalam dudukan elmot,di temukan pada impeller fun tidak center body dalam korosi",Accomodation,10/10/2023,,,CLOSED
+25/07/2024,SA,"AE posisi diparalel tiga tiba-tiba terdengar suara yang tidak lazim dari AE, Oiler jaga yang di control room lari kebawah untuk mengecek dan terdengar dentuman keras dari AE 2 seketika terjadi blackout , selanjutnya kita upayakan menyalakan ACB AE 3 untuk menghidupkan penerangan dan memeriksa AE 2 dan ditemukan cover carter cylinder no 4 jebol kiri-kanan di tonjok conetting rod yang jatuh ke carter.",Pergantian part sesuai dengan running hours,AE,25/07/2024,,,CLOSED
+14/07/2024,KM,AE 1 Cylinder no 1 terjadi kelainan. Turbocharge saat posisi running terjadi charging untuk menhindari yang tidak diinginkan diputuskan untuk stop engine,,AE,25/07/2024,,,CLOSED
+11/06/2024,KM,"Officer Jaga menyalakan radar untuk persiapan manouver dan di dapatkan pada radar No.1 X-Band dan Radar No 2 S-band tidak bisa mengkap target/tidak bisa menampilkan target setelah di setting tune,gain dan Sea nya target tetap tidak mau muncul (Scanner berputar dengan baik) . Setelah dilakukan pengecekan (Self Check) Semuanya Memory Check,Sensor Check All Ok ,untuk LINE CHECK : NAV2 : Disconnect, 2AXIS : Disconnect",,Navigation,14/07/2024,,,CLOSED
+27/06/2024,KM,"Kondisi tekanan LO AE 3 turun mencapai 0.304 Mpa, kemudian dilakukan overhaul",,AE,11/06/2024,,,CLOSED
+13/06/2024,NL,"Crane bergerak dengan bunyi kasar, Slewing Bearing termakan karean gesekan. Kemudian dilakukan Rocking Test namun hasilnya melebihi standard Clearancenya.",MElakukan request perbaikan,Crane,27/06/2024,,,CLOSED
+11/12/2023,NL,"Ketika jurumudi patrol keliling ditemukan Grab Guven Crane no 3 tidak tertutup dengan sempurna, ditemukan As Pin Lengan Grab Guven hilang bersaman dengan body pengaman pin yang sudha keropos",,Grab,13/06/2024,,,CLOSED
+11/12/2023,NE,Terjadi kerusakan pada Crank pin bearing pada AE 1 Cylinder no 3 dan Cylinder no 1,,AE,11/12/2023,,,CLOSED
+30/04/2024,NE,Terjadi kerusakan pada Crank pin bearing pada AE 2 Cylinder no 2,,AE,11/12/2023,,,CLOSED
+23/11/2024,UL,,,AE,30/04/2024,,,CLOSED
+18/04/2023,MD,"Disebabkan karena rumah crank pin bearing terlepas, ada satu mur yang terlepas dari bautnya. Akibatnya rumah crank pin bearing meghantam counter weight sampai patah baut pengikatnya. Baut pengikat connecting rod patah semua, Piston dan Liner pecah pada bagian bawah. Kondisi pada permukaan crank pin shaft luka dalam.",,AE,23/11/2024,,,CLOSED
+24/08/2023,HD,"TANGGAL 18 APRIL 2023 , DI TANAH KUNING, SAAT KAPAL BERLABUH DISERANG DALAM RANGKA KEGIATAN BONGKAR BATUBARA, TERJADI KERUSAKAN PADA CRANE NO.1",,Crane,18/04/2023,,,CLOSED
+02/01/2024,HD,"TANGGAL 24 AGUSTUS 2023 , SAAT PERJALANAN DARI TABONEO KE BAHUDOPI, TERJADI PENAMBAHAN AIR BALAST DI DBT1 KANAN",,Hull & Structure,24/08/2023,,,CLOSED
+03/01/2024,HD,"TANGGAL 2 JANUARI 2024 , DI WEDA SAAT KAPAL KEGIATAN BONGKAR BATUBARA, TERJADI KEBOCORAN WBT5P TERBENTUR EXCAVATOR",,Hull & Structure,02/01/2024,,,CLOSED
+03/02/2024,HD,"TANGGAL 2 JANUARI 2024 , DI WEDA SAAT KAPAL KEGIATAN BONGKAR BATUBARA, TERJADI KERUSAKAN AUSTRALIAN LADDER TERBENTUR EXCAVATOR",,Outfitting,03/01/2024,,,CLOSED
+16/07/2023,HD,"TANGGAL 3 FEBRUARI 2024 , DI WEDA SAAT KAPAL KEGIATAN LOADING ATUBARA, TERJADI KERUSAKAN YOKOHAMA FENDER AKIBAT TEKANAN TONGKANG",,Cargo Operation,03/02/2024,,,CLOSED
+28/08/2023,GN,"PADA TANGGAL 16 JULI 2023 PUKUL 05.30 , DI TABONEO, SAAT KAPAL DALAM KEGIATAN LOADING MUATAN DITEMUKAN KERUSAKAN WIRE HOISTING CRANE NO.2",,Crane,16/07/2023,,,CLOSED
+07/09/2023,NZ,Terjadi kebocoran di tank balast 3S dan 3P sehingga air masuk ke dalam TK 3C MFO,Dilakukan pengecekan oleh electrician dan mualim I diketemukan dalam keadaan patah,Pipe,28/08/2023,01/09/2023,,CLOSED
+09/09/2023,NZ,Terjadi kebocoran di pipa di pipa economizer,,Pipe,07/09/2023,07/09/2023,,CLOSED
+14/03/2024,NZ,Terjadi masalah pada AIS di touchscreen,,Bridge System,09/09/2023,,,CLOSED
+14/03/2024,NZ,Echosounder tidak bisa membaca kedalaman,,Bridge System,14/03/2024,,,CLOSED
+25/09/2023,NZ,"AIS Bermasalah di touchscreen bagian tengah bawah (untuk merubah ETA, Destination, dan Draft kapal) jarak lebih dari 5 mil Ais kapal lain tidak terbaca oleh Ais dari MV. Naziha. Kapal berlabuh di bouy Alfa Amamapare dari Port Control Ais Amamapare Ais MV. Naziha tidak terbaca oleh Port Control.",,Navigation,14/03/2024,,,CLOSED
+14/11/2023,NZ,Terjadi suara yang tidak normal pada bilge & balast,,Hull & Structure,25/09/2023,,,CLOSED
+30/06/2023,NZ,As Pompa Oil Blower Side TC ME Patah,,ME,14/11/2023,14/11/2023,,CLOSED
+14/03/2024,NZ,LO Pump mengalami kerusakan yaitu shaft dari LO Pump tersebut patah,,AE,30/06/2023,,,CLOSED
+09/09/2023,NZ,"AIS Bermasalah di touchscreen bagian tengah bawah (untuk merubah ETA, Destination, dan Draft kapal) jarak lebih dari 5 mil Ais kapal lain tidak terbaca oleh Ais dari MV. Naziha. Kapal berlabuh di bouy Alfa Amamapare dari Port Control Ais Amamapare Ais MV. Naziha tidak terbaca oleh Port Control.",,Bridge System,14/03/2024,,,CLOSED
+09/09/2023,NZ,Pembacaaan kedalaman laut tidak akurat,,Bridge System,09/09/2023,,,CLOSED
+20/02/2024,NZ,Penunjukan speed dan trip error/tidak sesuai,,Bridge System,09/09/2023,,,CLOSED
+26/07/2024,NZ,Pipa sensor water inggres didalam palka ditemukan dalam keadaaan patah,,Pipe,20/02/2024,,,CLOSED
+29/08/2024,NZ,Stopper dan Doubling Plate sementara agar aman dan sementara belum bisa di gunakan drill lagi,,LSA,26/07/2024,,,CLOSED
+21/09/2024,NZ,,,Boiler,29/08/2024,29/08/2024,,CLOSED
+30/09/2024,NZ,Terjadi kebocoran boiler keluar dari manhole diketahui adanya air panas keluar dari manhole cleaning bagian ekonomizer & menyembur karena boiler masih ada tekanan uap,,Boiler,21/09/2024,21/09/2024,,CLOSED
+30/09/2024,NZ,Pada saat crew akan mencuci pakaian ditemukan mesin cuci tidak dapat dinyalakan,,Accomodation,30/09/2024,,,CLOSED
+30/09/2024,NZ,"Saat akan memakai scalling untuk perawatan main deck, mesin scalling berfungsi tetapi selang scalling tidak memutar dan ada arus listrik diselang scalling",,General,30/09/2024,,,CLOSED
+30/09/2024,NZ,"Pada saat kapal sandar didermaga dockside amamapare, sewaktu tros buritan dihibob tali tros tidak bisa dipaksakan hibob",,Mooring System,30/09/2024,,,CLOSED
+01/10/2024,NZ,"Pada saat crew komunikasi sewaktu sandar kegiatan muat, dan berlabuh menggunakan HT untuk memudahkan komunikasi",,Bridge System,30/09/2024,,,CLOSED
+08/10/2024,NZ,"sewaktu pengisian TST 2 kiri, TST 5 kiri ikut terisi",,Pipe,01/10/2024,,,CLOSED
+11/11/2024,NZ,Air keluar dari indicator valve AE 1 cylinder head no 1 dan 3,,AE,08/10/2024,,,CLOSED
+12/11/2024,NZ,Kebocoran Oil Hydraulic Brake Cylinder,,Crane,11/11/2024,11/11/2024,,CLOSED
+20/11/2024,NZ,Ketika beroperasi Crane 4 bersuara keras dan Jib tidak bisa bergerak,,Crane,12/11/2024,12/11/2024,,CLOSED
+20/11/2024,NZ,Spiral Leader keropos,,Outfitting,20/11/2024,,,CLOSED
+25/11/2024,NZ,Spiral Leader keropos,,Outfitting,20/11/2024,,,CLOSED
+17/12/2024,NZ,"Saat selesai connect grab kemudian hibob hoisting angkat grab ada suara berderit diujung jib crane 3, dilakukan pengecekan wire hoisting keluar dari sheaves blok dan kondisi wire sudah rantas",,Crane,25/11/2024,,,CLOSED
+01/12/2024,NZ,Spiral Leader keropos,,Outfitting,17/12/2024,,,CLOSED
+01/12/2024,NZ,"Auxiliary Engine 1, 2, 3 tiba tiba berhenti saat seadang bongkar muat",,AE,01/12/2024,01/12/2024,,CLOSED
+01/12/2024,NZ,"Auxiliary Engine 1, 2, 3 tiba tiba berhenti saat seadang bongkar muat",,AE,01/12/2024,01/12/2024,,CLOSED
+14/12/2024,NZ,"Auxiliary Engine 1, 2, 3 tiba tiba berhenti saat seadang bongkar muat",,AE,01/12/2024,01/12/2024,,CLOSED
+16/12/2024,NZ,"Muata dipalka 1 tergenang air, dilakukan sounding TST 1 berkurang dan soundingan WBT 1C bertambah dari 1,5mtr sampai 3,2 mtr ini dikarena kan tanktop WBT 1C bocor atau bolong",,Hull & Structure,14/12/2024,,,CLOSED
+23/11/2024,NZ,"ditemukan pipa peranginan DBT 1 depan yang melawati TST 1 kanan sudah keropos hampir sepanjang pipa peranginan dan ditemukan di dalam palka 1 , 
+",,Hull & Structure,16/12/2024,,,CLOSED
+02/12/2024,NZ,Spiral Leader keropos,,Outfitting,23/11/2024,,,CLOSED
+17/05/2024,NZ,Kebocoran terjadi di pipa-pipa air boiler/pipa-pipa air bagian bawah,,Boiler,02/12/2024,,,CLOSED
+21/08/2024,NE,HYDROULICK HOIST MOTOR ANGKAT GRABE PLUS CARGO TIDAK KUAT. KEMUNGKINAN BESAR DINDING / COVER HYD MOTOR TERKIKIS.,,Crane,17/05/2024,,,CLOSED
+19/09/2024,NE,"- Lintang dan bujur pada GPS tidak berubah seiring berubahnya posisi kapal
+- Hilangnya Frequensi beacon pada GPS dan tidak adanya satelit terdeteksi di monitor GPS
+- Tidak terdeteksinya sensor pada siste",,Navigation,21/08/2024,,,CLOSED
+20/09/2024,NE,"Pipa tekan retak 8cm dekan flen pompa hydraulic, control valve luffing macet",,Crane,19/09/2024,19/09/2024,,CLOSED
+22/10/2024,NE,Pipa tekan retak dekat flange pompa hydraulic,,Crane,20/09/2024,,,CLOSED
+17/10/2024,AU,"Kebocoran pada pendingin freshwater, pada seating exhaust valve",,AE,22/10/2024,,,CLOSED
+29/11/2024,AU,"Kebocoran LO system cylinder head, dikarenakan gasket rusak",,AE,17/10/2024,,,CLOSED
+18/12/2024,AU,Sheave Block Hoisting Crane tidak berputar dan banyak gram-gram,,Crane,29/11/2024,,,CLOSED
+31/12/2024,AU,"Ring piston sudah aus, ditemukan asap pada pembakaran carter Cyl no 1",,AE,18/12/2024,,,CLOSED
+23/06/2024,AU,Kebocoran bagian pendingin compressor no 1 pada valve delivery stage 2,,Compressor,31/12/2024,,,CLOSED
+30/06/2024,SA,Wire Hoisting Crane no 1 Keluar dari drum dan terjepit dari drum,,Crane,23/06/2024,,,CLOSED
+03/09/2024,NZ,Pin Metal Cyl no 1 Jalan Macet,,AE,30/06/2024,,,CLOSED
+03/09/2024,SA,Anak tangga / step gangway sebelah kiri sudah banyak yang keropos,,Outfitting,03/09/2024,,,CLOSED
+02/10/2024,SA,Rantai yokohama fender sudah berkarat dan diameter mengecil sehingga rantai mudah putus,,Cargo Operation,03/09/2024,,,CLOSED
+15/08/2024,SA,ditemukan hydraulic pump Luffing tidak berputar samasekali,,Crane,02/10/2024,,,CLOSED
+23/09/2024,SA,Indikator suara dan lapmu tidak menyala,,LSA,15/08/2024,,,CLOSED
+17/10/2024,NL,Mesin tidak mau Blowup. control governor terbaca lampu pada shut down menyala,,ME,23/09/2024,,,CLOSED
+30/11/2024,NL,Terjadi kebocoran pada pipa bahan bakar mesin induk cyl no 2,,ME,17/10/2024,,,CLOSED
+05/11/2024,NL,"Pada saat mau Buka Hatch Cover, Power windlass tidak ada pressure ( Loose Power )",,Mooring System,30/11/2024,,,CLOSED
+11/08/2024,NL,terjadi kebocoran pada fuel oil high pressure & exhaust gas buang me cyl no 6 rendah.,,ME,05/11/2024,,,CLOSED
+22/09/2024,KM,Grab SMAG tidak dapat menutup dengan rapat,,Grab,11/08/2024,,,CLOSED
+24/09/2024,KM,Patah pada body pin Grab,,Grab,22/09/2024,,,CLOSED
+24/09/2024,KM,Valve Fire Hydrant rusak keropos,,Main Deck,24/09/2024,,,CLOSED
+24/09/2024,KM,Steel Ball Piston Terlepas,,AE,24/09/2024,,,CLOSED
+26/11/2024,KM,Cylinder Liner rusak,,AE,24/09/2024,,,CLOSED
+23/09/2024,MQ,Elmot Ejector FWG high temperature,,FWG,26/11/2024,26/11/2024,,CLOSED
+10/12/2024,RF,"Sheave block hoisting posisi tidak normal, menggeser sehingga menggesek body Jib Head, Snap ring externalnya lepas","Penanggulangan dilakukan melalui proses pelepasan wire, pembongkaran dan penggantian Sheave yang rusak, serta pemasangan kembali ke posisi semula. Setelah penggantian selesai, dilakukan uji fungsi (running test) untuk memastikan sistem beroperasi normal kembali.
+",Crane,23/09/2024,24/09/2024,,CLOSED
+14/10/2024,RF,"PADA SAAT MELAKUKAN PENGECEKAN WIRE CRANE SECARA RUTIN, DITEMUKAN PATAH URAT DI SEPANJANG WIRE DAN PEMBENGKOKAN PADA WIRE HOISTING CRANE NO 4",,Crane,10/12/2024,,,CLOSED
+10/11/2024,KM,Terjadi kebocoran air pendingin di FW Cooling,,AE,14/10/2024,,,CLOSED
+08/12/2024,AK,arus Listrik tidak sampe di electro motor,,Mooring System,10/11/2024,,,CLOSED
+25/07/2023,AK,Saat Hujan lebat ECHO target tidak nampak dalam jarak 4 NM,,Navigation,08/12/2024,,,CLOSED
+01/09/2023,GN,"PADA TANGGAL 25 JULI 2023 , SAAT KAPAL BERLAYAR DARI BAHUDOPI - TABONEO DITEMUKAN KERUSAKAN WIRE HOISTING CRANE NO.2 SAAT DILAKUKAN GREASING",,Crane,25/07/2023,,,CLOSED
+17/10/2023,GN,"PADA TANGGAL 01 SEPTEMBER 2023 , BERMULA RDU ABNORMAL DISERTAI REVOLUTION SHAFT ME ANALOG TIDAK BERFUNGSI NAMUN RPM MASIH NORMAL SELANJUTNYA EPS SYSTEM FAILURE",,ME,01/09/2023,,,CLOSED
+12/01/2025,GN,"PADA TANGGAL 17 OKTOBER 2023 PUKUL 12.20, OHN KAPAL AKAN TIBA DI TANJUNG PEMANCINGAN RADAR NO2 ON DAN DIOPERASIKAN NORMAL, SATU JAM KEMUDIAN LAYAR KEDIP2 SEPARUH LAYAR HILANG",,Navigation,17/10/2023,,,CLOSED
+16/01/2025,NZ,Saat mengangkat beban crane no.2 tidak kuat angkat beban,Dilakukan pengecekan dan ditemukan pompa motor hydraulic hoisting lemah dan dilakukan perbaikan crane no.2 ganti pompa hydraulic hoisting dengan pompa spare,Crane,12/01/2025,01/12/2025,,CLOSED
+12/02/2025,NZ,Terjadi kebocoran oil hydraulik dari shaft motor hydraulic hoist/cargo dimana volume oil hydraulik berkurang ditangkinya dan lampu alarm low level dipanel switchboardnya menyala,Dilakukan penggantian sparepart,Crane,16/01/2025,16/01/2025,,CLOSED
+19/02/2025,NZ,"Pada saat kapal sandar didermaga, kapal goyang lalu karena alun sehingga tali tros kencang dan kendor terus segingga mengakibatkan gesekan tali tros putus dan keadaan tali tros sebagian sudah lapuk",Usaha penanggulangan dipelabuhan tali tros dibikin mata darurat dan dipasang kembali kebolard darat,Mooring System,12/02/2025,,,CLOSED
+22/02/2025,NZ,"Pada saat mesin induk beroperasi terdengar adanya suara mesin yang tidak biasa, dan turbocharge surging, selain itu temperature scaving air juga panas (52 derajat) untuk temperatur gas buang (430 derajat)","Melakukan bongkar pasang atau overhaul mesin induk cylinder no.2 dan melakukan penggantian piston, ring, cylinder set spare yang sudah terakit",ME,19/02/2025,19/02/2025,,CLOSED
+24/02/2025,NZ,"Saat sedang melakukan kegiatan bongkar muatan menggunakan crane kapal, crane no.3 mengalami kerusakan pada pompa hydraulic luffing lemah",,Crane,22/02/2025,,,CLOSED
+26/03/2025,NZ,"Saat kegiatan bongkar muatan menggunakan crane kapal, crane no.1 mengalami kerusakan pada sheave hoisting ditop crane terbelah","Tidak menggunakan crane no.1 untuk sementara waktu, menunggu cargo dipalka 2 habis, crane no.1 direst",Crane,24/02/2025,,,CLOSED
+16/04/2025,NZ,"Saat kapal melaksanakan kegiatan muat menggunakan crane kapal, crane no.3 mengalami kerusakan dimana temperatur oli hydraulic tinggi",,Crane,26/03/2025,,,CLOSED
+21/04/2025,NZ,Tank top pada bagian yang miring dipalka 1 bocor terkena bobcat saat mengumpulkan muatan,Sementara disumbat menggunakan majun dan kawat las guna mengurangi debit air ballast yang keluar dipalka 1,Mooring System,16/04/2025,,,CLOSED
+23/04/2025,NZ,"Saat kapal melaksanakan kegiatan muat menggunakan crane kapal, crane no.3 mengalami kerusakan dimana oli hydraulic bocor pada o ring dipompa luffing saluran keluar",,Crane,21/04/2025,,,CLOSED
+30/04/2025,NZ,"System luffing lemah yang menyebabkan jib crane naiknya sangat pelan sekali dengan tanpa beban, lalu mengalami overheat, LO hydraulic system high temperature","LO cooler, pompa hydraulic, pompa hydraulic hoist diganti baru, lalu melakukan pengecekan kondisi bagian bagian part, adjust pressure",Crane,23/04/2025,23/04/2025,,CLOSED
+14/01/2025,NZ,"Saat kegiatan bongkar muatan menggunakan crane kapal, crane no.3 mengalami kerusakan dimana luffing tidak bisa up, tekanan rendah",,Crane,30/04/2025,,,CLOSED
+25/01/2025,NM,Crank pin metal rusak dimana ada suara semacam ketukan dengan jelas di cylinder no.3 dan Crank pin aus kemungkinan tekanan oli berkurang karena part sudah ada yang aus,Grinding crank pin secara manual,AE,14/01/2025,14/01/2025,,CLOSED
+02/02/2025,NM,Jacket cooling upper cover pecah,"Stop mesin lalu tutup kran in out jacket cooling, stop pompa jacket cooling dan menunggu mesin dingin",ME,25/01/2025,25/01/2025,,CLOSED
+05/04/2025,NM,"Crane no.1 emergency stop dimana oli systemnya terus berkurang didapati bahwa oli system keluar dari bearing drum hoisting, control valve hoisting dan receiver hoisting tidak bisa netral",Oli crane diturunkan dan ditampung didrum lalu dinaikan kembali,Crane,02/02/2025,,,CLOSED
+08/02/2025,NM,Pada saat gentry no.3 melakukan bongkar dan melakukan hibob grab yang sudah terisi cargo sewaktu dihibob sambungan wire yang terdapat kili kili nyangkut pada tutup palkah no.3 bagian depan yang mengakibatkan sobek pada mic gregor,,Hatch Cover,05/04/2025,,,CLOSED
+08/02/2025,AU,Kebocoran air pendingin dari cylinder head no 1&2,O/H cylinder head & mengganti gasket cylinder head dan bagian yang rusak pada cylinder no.1,AE,08/02/2025,02/08/2025,,CLOSED
+08/02/2025,AU,Ada udara yang masuk ke sistem pendingin LT AE no.2,Memperbaiki kebocoran air pendingin pada kompresor,AE,08/02/2025,02/08/2025,,CLOSED
+16/04/2025,AU,Kerusakan pada gasket cylinder head kompresor no.1 sehingga terjadi kebocoran air pendingin,Mengganti gasket cylinder head dengan spare yang ada,Compressor,08/02/2025,02/08/2025,,CLOSED
+06/02/2025,AU,Ada kebocoran oli dari sela sela casing turbo dan casing t/c turbin side membara,Mengganti t/c dengan spare,AE,16/04/2025,17/04/2025,,CLOSED
+31/03/2025,SA,,,Crane,06/02/2025,02/09/2025,,CLOSED
+28/04/2025,SA,Crane no.1 mengalami trouble jip crane (luffing) tidak bisa naik turun (macet),dilakukan penggantian contrantor lalu start untuk memarkirkan jip crane dan dilakukan pada drum luffing,Crane,31/03/2025,,,CLOSED
+20/03/2025,SA,Rest jib crane no.1 turun dengan senidrinya sehingga rest jib crane no.1 melengkung,,Crane,28/04/2025,,,CLOSED
+07/04/2025,KR,Shaft Vane Pump Hydroulick Crane No.4,Melakukan pengecekan pada saat ada hentakan pada crane melaporkan ke kantor untuk di supply vane pump hydroulick,Crane,20/03/2025,,,CLOSED
+11/04/2025,KR,Kerusakan pipa economizer Boiler mengalami kebocoran yang mengakibatkan air tawar lebih boros dari pada biasanya,,Boiler,07/04/2025,,,CLOSED
+04/05/2025,KR,LO Priming pump AE No 2 mengalami short,dilakukan Megger test,Pump,11/04/2025,,,CLOSED
+17/01/2025,KR,Pada Saat kapal manouvering Exh cyl No 6 mengalami exh gas temperature turun (drops),"Call bridge untuk mengambil posisi kapal aman, bridge memberi info aman setelah kpl berhenti (shut off M/E) selanjut kami melakukan pengantian puncture V/V, fuel pump suction V/V beserta mencabut 2 Pcs Fuel Injection valve",ME,04/05/2025,,,CLOSED
+14/01/2025,ND,,,Mooring System,17/01/2025,,,CLOSED
+20/01/2025,ND,Pickup sensor salah satu rusak atau tidak berfungsi,,ME,14/01/2025,,,CLOSED
+18/02/2025,ND,Sensor feed back lubricator salah satunya rusak / tidak berfungsi,,Fuel System,20/01/2025,,,CLOSED
+07/04/2025,ND,Keropos dan bolong,,Hatch Cover,18/02/2025,,,CLOSED
+20/04/2025,ND,Bergeser dari bearingnya,"Dr-reposisi dengan 
+menggunakan treker",Crane,07/04/2025,,,CLOSED
+07/01/2025,ND,"PRES FW PUMP TURUN SAMPAI 1 BAR,ALARM TEMP FW COOL JACKET CYL NO 2 SAMPAI 95 DERAJAT CELCIUS,RPM MESIN SLOW DOWN.",OVERHAUL MENGGANTI COOLING JACKET UPPER DENGAN SPARE YG ADA,ME,20/04/2025,20/04/2025,,CLOSED
+18/02/2025,KY,- Radar No.2 (S-band) pada waktu digunakan kapal saat sebelum tiba sandar weda tidak bisa digunakan,,Navigation,07/01/2025,,,CLOSED
+18/02/2025,KY,,,Crane,18/02/2025,,,CLOSED
+,KY,Luffing crane tidak bisa keatas dan kebawah,,Crane,18/02/2025,,,CLOSED
+,KY,Compresor tidak mau distart lalu conneticting rod patah,"Karena di kapal tidak ada spare 
+Akan dilakukan pergantian connecting rod saat spare ada 
+",General,,,,CLOSED
+,KY,GPS No.1 terkadang alarm window 212 (loss position) tidak menunjukan posisi lintang bujur sehingga di ecdis dan vhf tidak membaca lintang bujur dari GPS N0.1,Dilakukan restart ulang gps no.1 kembali normal namun balik lagi loss position,Navigation,,,,CLOSED
+01/05/2025,KY,Ketika running luffing terjadi kebocoran karena baut pengikat rusak,,Crane,,,,CLOSED
+,KY,Electro motor shot body,Bersihkan dengan electric contact cleaner dan di insulating varnish ulang.,Pump,01/05/2025,,,CLOSED
+03/05/2025,NL,Kondisi rantas sebanyak 11 titik,Mengganti wire hoisting dengan spare,Crane,,,,CLOSED
+07/01/2025,NL,Wire luffing rantas,Mengganti wire luffing dengan spare,Crane,03/05/2025,,,CLOSED
+11/02/2025,HM,Terdapat kebocoran pada back up ring dan seal pada stafa hatch cover winch No.6,,Hatch Cover,07/01/2025,,,CLOSED
+31/03/2025,HM,Staffa bintang & oil motor hatch cover no.5 oil pada seal,,Hatch Cover,11/02/2025,,,CLOSED
+05/01/2025,NW,"terjadi kerusakan pada Auxiliary Engine No 1 
+cylinder No 3. Yang disebabkan karena baut connecting rod patah yang mengakibatkan connecting 
+rod dan piston lepas mengenai crank shaft dan bodi",,AE,31/03/2025,,,CLOSED
+06/01/2025,NT,APM CONTROL FOR AE.2 FAIL TO SUPPLY CURRENT,MENGGANTI APM CONTROL DENGAN NEW SPARE,AE,05/01/2025,01/06/2025,,CLOSED
+07/01/2025,NT,T/C stuck karena surging,Mengganti T/C dengan used,AE,06/01/2025,01/06/2025,,CLOSED
+07/01/2025,SH,Piston bagian kanan patah di grab no.1 dan piston bagian kiri bengkok,Melakukan pengecekan dan overhaule,Grab,07/01/2025,,,CLOSED
+11/02/2025,HM,Terdapat kebocoran pada back up ring dan seal pada stafa hatch cover winch No.6,"Buka hatch cover winch dari tempatnya, membuka tutup palka secara manual",Hatch Cover,07/01/2025,,,CLOSED
+15/01/2025,HM,Terjadi ketidaksesuaian pada motor oil/staffa bintang dimana terjadi kebocoran pada oil seal motor oil,Melakukan pengecekan pada oil seal dan menutup pipa hydrolik motor oil,Hatch Cover,11/02/2025,,,CLOSED
+04/02/2025,KM,ME fuel rail pressure very low,"Check dan cleaning transmister dan engine speed sensor, O/H fuel press control unit, ganti solenoid valve",ME,15/01/2025,16/01/2025,,CLOSED
+25/02/2025,KM,Crane no.2 tidak bisa gerak kekanan dan kekiri,"Melakukan overhaul motor hydraulik slewing, control valve, melakukan cleaning filter",Crane,04/02/2025,02/05/2025,,CLOSED
+24/03/2025,KM,Ditemukan kerusakan atau berlubang akibat keropos pada tutup fairlead dihaluan dan buritan ketika fairlead dilaksanakan perawatan,Mengukur cover fairlead untuk dikirim kekantor dan membuat laporan kerusakan,Mooring System,25/02/2025,,,CLOSED
+19/04/2025,KM,ME Exhaust valve tidak bisa menutup dengan rapat,"Mengganti exhaust valve dengan spare yang ada, melakukan running test me untuk memastikan bahwa normal",ME,24/03/2025,25/03/2025,,CLOSED
+09/01/2025,KM,Main Engine Jacket Guide Lower Pecah,"Mengganti jacket guide lower, cylinder head dengan spare, o ring jacket guide new 2 pcs",ME,19/04/2025,19/04/2025,,CLOSED
+28/01/2025,MY,,,Crane,09/01/2025,13/01/2025,,CLOSED
+28/01/2025,MY,Terjadi kebocoran oli pada hydraulic motor hoisting,,Crane,28/01/2025,,,CLOSED
+01/05/2025,MY,Terjadi kebocoran sistem pending air tawar pada ruang compresi,,Compressor,28/01/2025,,,CLOSED
+08/02/2025,MY,Boiler susah untuk menyala kemungkinan dari smoke tube yang banyak buntu,Dilakukan pembersihan pada smoke tube,Boiler,01/05/2025,,,CLOSED
+30/04/2025,MQ,"Setelah Setelah di transmit tidak muncul 
+Target/Objek, Untuk sinyal seperempat tidak Full Antena masih berputar","Dimatikan untuk sementar waktu dan saat di On kembali,masih belum muncul juga target/Objek nya",Navigation,08/02/2025,,,CLOSED
+22/01/2025,MR,Pada saat OHN dilakukan persiapan kemudi dan ditemukan di anjungan bahwa indikator daun kemudi stuck di 20 derajat kiri namun kemudi masih bisa di gerakan dan normal,"Pengecekan pada system kemudi kapal secara menyeluruh, pengecekan pada power 110, Tes kemudi menggunakan 
+hydraulic pump no.2 
+voltage, Pengecekan pada transmitter",Engine Propulsion,30/04/2025,,,CLOSED
+02/01/2025,MZ,"Minim pencitraan pada objek sekitar,auto tuning tidak mau naik (tidak maksimal)",,Navigation,22/01/2025,,,CLOSED
+20/02/2025,MZ,Wire rantas dan setelah di cek pemakaian jamnya sudah melebihi RH yaitu 2058 jam 36 menit,,Crane,02/01/2025,,,CLOSED
+10/04/2025,MZ,"Patah shaft jacket cool pump,LO pump shaft bengkok,LO pressure turun dan drop T/C jammed","Penanganan dilakukan melalui pembongkaran menyeluruh pada sistem silinder, pelumasan, pendinginan, serta unit turbocharger. Seluruh komponen yang rusak telah diganti atau diperbaiki, termasuk piston, cylinder liner, crankpin bearing, shaft, dan pompa terkait. Dilakukan juga overhaul turbocharger serta penggantian dengan unit recondition. Setelah pemasangan ulang dan pembersihan crankcase serta penggantian oli pelumas, dilakukan uji coba (running test) dan hasilnya menunjukkan kondisi mesin telah kembali normal dan berfungsi dengan baik.",AE,20/02/2025,25/02/2025,,CLOSED
+11/01/2025,MZ,Terdengar suara kasar dan keras disekitar area pompa jacket cooling disaat aux engine running dimana shaft dan gear rusak,Dilakukan overhaul fw jacket cooling pump bekas dan mengganti komponen dalamnya,AE,10/04/2025,04/10/2025,,CLOSED
+12/02/2025,UL,Karena cuaca hujan maka dilakukan penutupan palka no. 1-4 pada saat menutup palka 4 & 3 terjadi kebocoran pipa hydrolik,,Pipe,11/01/2025,,,CLOSED
+20/02/2025,UL,lt genset distop karena terjadi pada filter fuel high yang apabila distop akan terjadi kerusakan yang lainnya,Karena sparepart dikapal tidak ada maka crew akan turun beli filter ke balikpapan yang sudah dikomunikasikan dengan pihak tokonya,Crane,12/02/2025,,,CLOSED
+22/02/2025,UL,Terjadi kebocoran pada stafa pump crane no.4,Dilakukan pengecekan pada crane dan ditemukan keretan pada stafa yang mengakibatkan kebocoran,Crane,20/02/2025,,,CLOSED
+23/02/2025,UL,Terjadi kebocoran pipa boiler,Melakukan perbaikan dengan estimasi selesai 24.00 atau 5 jam,Boiler,22/02/2025,,,CLOSED
+24/02/2025,UL,Terjadi stop mesin yang dikarenakan pada ME jacket cooling no.2 pecah,Langsung dilakukan perbaikan,ME,23/02/2025,,,CLOSED
+24/02/2025,UL,Main engine mengalami kebocoran pendinginan air tawar pada salah satu upper jacket cooling cylinder no.2 sehingga water cooling jacket uppernya pecah,Memeriksa dan mengoverhaul main engine upper jacker cooling cylinder no.2 dan mengganti main engine upper jacket cooling dengan spare yang baru,ME,24/02/2025,,,CLOSED
+25/02/2025,UL,Terjadi stop mesin yang dikarenakan pada ME jacket cooling no.6 pecah,Langsung dilakukan perbaikan,ME,24/02/2025,,,CLOSED
+25/02/2025,UL,Saat berlayar AE No.2 tidak mau dibagi beban ketika beban dinaikan AE no.1 maka AE no.2 mengikuti AE no.1 begitu ketika dikurangi,Dilakukan pengecekan terhadap AVR dan AE ditemukan bahwa gear pada governor tidak dapat saling menempel,AE,25/02/2025,,,CLOSED
+04/03/2025,UL,Main Engine water cooling upper pecah pada cylinder no.6 sehingga terjadi kebocoran pada pendinginan air tawar,Memeriksa dan mengoverhaul main engine upper jacket cooling cylinder no.6 lalu mengganti main engine upper jacket cooling dengan psare yang baru,ME,25/02/2025,,,CLOSED
+08/03/2025,UL,Kebocoran boiler deras dan tidak bisa toleransi,Dilakukan perbaikan dengan estimasi -/+ 24 jam,Boiler,04/03/2025,,,CLOSED
+11/03/2025,UL,Terjadi stop mesin yang dikarenakan pada ME jacket cooling bawah no.2 pecah,Langsung dilakukan penggantian jacket cooling lower cylinder no.2 dengan spare part baru,ME,08/03/2025,,,CLOSED
+13/03/2025,UL,Saat selesai install wire penuntun wire luffing dan saat dihibob wire luffing dan saat akan hibob wire luffing crane no.4 start terjadi elmot short body,,Crane,11/03/2025,,,CLOSED
+16/03/2025,UL,Pada saat start crane no.4 terjadi suara letupan pada mcb di ecr dan terjadi elmot short body pada crane no.4,Akan diganti elmot ambil dari crane no.2,Crane,13/03/2025,,,CLOSED
+17/03/2025,UL,Kebocoran pipa pipa pada boiler,Pengepropan dan pengelasan pada pipa pipa bocor diboiler,Boiler,16/03/2025,,,CLOSED
+19/01/2025,UL,Saat akan test me ditunda karena compresor tidak bisa isi angin karena packing rusak dan me tida bisa dihandset atau actuator abnormal,Mencari sensor handset ME yang kembali lagi dan melakukan perbaikan packing compresor,ME,17/03/2025,,,CLOSED
+17/02/2025,MF,"Tidak menampilkan data data cautionnya menunjukan "" norensponse from comunication unit""",Telah dilakukan restart dan melihat buku manual tapi tidak ada di troubleshooting,Navigation,19/01/2025,,,CLOSED
+25/02/2025,RF,Ketika running terjadi suara kasar pada AE 2 low cool press in lalu temperature jacket AE 2 naik,Dilakuka stop running pada AE 2 kemudia melakukan pemeriksaan pada c.w pump,AE,17/02/2025,,,CLOSED
+17/03/2025,BE,Pada saat kapal akan melakukan ohn/manuver untuk sandar c/e melakukan test terhadap bow thruster tetapi control pada panel bridge tidak mau connect,"Dilakukan pengecekan pada panel dibridge,ecr, dan haluan pada ruangan bow thruster lalu dilakukan juga pengecekan pada elmot dan system hydraulic bow thruster",Engine Propulsion,25/02/2025,,,CLOSED
+11/04/2025,BE,Pada saat air compressor no.2 dijalankan terjadi suara ketukan pada compressor,Dilakukan pembongkaran pada compressor untuk mengeluarkan piston,Compressor,17/03/2025,18/03/2025,,CLOSED
+27/04/2025,BE,Ketika dilakukan oli ternyata oli berwarna putih dengan indikasi oli bercampur air,"Mematikan main generator, melakukan penggantian dan pembongkaran",ME,11/04/2025,04/11/2025,,CLOSED
+05/05/2025,NM,Saat dilakukan pengecekan ditemukan bahwa bilges 2 kanan dan kiri adanya penambahan air bilges (got),"Melakukan pengecekan secara berulang dan dilakukan pengecekan pada hydroulik pump,valve dan cran",Bilge System,27/04/2025,,,CLOSED
+15/01/2025,NM,Water Jacket Upper Cyl No.2 pecah,Overhaul penggantian water jacket dengan sapre yang baru,ME,05/05/2025,05/04/2025,,CLOSED
+13/04/2025,FZ,Saat bongkar batu bara terjadi kerusakan crane no.2,Kegiatan menggunakan crane no.2 distop dan langsung melakukan pengecekan,Crane,15/01/2025,,,CLOSED
+21/01/2025,FZ,Tidak dapat mengadakan mauatan batu bara curah sesuai stowage,,Main Deck,13/04/2025,28/04/2025,,CLOSED
+06/01/2025,MD,Bend break/dudukan kampas rem hoisting drum crane no.4 patah,Kita lakukan pengelasan sementara karena material Bend Break dari Besi Cor,Crane,21/01/2025,,,CLOSED
+06/03/2025,MD,Saat kegiatan muat telah terjadi kerusakan pada genset dimana stang piston patah yang mengakibatkan genset tidak bisa digunakan,,Emergency Generator,06/01/2025,,,CLOSED
+12/01/2025,MD,Grab Smack terdapat kerusakan diconnector males terbakar,,Grab,06/03/2025,,,CLOSED
+20/01/2025,AK,Crane no.3 terdapat suara kasar tidak sebagaimana biasanya,Melaporkan pengecekan oleh masinis pada gear box dan penambahan LO,Crane,12/01/2025,16/01/2025,,CLOSED
+21/01/2025,AK,Pada Saat Pengecekan Rutin Setelah Kegiatan Muat di Muara jawa Kami Menemukan Wire Hoisting Crane 1 Dalam Kondisi Damage Strands DiBeberapa,Untuk sementara crane tersebut tidak dapat digunakan sampai pergantian wire tersebut telah diganti dengan yang baru,Crane,20/01/2025,,,CLOSED
+21/01/2025,AK,Pada Saat Pengecekan Rutin Setelah Kegiatan Muat di Muara jawa Kami Menemukan Wire Hoisting Crane 3 Dalam Kondisi Damage Strands DiBeberapa,Untuk sementara crane tersebut tidak dapat digunakan sampai pergantian wire tersebut telah diganti dengan yang baru,Crane,21/01/2025,,,CLOSED
+21/01/2025,AK,Pada Saat Pengecekan Rutin Setelah Kegiatan Muat di Muara jawa Kami Menemukan Wire Hoisting Crane 4 Dalam Kondisi Damage Strands DiBeberapa,Untuk sementara crane tersebut tidak dapat digunakan sampai pergantian wire tersebut telah diganti dengan yang baru,Crane,21/01/2025,,,CLOSED
+24/01/2025,AK,"Pada saat pengecekan EEBD terdapat ditermukan segel katup pengaktifan terlepas, tekanan udara habis dari 200 bar sampai 0",Memasang segel katup pressure namun tidak dapat terpasang lagi dan device tersebut sementara tidak dapat digunakan lagi karena air cylinder 0 bar,LSA,21/01/2025,,,CLOSED
+12/03/2025,AK,ECDIS No.2 tidak terbaca,ECDIS No.2 dimatikan ulang dan di nyalakan kembali tetapi tampilan layar tetap data D tidak terbaca,Navigation,24/01/2025,,,CLOSED
+08/03/2025,AK,"Abnormal condition Handle 
+remote , Abnormal condition Relief valve","checking condition, cleaning & lapping",LSA,12/03/2025,,,CLOSED
+03/04/2025,AK,Wire crane no.3 terdapat perubahan bentuk pada wire hoisting,Mengadakan pengecekan dan shve block crane dan roler drum saat jib crane posisi rest semua roler berputar dengan normal dan pada roll drum juga tidak ada,Crane,08/03/2025,,,CLOSED
+11/04/2025,AK,"Electromotor Indication Short 
+Body",Overhaul Electro Moto,Mooring System,03/04/2025,,,CLOSED
+17/01/2025,AK,.Electromotor Burnt out,Overhaul Electro Motor to rewinding,Pump,11/04/2025,04/11/2025,,CLOSED
+09/01/2025,NN,"Error Assembly: Bearings and Connecting Rods are not in the precise positions, whereas the bearings should be in a stationary or precise position.",,Compressor,17/01/2025,,,CLOSED
+04/02/2025,SN,Saat menjalankan machinery hydrolic oil terjadi ketidaksesuaian pada motor oil / motor bintang hatch cover no. 6,"Kami lakukan pengechekan,diketahui kebocoran pada oil seal motor bintang Untuk sementara kegiatan buka-tutup palka no. 6 di lakukan manual pakai alat-alat bantu, seperti chain block, wire, tali tros, dan alat pendukung lainnya.
+Kami telah buka motor oil",Hatch Cover,09/01/2025,,,CLOSED
+17/02/2025,SN,"Oil Mist Detector, tr way valve me,control star spwfg, grounding Abnormal,",Pengecekan dan perbaikan,ME,04/02/2025,,,CLOSED
+20/03/2025,SN,Tunnel Dutc keel terendam,Perbaikan oleh mandor elect diassit deck team,Hull & Structure,17/02/2025,,,CLOSED
+26/03/2025,SN,,,ME,20/03/2025,,,CLOSED
+26/03/2025,SN,Adanya Suara Keras Dimesin Cylinder No.1 & 3,Cek dan perbaiki kerusakan ganti material yang rusak,ME,26/03/2025,26/03/2025,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
+,,,,,,,,CLOSED
