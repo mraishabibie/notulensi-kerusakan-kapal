@@ -100,8 +100,10 @@ with st.container(border=True):
         )
     
     with col_btn_vessel:
-        # Tombol Select All / Clear Selection Kecil di samping kanan
-        st.markdown("<p style='font-size: 10px; margin-bottom: 0;'>&nbsp;</p>", unsafe_allow_html=True) # Spacer kecil
+        # Menambahkan spacer HTML yang lebih pendek (untuk menyelaraskan vertikal)
+        st.markdown("<div style='height: 24px;'></div>", unsafe_allow_html=True)
+        
+        # Menggunakan st.button dengan CSS font-size kecil dan padding minimal
         st.button(
             "All/Clear", 
             on_click=toggle_all_vessels, 
@@ -336,3 +338,4 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
+
