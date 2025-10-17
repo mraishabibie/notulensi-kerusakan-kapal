@@ -11,19 +11,23 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     st.stop() 
 
 # --- Konfigurasi ---
-DATA_FILE = 'notulensi_kerusakan.csv'
+# Catatan: DATA_FILE sekarang berada di root repositori
+DATA_FILE = 'notulensi_kerusakan.csv' 
 COLUMNS = ['Day', 'Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Issued Date', 'Closed Date', 'Keterangan', 'Status'] 
 DATE_FORMAT = '%d/%m/%Y'
 
 # --- Fungsi Manajemen Data ---
 
-# Gunakan cache global tanpa TTL, cache ini akan di-clear paksa dari halaman 1
 @st.cache_data() 
 def load_data_dashboard():
     """Memuat data dari CSV dan melakukan pre-processing untuk analisis."""
     if os.path.exists(DATA_FILE):
-        df = pd.read_csv(DATA_FILE)
-        
+        try:
+            df = pd.read_csv(DATA_FILE)
+        except Exception as e:
+            st.error(f"Gagal memuat file data '{DATA_FILE}'. Error: {e}")
+            return pd.DataFrame()
+            
         if 'Closed Date' not in df.columns:
              df['Closed Date'] = pd.NA
         
@@ -46,7 +50,7 @@ def load_data_dashboard():
         
         return df
     else:
-        st.error(f"File data '{DATA_FILE}' tidak ditemukan. Pastikan sudah ada.")
+        st.info(f"File data '{DATA_FILE}' tidak ditemukan di lokasi yang diharapkan. Pastikan sudah ada.")
         return pd.DataFrame()
 
 # --- Tampilan Utama Dashboard ---
@@ -88,11 +92,12 @@ with st.container(border=True):
     
     df_closed = df_filtered[df_filtered['Status'] == 'CLOSED'].copy()
     
+    # Hitung Avg. Waktu Penyelesaian Global (MTTR Global)
     if not df_closed.empty and df_closed['Resolution_Time_Days'].notna().any():
         avg_res_time = df_closed[df_closed['Resolution_Time_Days'] >= 0]['Resolution_Time_Days'].mean() 
-        col_avg_days_res.metric("Avg. Waktu Penyelesaian", f"{avg_res_time:,.1f} Hari")
+        col_avg_days_res.metric("Avg. Waktu Penyelesaian (MTTR)", f"{avg_res_time:,.1f} Hari")
     else:
-        col_avg_days_res.metric("Avg. Waktu Penyelesaian", "N/A")
+        col_avg_days_res.metric("Avg. Waktu Penyelesaian (MTTR)", "N/A")
 
 st.markdown("---")
 
@@ -100,7 +105,7 @@ st.markdown("---")
 # === Bagian 2: Analisis Detail Menggunakan Tabs ===
 # =========================================================
 
-tab_unit, tab_vessel, tab_time = st.tabs(["📊 Analisis Unit/Sistem", "⚓ Kinerja Kapal", "📈 Tren Kerusakan"])
+tab_unit, tab_vessel, tab_time, tab_kpi = st.tabs(["📊 Analisis Unit/Sistem", "⚓ Kinerja Kapal", "📈 Tren Kerusakan", "🏆 Metrik Keandalan (MTBF/MTTR)"])
 
 with tab_unit:
     st.subheader("Penyebaran Kerusakan berdasarkan Unit/Sistem")
@@ -164,7 +169,6 @@ with tab_vessel:
     df_vessel_open = df_filtered[df_filtered['Status'] == 'OPEN']
     vessel_open_counts = df_vessel_open.groupby('Vessel').size().sort_values(ascending=False).reset_index(name='Jumlah OPEN')
     
-    # --- PERBAIKAN UNTUK RATA TENGAH VISUAL ---
     st.data_editor(
         vessel_open_counts,
         column_config={
@@ -172,16 +176,14 @@ with tab_vessel:
                 "Jumlah OPEN",
                 format="%d", 
                 help="Total laporan yang masih OPEN",
-                # Menggunakan lebar sangat kecil untuk memaksa angka berada di tengah secara visual
                 width="small" 
             )
         },
         column_order=['Vessel', 'Jumlah OPEN'],
         hide_index=True,
         use_container_width=True,
-        disabled=True # PENTING: Untuk membuatnya terlihat seperti tabel biasa dan tidak dapat diedit
+        disabled=True 
     )
-    # ----------------------------------------
 
 
 with tab_time:
@@ -231,3 +233,72 @@ with tab_time:
         st.plotly_chart(fig_timeline, use_container_width=True)
     else:
         st.info("Tidak ada laporan yang berstatus OPEN.")
+        
+        
+with tab_kpi:
+    st.subheader("🏆 Metrik Keandalan Unit (MTBF & MTTR)")
+    
+    if df_filtered.empty:
+        st.info("Data tidak cukup untuk menghitung metrik keandalan.")
+    else:
+        
+        # --- PERHITUNGAN MTBF (Mean Time Between Failures) ---
+        start_date = df_filtered['Date_Day'].min()
+        end_date = datetime.now()
+        total_period_days = (end_date - start_date).days
+        
+        if total_period_days <= 0:
+            st.warning("Periode data terlalu singkat untuk analisis MTBF.")
+        else:
+            # Hitung Jumlah Kegagalan (Failure Count) per Unit
+            failure_counts = df_filtered.groupby('Unit').size().reset_index(name='Jumlah Kerusakan')
+            
+            # Hitung MTBF (Hari/Kegagalan)
+            failure_counts['MTBF (Hari)'] = total_period_days / failure_counts['Jumlah Kerusakan']
+            
+            
+            # --- PERHITUNGAN MTTR (Mean Time to Repair) ---
+            # Hanya gunakan data yang sudah CLOSED
+            df_closed_mttr = df_filtered[df_filtered['Status'] == 'CLOSED'].copy()
+
+            if not df_closed_mttr.empty:
+                # Hitung rata-rata Resolution_Time_Days per Unit
+                mttr_unit = df_closed_mttr.groupby('Unit')['Resolution_Time_Days'].mean().reset_index(name='MTTR (Hari)')
+                
+                # Gabungkan MTBF dan MTTR
+                reliability_metrics = pd.merge(failure_counts, mttr_unit, on='Unit', how='left').fillna({'MTTR (Hari)': np.nan})
+                
+                # Format dan sort berdasarkan MTBF Terendah (paling tidak andal)
+                mtbf_mttr_display = reliability_metrics.sort_values(by='MTBF (Hari)', ascending=True).reset_index(drop=True)
+
+                st.info(f"Analisis MTBF dilakukan selama periode **{total_period_days:,.0f} Hari** (dari {start_date.strftime('%d/%m/%Y')} hingga Hari Ini). MTTR hanya dihitung dari laporan yang sudah CLOSED.")
+
+                st.markdown("##### 1. Keandalan dan Efisiensi Perbaikan per Unit")
+                
+                # Tampilkan tabel gabungan MTBF dan MTTR
+                st.data_editor(
+                    mtbf_mttr_display,
+                    column_config={
+                        "MTBF (Hari)": st.column_config.NumberColumn(
+                            "MTBF (Keandalan)",
+                            format="%.1f",
+                            help="Rata-rata Hari Kalender antar kerusakan (Semakin Kecil, Semakin Tidak Andal)"
+                        ),
+                        "MTTR (Hari)": st.column_config.NumberColumn(
+                            "MTTR (Perbaikan)",
+                            format="%.1f",
+                            help="Rata-rata Waktu yang dibutuhkan untuk menutup laporan (Semakin Besar, Semakin Lambat Perbaikan)"
+                        ),
+                        "Jumlah Kerusakan": st.column_config.NumberColumn(
+                            "Kerusakan",
+                            format="%d",
+                            width="small"
+                        )
+                    },
+                    column_order=['Unit', 'Jumlah Kerusakan', 'MTBF (Hari)', 'MTTR (Hari)'],
+                    hide_index=True,
+                    use_container_width=True,
+                    disabled=True
+                )
+            else:
+                st.warning("Tidak ada laporan yang berstatus CLOSED, sehingga MTTR per Unit tidak dapat dihitung.")
