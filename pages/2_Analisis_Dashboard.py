@@ -42,10 +42,12 @@ def load_data_dashboard():
         # Hapus baris di mana Date_Day tidak valid
         df = df.dropna(subset=['Date_Day']).reset_index(drop=True)
         
-        # Hitung Resolution Time (hanya untuk yang sudah CLOSED dan tanggal valid)
-        df['Resolution_Time_Days'] = (df['Date_Closed'] - df['Date_Issue']).dt.days
-        # Bersihkan Resolution_Time_Days yang negatif (issue > closed)
-        df.loc[df['Resolution_Time_Days'] < 0, 'Resolution_Time_Days'] = np.nan
+        # --- IMPLEMENTASI FORMULA MTTR INKLUSIF (+1) ---
+        # MTTR = (Tanggal Selesai - Tanggal Issue) + 1 hari
+        df['Resolution_Time_Days'] = (df['Date_Closed'] - df['Date_Issue']).dt.days + 1
+        
+        # Bersihkan Resolution_Time_Days yang tidak valid (misal, Issue Date setelah Closed Date atau 0)
+        df.loc[df['Resolution_Time_Days'] <= 0, 'Resolution_Time_Days'] = np.nan
         
         return df
     else:
@@ -93,7 +95,7 @@ with st.container(border=True):
     
     # Hitung Avg. Waktu Penyelesaian Global (MTTR Global)
     if not df_closed.empty and df_closed['Resolution_Time_Days'].notna().any():
-        avg_res_time = df_closed[df_closed['Resolution_Time_Days'] >= 0]['Resolution_Time_Days'].mean() 
+        avg_res_time = df_closed[df_closed['Resolution_Time_Days'] > 0]['Resolution_Time_Days'].mean() 
         col_avg_days_res.metric("Avg. Waktu Penyelesaian (MTTR)", f"{avg_res_time:,.1f} Hari")
     else:
         col_avg_days_res.metric("Avg. Waktu Penyelesaian (MTTR)", "N/A")
