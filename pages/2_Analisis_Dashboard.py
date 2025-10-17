@@ -92,6 +92,7 @@ with st.container(border=True):
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
     with col_filter_vessel_select:
+        # PERBAIKAN 1: Tambahkan label multiselect di sini
         st.write("Filter Kapal (Pilih 1 atau Lebih)")
         
         # --- KODE CSS UNTUK MEMBATASI TINGGI MULTISELECT ---
@@ -107,17 +108,17 @@ with st.container(border=True):
             unsafe_allow_html=True
         )
         
-        # Menggunakan st.multiselect dengan DEFAULT=all_vessels
+        # Menggunakan st.multiselect dengan label kosong
         selected_vessels = st.multiselect(
-            label="", # Label dihapus karena sudah ada di st.write di atas
+            label="", # Label dihapus
             options=all_vessels, 
-            default=all_vessels, # <--- PERUBAHAN DI SINI: Default memilih semua kapal
+            default=all_vessels, 
             key="filter_vessel_dashboard"
         )
     
     with col_btn_vessel:
-        # Tombol Select All / Clear Selection Kecil di samping kanan (Menggunakan Ikon)
-        st.markdown("<div style='height: 33px;'></div>", unsafe_allow_html=True) 
+        # PERBAIKAN 2: Ganti Spacer dengan label kosong pendek agar tombol sejajar dengan filter.
+        st.write("#") # Ini akan menciptakan spacer vertikal yang lebih pendek
         st.button(
             "🔄", 
             on_click=toggle_all_vessels, 
@@ -352,3 +353,4 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
+
