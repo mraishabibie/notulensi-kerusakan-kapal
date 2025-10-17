@@ -244,7 +244,7 @@ else:
 # === TOMBOL INPUT & FORMULIR ===
 # =========================================================
 
-st.markdown("---")
+st.write("")
 if st.button("➕ Tambah Laporan Kerusakan Baru", use_container_width=True):
     st.session_state.show_new_report_form_v2 = not st.session_state.show_new_report_form_v2
 
@@ -348,4 +348,5 @@ with st.expander("📁 Lihat Riwayat Laporan (CLOSED)"):
                      hide_index=True, 
                      use_container_width=True,
                      column_order=COLUMNS,
+
                      )
