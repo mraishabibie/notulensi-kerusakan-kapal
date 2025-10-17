@@ -100,27 +100,13 @@ with st.container(border=True):
         )
     
     with col_btn_vessel:
-    # Spacer untuk merapikan posisi tombol
-    st.markdown("<div style='height: 33px;'></div>", unsafe_allow_html=True)
-    
-    # CSS khusus untuk tombol All/Clear
-    st.markdown("""
-        <style>
-        div[data-testid="stButton"] button[kind="secondary"][data-testid="stButton"][id^="allclear-btn"] {
-            font-size: 11px !important;
-            padding: 3px 6px !important;
-        }
-        </style>
-    """, unsafe_allow_html=True)
-
-    # Tombol dengan key unik supaya bisa ditarget CSS-nya
-    st.button(
-        "All/Clear",
-        key="allclear-btn",
-        on_click=toggle_all_vessels,
-        use_container_width=True
-    )
-
+        # Tombol yang terlalu besar
+        st.markdown("<div style='height: 30px;'></div>", unsafe_allow_html=True)
+        st.button(
+            "All/Clear", 
+            on_click=toggle_all_vessels, 
+            use_container_width=True
+        )
 
     # Filter data utama
     df_filtered = df.copy()
@@ -349,6 +335,7 @@ with tab_kpi:
         )
     else:
         st.warning("Tidak ada laporan yang berstatus CLOSED dalam kombinasi filter ini, sehingga MTTR per Unit tidak dapat dihitung.")
+
 
 
 
