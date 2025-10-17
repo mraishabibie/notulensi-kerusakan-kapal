@@ -11,7 +11,6 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     st.stop() 
 
 # --- Konfigurasi ---
-# Catatan: DATA_FILE sekarang berada di root repositori
 DATA_FILE = 'notulensi_kerusakan.csv' 
 COLUMNS = ['Day', 'Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Issued Date', 'Closed Date', 'Keterangan', 'Status'] 
 DATE_FORMAT = '%d/%m/%Y'
@@ -105,7 +104,7 @@ st.markdown("---")
 # === Bagian 2: Analisis Detail Menggunakan Tabs ===
 # =========================================================
 
-tab_unit, tab_vessel, tab_time, tab_kpi = st.tabs(["📊 Analisis Unit/Sistem", "⚓ Kinerja Kapal", "📈 Tren Kerusakan", "🏆 Metrik Keandalan (MTBF/MTTR)"])
+tab_unit, tab_vessel, tab_time, tab_kpi = st.tabs(["📊 Analisis Unit/Sistem", "⚓ Kinerja Kapal", "📈 Tren Kerusakan", "🏆 Metrik Keandalan (DBF/MTTR)"])
 
 with tab_unit:
     st.subheader("Penyebaran Kerusakan berdasarkan Unit/Sistem")
@@ -236,53 +235,56 @@ with tab_time:
         
         
 with tab_kpi:
-    st.subheader("🏆 Metrik Keandalan Unit (MTBF & MTTR)")
+    st.subheader("🏆 Metrik Keandalan Unit (DBF & MTTR)")
     
     if df_filtered.empty:
         st.info("Data tidak cukup untuk menghitung metrik keandalan.")
     else:
         
-        # --- PERHITUNGAN MTBF (Mean Time Between Failures) ---
+        # --- PERHITUNGAN DBF (Days Between Failures) ---
         start_date = df_filtered['Date_Day'].min()
         end_date = datetime.now()
         total_period_days = (end_date - start_date).days
         
         if total_period_days <= 0:
-            st.warning("Periode data terlalu singkat untuk analisis MTBF.")
+            st.warning("Periode data terlalu singkat untuk analisis DBF.")
         else:
             # Hitung Jumlah Kegagalan (Failure Count) per Unit
             failure_counts = df_filtered.groupby('Unit').size().reset_index(name='Jumlah Kerusakan')
             
-            # Hitung MTBF (Hari/Kegagalan)
-            failure_counts['MTBF (Hari)'] = total_period_days / failure_counts['Jumlah Kerusakan']
+            # Hitung DBF (Days Between Failures)
+            # DBF = Total Hari Kalender / Jumlah Kerusakan
+            failure_counts['DBF (Hari)'] = total_period_days / failure_counts['Jumlah Kerusakan']
             
             
             # --- PERHITUNGAN MTTR (Mean Time to Repair) ---
-            # Hanya gunakan data yang sudah CLOSED
             df_closed_mttr = df_filtered[df_filtered['Status'] == 'CLOSED'].copy()
 
             if not df_closed_mttr.empty:
                 # Hitung rata-rata Resolution_Time_Days per Unit
                 mttr_unit = df_closed_mttr.groupby('Unit')['Resolution_Time_Days'].mean().reset_index(name='MTTR (Hari)')
                 
-                # Gabungkan MTBF dan MTTR
+                # Gabungkan DBF dan MTTR
                 reliability_metrics = pd.merge(failure_counts, mttr_unit, on='Unit', how='left').fillna({'MTTR (Hari)': np.nan})
                 
-                # Format dan sort berdasarkan MTBF Terendah (paling tidak andal)
-                mtbf_mttr_display = reliability_metrics.sort_values(by='MTBF (Hari)', ascending=True).reset_index(drop=True)
-
-                st.info(f"Analisis MTBF dilakukan selama periode **{total_period_days:,.0f} Hari** (dari {start_date.strftime('%d/%m/%Y')} hingga Hari Ini). MTTR hanya dihitung dari laporan yang sudah CLOSED.")
-
-                st.markdown("##### Keandalan dan Efisiensi Perbaikan per Unit")
+                # Ubah nama kolom MTBF menjadi DBF
+                reliability_metrics = reliability_metrics.rename(columns={'DBF (Hari)': 'DBF (Hari)'})
                 
-                # Tampilkan tabel gabungan MTBF dan MTTR
+                # Sort berdasarkan DBF Terendah (paling sering rusak)
+                dbf_mttr_display = reliability_metrics.sort_values(by='DBF (Hari)', ascending=True).reset_index(drop=True)
+
+                st.info(f"Analisis **DBF (Days Between Failures)** dilakukan selama periode **{total_period_days:,.0f} Hari** (dari {start_date.strftime('%d/%m/%Y')} hingga Hari Ini). MTTR hanya dihitung dari laporan yang sudah CLOSED.")
+
+                st.markdown("##### 1. Keandalan dan Efisiensi Perbaikan per Unit")
+                
+                # Tampilkan tabel gabungan DBF dan MTTR
                 st.data_editor(
-                    mtbf_mttr_display,
+                    dbf_mttr_display,
                     column_config={
-                        "MTBF (Hari)": st.column_config.NumberColumn(
-                            "MTBF (Keandalan)",
+                        "DBF (Hari)": st.column_config.NumberColumn(
+                            "DBF (Keandalan)",
                             format="%.1f",
-                            help="Rata-rata Hari Kalender antar kerusakan (Semakin Kecil, Semakin Tidak Andal)"
+                            help="Rata-rata Hari Kalender antar kerusakan (Semakin Kecil, Semakin Sering Rusak)"
                         ),
                         "MTTR (Hari)": st.column_config.NumberColumn(
                             "MTTR (Perbaikan)",
@@ -295,11 +297,10 @@ with tab_kpi:
                             width="small"
                         )
                     },
-                    column_order=['Unit', 'Jumlah Kerusakan', 'MTBF (Hari)', 'MTTR (Hari)'],
+                    column_order=['Unit', 'Jumlah Kerusakan', 'DBF (Hari)', 'MTTR (Hari)'],
                     hide_index=True,
                     use_container_width=True,
                     disabled=True
                 )
             else:
                 st.warning("Tidak ada laporan yang berstatus CLOSED, sehingga MTTR per Unit tidak dapat dihitung.")
-
