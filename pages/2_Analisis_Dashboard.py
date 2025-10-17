@@ -85,12 +85,13 @@ st.session_state.all_vessels_list = all_vessels
 
 
 with st.container(border=True): 
-    col_filter_year, col_filter_vessel, col_btn_vessel, col_spacer_top = st.columns([1, 2, 0.7, 1.3])
+    # Mengurangi kolom agar tombol Select All bisa menyatu dengan filter kapal
+    col_filter_year, col_filter_vessel_main, col_spacer_top = st.columns([1, 2.7, 1.3])
     
     with col_filter_year:
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
-    with col_filter_vessel:
+    with col_filter_vessel_main:
         # Menggunakan st.multiselect
         selected_vessels = st.multiselect(
             "Filter Kapal (Pilih 1 atau Lebih)", 
@@ -98,12 +99,10 @@ with st.container(border=True):
             default=all_vessels, 
             key="filter_vessel_dashboard"
         )
-    
-    with col_btn_vessel:
-        # Tombol Select All / Clear Selection
-        st.write("") # Spacer
+        
+        # PERBAIKAN: Tombol Select All / Clear Selection di bawah multiselect
         st.button(
-            "☑️ Select All / Clear", 
+            "☑️ Select All / Clear Selection", 
             on_click=toggle_all_vessels, 
             use_container_width=True
         )
