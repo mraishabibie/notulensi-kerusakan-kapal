@@ -230,6 +230,26 @@ col_filter, col_spacer = st.columns([1, 4])
 with col_filter:
     selected_year = st.selectbox("Filter Tahun Kejadian (Global)", year_options, key="filter_tahun_homepage")
 
+# Tambahkan tombol export di sebelah kanan filter
+col_filter, col_export = st.columns([3, 1])
+
+with col_filter:
+    selected_year = st.selectbox("Filter Tahun Kejadian (Global)", year_options, key="filter_tahun_homepage")
+
+with col_export:
+    try:
+        with open(DATA_FILE, "rb") as file:
+            st.download_button(
+                label="⬇️ Export CSV",
+                data=file,
+                file_name="notulensi_kerusakan.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+    except FileNotFoundError:
+        st.warning("File CSV belum tersedia", icon="⚠️")
+
+
 # Load data final berdasarkan filter tahun
 df_stats, total_open, total_closed, _ = get_processed_data_for_display(selected_year)
 
