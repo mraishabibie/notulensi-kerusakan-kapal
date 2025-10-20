@@ -30,39 +30,60 @@ if 'data_master_df' not in st.session_state:
 
 # --- FUNGSI PEMBANTU UNTUK MEMUAT DAN MEMPROSES DATA CSV ---
 @st.cache_data(ttl=3600) 
-def get_processed_data_for_mock_ship_data():
-    """Memuat dan memproses data CSV untuk mendapatkan statistik per kapal."""
+def get_all_data():
+    """Memuat semua data dari CSV untuk digunakan di semua filter dan statistik."""
     if not os.path.exists(DATA_FILE):
-        return pd.DataFrame(), 0, 0 # Mengembalikan df, total_open, total_closed
+        return pd.DataFrame()
 
     try:
         df = pd.read_csv(DATA_FILE)
     except Exception:
-        return pd.DataFrame(), 0, 0
+        return pd.DataFrame()
 
     # Data cleaning dan preprocessing
     df['Vessel'] = df['Vessel'].astype(str).str.upper().str.strip()
     df['Status'] = df.get('Status', 'OPEN').astype(str).str.upper().str.strip()
     df['Issued Date'] = df.get('Issued Date', pd.NA).astype(str).str.strip()
     
-    # Konversi tanggal Issued Date 
+    # Konversi tanggal Issued Date (digunakan untuk filter tahun & last inspection)
     df['Date_Issued'] = pd.to_datetime(df['Issued Date'], format=DATE_FORMAT, errors='coerce')
     
     # Filter baris yang tidak memiliki kode kapal
-    df = df.dropna(subset=['Vessel'])
+    df = df.dropna(subset=['Vessel', 'Date_Issued']) # Menggunakan Date_Issued sebagai referensi tanggal
     df = df[df['Vessel'] != 'NAN']
+    
+    return df
 
-    # 1. Hitung TOTAL GLOBAL
-    total_open_global = (df['Status'] == 'OPEN').sum()
-    total_closed_global = (df['Status'] == 'CLOSED').sum()
+@st.cache_data(ttl=3600) 
+def get_processed_data_for_mock_ship_data(selected_year=None):
+    """Memproses data yang sudah difilter berdasarkan tahun untuk mendapatkan statistik per kapal."""
+    df = get_all_data()
+    
+    if df.empty:
+        return pd.DataFrame(), 0, 0
+    
+    df_filtered = df.copy()
 
-    # 2. Hitung statistik per kapal
-    stats = df.groupby('Vessel')['Status'].value_counts().unstack(fill_value=0)
+    # 1. Filter berdasarkan Tahun (jika bukan 'All')
+    if selected_year and selected_year != 'All':
+        df_filtered = df_filtered[df_filtered['Date_Issued'].dt.year == int(selected_year)]
+
+    # Jika setelah filter kosong, kembalikan 0
+    if df_filtered.empty:
+        return pd.DataFrame(), 0, 0
+    
+    # 2. Hitung TOTAL GLOBAL (setelah filter tahun)
+    total_open_global = (df_filtered['Status'] == 'OPEN').sum()
+    total_closed_global = (df_filtered['Status'] == 'CLOSED').sum()
+
+    # 3. Hitung statistik per kapal
+    stats = df_filtered.groupby('Vessel')['Status'].value_counts().unstack(fill_value=0)
     
     stats['OPEN'] = stats.get('OPEN', 0)
     stats['CLOSED'] = stats.get('CLOSED', 0)
     
-    last_inspection = df.groupby('Vessel')['Date_Issued'].max().dt.strftime(DATE_FORMAT)
+    # Ambil tanggal Issued terakhir untuk kapal yang ditampilkan (dalam range tahun terpilih)
+    last_inspection = df_filtered.groupby('Vessel')['Date_Issued'].max().dt.strftime(DATE_FORMAT)
 
     result = stats[['OPEN', 'CLOSED']].reset_index()
     result['last_inspection'] = result['Vessel'].map(last_inspection)
@@ -71,9 +92,9 @@ def get_processed_data_for_mock_ship_data():
 
 
 # --- FUNGSI UTAMA UNTUK DATA CARD ---
-def get_ship_data():
+def get_ship_data(selected_year=None):
     """Mengambil data status Open/Closed NC secara dinamis dari CSV."""
-    df_stats, _, _ = get_processed_data_for_mock_ship_data()
+    df_stats, _, _ = get_processed_data_for_mock_ship_data(selected_year)
     
     ship_list = []
     if not df_stats.empty:
@@ -277,13 +298,25 @@ else:
     st.sidebar.success(f"Selamat Datang, {st.session_state.username}!")
     
     # *** TRIK UNTUK MENGUBAH JUDUL SIDEBAR MENJADI "Homepage" ***
-    # Menggunakan st.markdown("# Judul") di awal halaman root akan menimpa nama file di sidebar.
     st.markdown("# Homepage") 
     
     # Judul yang tampil di Body halaman
     st.markdown("## Pilih Kapal untuk Inspeksi")
     
-    ship_data, total_open, total_closed = get_processed_data_for_mock_ship_data()
+    # 1. Tentukan Tahun yang Tersedia untuk Filter
+    df_all = get_all_data()
+    valid_years = df_all['Date_Issued'].dt.year.dropna().astype(int).unique()
+    year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
+    
+    # 2. Tambahkan Filter Tahun
+    col_filter_year, col_spacer = st.columns([1, 3])
+    with col_filter_year:
+        selected_year = st.selectbox("Filter Tahun Laporan", year_options, key="global_year_filter")
+        
+    st.markdown("---")
+        
+    # 3. Hitung dan Tampilkan Metrik Global berdasarkan Tahun Terpilih
+    ship_data_df, total_open, total_closed = get_processed_data_for_mock_ship_data(selected_year)
     
     # --- MENAMPILKAN METRIK GLOBAL ---
     st.markdown("### Ringkasan Status Global")
@@ -293,7 +326,7 @@ else:
     with col_open:
         st.markdown(f"""
             <div class="global-metric-box">
-                <div class="global-label">TOTAL LAPORAN OPEN</div>
+                <div class="global-label">TOTAL LAPORAN OPEN ({selected_year})</div>
                 <div class="global-value-open">{total_open}</div>
             </div>
         """, unsafe_allow_html=True)
@@ -301,7 +334,7 @@ else:
     with col_closed:
         st.markdown(f"""
             <div class="global-metric-box">
-                <div class="global-label">TOTAL LAPORAN CLOSED</div>
+                <div class="global-label">TOTAL LAPORAN CLOSED ({selected_year})</div>
                 <div class="global-value-closed">{total_closed}</div>
             </div>
         """, unsafe_allow_html=True)
@@ -309,7 +342,7 @@ else:
     with col_total:
         st.markdown(f"""
             <div class="global-metric-box" style="border-top: 5px solid #AAAAAA; color: #111111;">
-                <div class="global-label">TOTAL SELURUH LAPORAN</div>
+                <div class="global-label">TOTAL SELURUH LAPORAN ({selected_year})</div>
                 <div style="font-size: 2em; font-weight: bold;">{total_open + total_closed}</div>
             </div>
         """, unsafe_allow_html=True)
@@ -317,11 +350,11 @@ else:
     st.markdown("---")
     # ----------------------------------------
     
-    if ship_data.empty:
-        st.warning("Tidak ada data kapal yang valid ditemukan di file CSV.")
+    if ship_data_df.empty:
+        st.warning(f"Tidak ada data kapal yang valid ditemukan untuk tahun {selected_year}.")
     else:
-        # Pindahkan logika konversi ke list ke sini agar tidak memanggil cache ulang
-        final_ship_list = get_ship_data()
+        # Konversi DataFrame hasil filter ke list untuk display cards
+        final_ship_list = get_ship_data(selected_year) 
         display_ship_cards(final_ship_list)
 
     st.info("Silakan pilih salah satu kapal di atas untuk melihat atau menginput laporan kerusakan.")
