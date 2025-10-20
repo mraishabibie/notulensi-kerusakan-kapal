@@ -13,6 +13,7 @@ st.set_page_config(
 )
 
 # --- CSS untuk Memusatkan Konten ---
+# Blok CSS ini juga memastikan judul 'Homepage' muncul di sidebar jika file utamanya adalah 'streamlit_app.py'
 st.markdown("""
     <style>
     /* Styling untuk Container Login */
@@ -39,7 +40,10 @@ if 'selected_ship_code' not in st.session_state:
     st.session_state.selected_ship_code = None
     
 # --- MAIN LOGIC ---
-if not st.session_state.logged_in:
+
+# Trik untuk mengubah judul di sidebar (walaupun file ini hanya gerbang)
+# Ini adalah judul yang akan dilihat user saat belum login
+if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     
     # 1. Gunakan kolom untuk memusatkan secara horizontal
     col1, col2, col3 = st.columns([1, 1.5, 1]) # 1.5 untuk kolom login, 1 dan 1 sebagai spacer
@@ -64,7 +68,7 @@ if not st.session_state.logged_in:
                     st.session_state.username = username_input
                     st.success("Login Berhasil! Mengalihkan ke Homepage...")
                     
-                    # PERBAIKAN: Dialihkan ke 1_Homepage
+                    # Dialihkan ke 1_Homepage.py
                     st.switch_page("1_Homepage") 
                     
                 else:
