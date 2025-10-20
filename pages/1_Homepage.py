@@ -13,7 +13,6 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
 DATA_FILE = 'notulensi_kerusakan.csv'
 DATE_FORMAT = '%d/%m/%Y'
 
-
 # --- FUNGSI PEMBANTU UNTUK MEMUAT DAN MEMPROSES DATA CSV ---
 @st.cache_data(ttl=3600) 
 def get_processed_data_for_display(selected_year=None):
@@ -78,6 +77,7 @@ def get_ship_list(df_stats):
             })
     return ship_list
 
+
 # --- FUNGSI DISPLAY CARD DENGAN HTML/CSS KUSTOM ---
 def display_ship_cards(ship_list):
     """Menampilkan daftar kapal dalam format card kustom."""
@@ -92,27 +92,23 @@ def display_ship_cards(ship_list):
             }
             .ship-card-content {
                 background-color: #FFFFFF; 
-                border-radius: 12px 12px 0 0; /* Sudut atas membulat */
+                border-radius: 12px 12px 0 0;
                 padding: 20px;
                 width: 100% !important; 
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
                 border-top: 5px solid #005691;
                 transition: transform 0.2s;
             }
-            /* Menyesuaikan tombol agar menyatu dengan card */
             .stButton>button {
                 margin-top: 0px; 
                 height: 40px;
                 background-color: #005691;
                 color: white;
                 border: none;
-                border-radius: 0 0 12px 12px; /* Sudut bawah membulat */
+                border-radius: 0 0 12px 12px;
             }
             .stButton>button:hover {
                 background-color: #004070;
-            }
-            .ship-card-content:hover + .stButton>button {
-                background-color: #004070; /* Hover button saat hover card */
             }
             .ship-code-display {
                 font-size: 1.5em;
@@ -145,7 +141,6 @@ def display_ship_cards(ship_list):
                 border-top: 1px solid #DDDDDD; 
                 padding-top: 8px;
             }
-            /* Metrik Global */
             .global-metric-box {
                 background-color: #FFFFFF;
                 border-radius: 12px;
@@ -175,7 +170,6 @@ def display_ship_cards(ship_list):
     """, unsafe_allow_html=True)
 
     ship_list.sort(key=lambda x: x['code']) 
-    
     num_cols = 3 
     cols = st.columns(num_cols)
     
@@ -185,7 +179,6 @@ def display_ship_cards(ship_list):
         ship_name = ship['code']
 
         with col:
-            # 1. Tampilkan HTML Card Content (sebagai div)
             card_html = f"""
                 <div class="ship-card-content">
                     <div class="ship-code-display">{ship_name}</div>
@@ -207,26 +200,41 @@ def display_ship_cards(ship_list):
             """
             st.markdown(card_html, unsafe_allow_html=True)
             
-            # 2. Tambahkan Tombol untuk Navigasi (terlihat menyatu)
             if st.button(f"Lihat Detail {ship['code']}", key=f"btn_{ship['code']}", use_container_width=True):
                  st.session_state.selected_ship_code = ship['code']
                  st.session_state.selected_ship_name = ship_name 
                  st.switch_page("pages/2_Laporan_Aktif_&_Input.py")
                  
-            st.markdown(f'<div style="margin-bottom: 20px;"></div>', unsafe_allow_html=True) # Jarak antar baris
+            st.markdown(f'<div style="margin-bottom: 20px;"></div>', unsafe_allow_html=True)
 
 
 # --- MAIN LOGIC ---
 st.sidebar.success(f"Selamat Datang, {st.session_state.username}!")
-st.markdown("# Homepage") # Judul untuk sidebar dan body
+st.markdown("# Homepage")
 st.markdown("## Laporan Kerusakan Kapal")
 st.write("---")
-# --- FILTER TAHUN ---
-df_stats_temp, _, _, valid_years_list_temp = get_processed_data_for_display() # Load untuk mendapatkan tahun unik
+
+# 💅 CSS tambahan buat tombol Export CSV biar sejajar & warna seragam
+st.markdown("""
+    <style>
+        div[data-testid="stDownloadButton"] > button {
+            height: 38px;
+            margin-top: 22px;
+            background-color: #005691 !important;
+            color: white !important;
+            border: none;
+            border-radius: 6px;
+        }
+        div[data-testid="stDownloadButton"] > button:hover {
+            background-color: #004070 !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- FILTER TAHUN & EXPORT BUTTON ---
+df_stats_temp, _, _, valid_years_list_temp = get_processed_data_for_display()
 year_options = ['All'] + sorted(valid_years_list_temp, reverse=True)
 
-
-# Tambahkan tombol export di sebelah kanan filter
 col_filter, col_export = st.columns([3, 1])
 
 with col_filter:
@@ -245,12 +253,10 @@ with col_export:
     except FileNotFoundError:
         st.warning("File CSV belum tersedia", icon="⚠️")
 
-
-# Load data final berdasarkan filter tahun
+# --- LOAD DATA ---
 df_stats, total_open, total_closed, _ = get_processed_data_for_display(selected_year)
 
 # --- MENAMPILKAN METRIK GLOBAL ---
-
 st.markdown("### Ringkasan Status Global")
 
 col_open, col_closed, col_total = st.columns(3)
@@ -280,8 +286,8 @@ with col_total:
     """, unsafe_allow_html=True)
 
 st.markdown("---")
-# ----------------------------------------
 
+# --- TAMPILKAN CARD KAPAL ---
 st.markdown("### Pilih Kapal untuk Laporan Detail")
 
 if df_stats.empty:
