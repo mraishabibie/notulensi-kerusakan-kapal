@@ -225,10 +225,6 @@ st.write("---")
 df_stats_temp, _, _, valid_years_list_temp = get_processed_data_for_display() # Load untuk mendapatkan tahun unik
 year_options = ['All'] + sorted(valid_years_list_temp, reverse=True)
 
-col_filter, col_spacer = st.columns([1, 4])
-
-with col_filter:
-    selected_year = st.selectbox("Filter Tahun Kejadian (Global)", year_options, key="filter_tahun_homepage")
 
 # Tambahkan tombol export di sebelah kanan filter
 col_filter, col_export = st.columns([3, 1])
