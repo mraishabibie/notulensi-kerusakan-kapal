@@ -12,6 +12,26 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- CSS untuk Memusatkan Konten ---
+st.markdown("""
+    <style>
+    /* Styling untuk Container Login */
+    .login-container {
+        background-color: #FFFFFF;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        max-width: 450px; /* Batasi lebar kotak login */
+        margin: 0 auto; /* Memusatkan secara horizontal jika tidak di dalam st.columns */
+        margin-top: 10vh; /* Jarak dari atas layar */
+    }
+    .stForm {
+        padding: 0; /* Hapus padding default form Streamlit */
+    }
+    </style>
+""", unsafe_allow_html=True)
+# ------------------------------------
+
 # --- Inisialisasi Session State ---
 if 'logged_in' not in st.session_state:
     st.session_state.logged_in = False
@@ -20,27 +40,38 @@ if 'selected_ship_code' not in st.session_state:
     
 # --- MAIN LOGIC ---
 if not st.session_state.logged_in:
-    st.title("🚢 Login Sistem Laporan Kerusakan")
     
-    with st.form("login_form"):
-        st.subheader("Masukkan ID dan Password Anda")
-        username_input = st.text_input("ID Pengguna", key="user_input")
-        password_input = st.text_input("Password", type="password", key="pass_input")
-        submitted = st.form_submit_button("Login")
+    # 1. Gunakan kolom untuk memusatkan secara horizontal
+    col1, col2, col3 = st.columns([1, 1.5, 1]) # 1.5 untuk kolom login, 1 dan 1 sebagai spacer
+    
+    with col2:
+        st.markdown('<div class="login-container">', unsafe_allow_html=True)
+        
+        st.markdown('<h3 style="text-align: center; color: #005691;">🚢 Login Sistem Laporan</h3>', unsafe_allow_html=True)
+        
+        with st.form("login_form"):
+            st.subheader("Masukkan ID dan Password Anda")
+            
+            username_input = st.text_input("ID Pengguna", key="user_input")
+            password_input = st.text_input("Password", type="password", key="pass_input")
+            
+            st.markdown("---")
+            submitted = st.form_submit_button("Login", use_container_width=True)
 
-        if submitted:
-            if username_input == USERNAME and password_input == PASSWORD:
-                st.session_state.logged_in = True
-                st.session_state.username = username_input
-                st.success("Login Berhasil! Mengalihkan ke Homepage...")
-                
-                # PERBAIKAN: Dialihkan ke 1_Homepage
-                # Streamlit akan mencari file 1_Homepage.py di folder pages/
-                st.switch_page("1_Homepage") 
-                
-            else:
-                st.error("ID atau Password salah.")
+            if submitted:
+                if username_input == USERNAME and password_input == PASSWORD:
+                    st.session_state.logged_in = True
+                    st.session_state.username = username_input
+                    st.success("Login Berhasil! Mengalihkan ke Homepage...")
+                    
+                    # PERBAIKAN: Dialihkan ke 1_Homepage
+                    st.switch_page("1_Homepage") 
+                    
+                else:
+                    st.error("ID atau Password salah.")
+        
+        st.markdown('</div>', unsafe_allow_html=True)
+        
 else:
     # Jika sudah login, langsung alihkan ke Homepage
-    # PERBAIKAN: Dialihkan ke 1_Homepage
     st.switch_page("1_Homepage")
