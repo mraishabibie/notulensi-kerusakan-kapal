@@ -200,14 +200,6 @@ with st.container(border=True):
                 font-size: 0.9em;
                 color: #555555;
             }
-            /* CSS BARU UNTUK MENGATUR TINGGI BARIS LAPORAN AKTIF */
-            .st-emotion-cache-12fm5q6 { /* Selector untuk kolom Streamlit */
-                padding-top: 5px !important; 
-                padding-bottom: 5px !important;
-            }
-            .row-content {
-                line-height: 1.2;
-            }
         </style>
     """, unsafe_allow_html=True)
     # -------------------------------
@@ -278,16 +270,16 @@ else:
             # Tampilan dalam kolom
             cols = st.columns([0.5, 3, 1, 1.5, 1.5])
             
-            cols[0].markdown(f"<div class='row-content'>**{int(unique_id)}**</div>", unsafe_allow_html=True)
+            cols[0].write(f"**{int(unique_id)}**")
             
-            # Masalah dan Solusi (Dibuat lebih ringkas)
-            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<small> | Solusi: {str(row['Penyelesaian'])}</small>"
-            cols[1].markdown(f"<div class='row-content'>{problem_text}</div>", unsafe_allow_html=True)
+            # Masalah dan Solusi
+            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<br><small>Solusi: {str(row['Penyelesaian'])}</small>"
+            cols[1].markdown(problem_text, unsafe_allow_html=True)
             
-            cols[2].markdown(f"<div class='row-content'>{row['Unit']}</div>", unsafe_allow_html=True)
+            cols[2].write(row['Unit'])
             
             date_text = f"**Tgl:** {row['Day']}"
-            cols[3].markdown(f"<div class='row-content'>{date_text}</div>", unsafe_allow_html=True)
+            cols[3].markdown(date_text, unsafe_allow_html=True)
 
             # --- ACTION BUTTONS (EDIT & HAPUS) ---
             action_col = cols[4]
@@ -333,6 +325,13 @@ else:
                 status_key = key_prefix + 'status'
                 default_status_idx = 1 if row['Status'] == 'CLOSED' else 0
                 
+                # Logika status selectbox agar tetap dalam edit mode
+                # Kita perlu menentukan status yang sedang dipilih (baik dari DB atau dari interaksi user)
+                
+                # --- State Management untuk Status Closed/Open di Edit Mode ---
+                # Menggunakan trik session state agar status berubah tanpa rerunning form
+                
+                # Default status untuk selectbox
                 status_options = ['OPEN', 'CLOSED']
                 if status_key not in st.session_state:
                      st.session_state[status_key] = status_options[default_status_idx]
@@ -346,6 +345,7 @@ else:
                 # Conditional Closed Date input
                 new_closed_date = None
                 
+                # PERBAIKAN LOGIKA: Jika status saat ini adalah CLOSED, tampilkan Closed Date
                 if new_status == 'CLOSED':
                     
                     # Convert existing Closed Date string to date object if valid, else today
