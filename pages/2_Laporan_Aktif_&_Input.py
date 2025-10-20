@@ -80,6 +80,7 @@ def get_report_stats(df, year=None):
     """Menghitung total, open, dan closed report, difilter berdasarkan tahun."""
     df_filtered = df.copy()
     
+    # PERBAIKAN BUG: Pastikan Date_Day adalah datetime sebelum diakses
     if year and year != 'All':
         df_filtered = df_filtered[df_filtered['Date_Day'].dt.year == int(year)]
         
@@ -155,7 +156,8 @@ unit_options = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
 # =========================================================
 # === DASHBOARD STATISTIK DENGAN FILTER TAHUN ===
 # =========================================================
-valid_years = df_filtered_ship['Date_Day'].dt.year.dropna().astype(int).unique()
+# PERBAIKAN BUG: Gunakan dropna() sebelum mengakses .dt.year
+valid_years = df_filtered_ship['Date_Day'].dropna().dt.year.astype(int).unique()
 year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
 
 with st.container(border=True): 
@@ -199,6 +201,18 @@ with st.container(border=True):
             .metric-label-custom {
                 font-size: 0.9em;
                 color: #555555;
+            }
+            /* CSS BARU UNTUK MENGATUR TINGGI BARIS LAPORAN AKTIF */
+            .st-emotion-cache-12fm5q6 { /* Selector untuk kolom Streamlit */
+                padding-top: 1px !important; 
+                padding-bottom: 1px !important; 
+            }
+            .row-content {
+                line-height: 1.2;
+            }
+            /* PERUBAHAN: Target tag small untuk ukuran font yang lebih besar (0.9em) */
+            small {
+                font-size: 0.9em !important;
             }
         </style>
     """, unsafe_allow_html=True)
@@ -273,7 +287,8 @@ else:
             cols[0].write(f"**{int(unique_id)}**")
             
             # Masalah dan Solusi
-            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<br><small>Solusi: {str(row['Penyelesaian'])}</small>"
+            # Mengganti <br><small> menjadi | <small> dan menaikkan font size tag <small>
+            problem_text = f"**Masalah:** {str(row['Permasalahan'])} | <small>Solusi: {str(row['Penyelesaian'])}</small>"
             cols[1].markdown(problem_text, unsafe_allow_html=True)
             
             cols[2].write(row['Unit'])
