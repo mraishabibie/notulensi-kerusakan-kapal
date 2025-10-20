@@ -10,6 +10,11 @@ if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     st.error("Anda harus login untuk mengakses halaman ini. Silakan kembali ke halaman utama.")
     st.stop() 
 
+# --- PERUBAHAN UTAMA: Hapus Cek Kapal Terpilih ---
+# Dashboard ini sekarang beroperasi dalam mode GLOBAL (semua kapal)
+# VARIABEL KAPAL DIPILIH DIHAPUS (SELECTED_SHIP_CODE/NAME)
+# ----------------------------------------------------
+
 # --- Konfigurasi ---
 DATA_FILE = 'notulensi_kerusakan.csv' 
 COLUMNS = ['Day', 'Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Issued Date', 'Closed Date', 'Keterangan', 'Status'] 
@@ -19,7 +24,7 @@ DATE_FORMAT = '%d/%m/%Y'
 
 @st.cache_data() 
 def load_data_dashboard():
-    """Memuat data dari CSV dan melakukan pre-processing untuk analisis."""
+    """Memuat SEMUA data dari CSV dan melakukan pre-processing untuk analisis GLOBAL."""
     if os.path.exists(DATA_FILE):
         try:
             df = pd.read_csv(DATA_FILE)
@@ -39,8 +44,8 @@ def load_data_dashboard():
         df['Date_Issue'] = pd.to_datetime(df['Issued Date'], format=DATE_FORMAT, errors='coerce')
         df['Date_Closed'] = pd.to_datetime(df['Closed Date'], format=DATE_FORMAT, errors='coerce') 
 
-        # Hapus baris di mana Date_Day tidak valid
-        df = df.dropna(subset=['Date_Day']).reset_index(drop=True)
+        # Hapus baris di mana Date_Day tidak valid atau Vessel kosong
+        df = df.dropna(subset=['Date_Day', 'Vessel']).reset_index(drop=True)
         
         # Hitung Resolution Time (MTTR) dengan hari kalender INKLUSIF (+1)
         df['Resolution_Time_Days'] = (df['Date_Closed'] - df['Date_Issue']).dt.days + 1
@@ -48,13 +53,14 @@ def load_data_dashboard():
         # Bersihkan Resolution_Time_Days yang tidak valid
         df.loc[df['Resolution_Time_Days'] <= 0, 'Resolution_Time_Days'] = np.nan
         
-        return df
+        return df # Mengembalikan SEMUA data
     else:
         st.info(f"File data '{DATA_FILE}' tidak ditemukan di lokasi yang diharapkan. Pastikan sudah ada.")
         return pd.DataFrame()
 
 # --- Fungsi Callback untuk Tombol Select/Clear All ---
 def toggle_all_vessels():
+    # Fungsi ini tetap relevan karena sekarang kita melihat SEMUA kapal
     all_vessels = st.session_state.all_vessels_list
     current_selection = st.session_state.filter_vessel_dashboard
     
@@ -67,7 +73,7 @@ def toggle_all_vessels():
 
 # --- Tampilan Utama Dashboard ---
 
-st.title("📊 Dashboard Analisis Kerusakan Kapal")
+st.title("📊 Dashboard Analisis Kerusakan Kapal (Global)")
 
 df = load_data_dashboard()
 
@@ -84,25 +90,24 @@ st.session_state.all_vessels_list = all_vessels
 
 
 with st.container(border=True): 
-    # RASIO BARU: Filter Tahun dan Kapal dibuat dengan lebar yang berbeda
+    
     col_filter_year, col_filter_vessel_select, col_spacer_top = st.columns([1, 2.7, 1.3])
     
     with col_filter_year:
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_dashboard")
         
     with col_filter_vessel_select:
-        # Menghilangkan st.write di sini untuk menyelaraskan multiselect dengan selectbox tahun
-        # Label akan diletakkan langsung di multiselect
-        
         # Menggunakan st.multiselect dengan DEFAULT=all_vessels
+        st.markdown("Kapal (Pilih 1 atau Lebih) - **Global View**") # Label manual
         selected_vessels = st.multiselect(
-            "Filter Kapal (Pilih 1 atau Lebih)", # Label diletakkan di sini
+            "Filter Kapal (Pilih 1 atau Lebih)", # Label ini disembunyikan
             options=all_vessels, 
             default=all_vessels, 
-            key="filter_vessel_dashboard"
+            key="filter_vessel_dashboard",
+            label_visibility='collapsed' # Sembunyikan label bawaan
         )
         
-        # PERBAIKAN: Tombol Select All diletakkan di bawah filter Kapal (di kolom yang sama)
+        # Tombol Select All diletakkan di bawah filter Kapal (di kolom yang sama)
         st.button(
             "🔄 Pilih Semua / Bersihkan", 
             on_click=toggle_all_vessels, 
@@ -151,7 +156,7 @@ with st.container(border=True):
 st.markdown("---")
 
 # =========================================================
-# === Bagian 2: Analisis Detail Menggunakan Tabs ===
+# === Bagian 2: Analisis Detail Menggunakan Tabs (Sama seperti sebelumnya) ===
 # =========================================================
 
 tab_unit, tab_vessel, tab_time, tab_kpi = st.tabs(["📊 Analisis Unit/Sistem", "⚓ Kinerja Kapal", "📈 Tren Kerusakan", "🏆 Metrik Efisiensi (MTTR)"])
