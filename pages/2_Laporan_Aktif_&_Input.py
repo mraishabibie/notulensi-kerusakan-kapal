@@ -6,7 +6,7 @@ import time
 import numpy as np 
 
 # --- Logika Autentikasi ---
-if 'logged_in' not in st.session_state or not st.session_state.logged in:
+if 'logged_in' not in st.session_state or not st.session_state.logged_in:
     st.error("Anda harus login untuk mengakses halaman ini. Silakan kembali ke halaman utama.")
     st.stop() 
 
@@ -70,8 +70,7 @@ def load_data():
     # 2. Filter dan kembalikan data HANYA untuk kapal yang dipilih
     df_all = st.session_state['data_master_df'].copy()
     
-    # PERBAIKAN KRITIS: Paksa konversi Date_Day ke datetime di DataFrame yang diakses
-    # Ini mengatasi masalah tipe data yang hilang saat filtering
+    # PERBAIKAN KRITIS: Paksa konversi Date_Day ke datetime di DataFrame yang diakses dari Session State
     df_all['Date_Day'] = pd.to_datetime(df_all['Date_Day'], errors='coerce')
 
     df_filtered_ship = df_all[
@@ -161,7 +160,6 @@ unit_options = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
 # === DASHBOARD STATISTIK DENGAN FILTER TAHUN ===
 # =========================================================
 # PERBAIKAN BUG: Menggunakan dropna() sebelum mengakses .dt.year
-# Line 160 (di file Anda)
 valid_years = df_filtered_ship['Date_Day'].dropna().dt.year.astype(int).unique()
 year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
 
@@ -506,7 +504,7 @@ if st.session_state.get('show_new_report_form_v2'):
             with status_cols[0]:
                 default_status = st.selectbox("Status Awal Laporan", options=['OPEN', 'CLOSED'], index=0) 
             
-            with col_status_date[1]:
+            with status_cols[1]:
                 closed_date_input = st.date_input("Tanggal Selesai (Jika Closed)", 
                                                   value=None, 
                                                   disabled=(default_status == 'OPEN'),
