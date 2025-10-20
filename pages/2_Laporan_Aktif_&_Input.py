@@ -321,24 +321,47 @@ else:
                 default_day_dt = datetime.strptime(row['Day'], DATE_FORMAT).date()
                 new_day = col_status_date.date_input("Tgl Kejadian (Day)", value=default_day_dt, key=key_prefix + 'day')
                 
+                # Menggunakan value dari Session State untuk konsistensi status
+                status_key = key_prefix + 'status'
                 default_status_idx = 1 if row['Status'] == 'CLOSED' else 0
-                new_status = col_status_date.selectbox("Status", options=['OPEN', 'CLOSED'], index=default_status_idx, key=key_prefix + 'status')
+                
+                # Logika status selectbox agar tetap dalam edit mode
+                # Kita perlu menentukan status yang sedang dipilih (baik dari DB atau dari interaksi user)
+                
+                # --- State Management untuk Status Closed/Open di Edit Mode ---
+                # Menggunakan trik session state agar status berubah tanpa rerunning form
+                
+                # Default status untuk selectbox
+                status_options = ['OPEN', 'CLOSED']
+                if status_key not in st.session_state:
+                     st.session_state[status_key] = status_options[default_status_idx]
+
+                new_status = col_status_date.selectbox("Status", 
+                                                       options=status_options, 
+                                                       index=status_options.index(st.session_state[status_key]), 
+                                                       key=status_key)
+                
                 
                 # Conditional Closed Date input
                 new_closed_date = None
+                
+                # PERBAIKAN LOGIKA: Jika status saat ini adalah CLOSED, tampilkan Closed Date
                 if new_status == 'CLOSED':
                     
-                    # Convert existing Closed Date string to date object if valid, else None
+                    # Convert existing Closed Date string to date object if valid, else today
                     current_closed_date_str = str(row['Closed Date'])
                     current_closed_date_dt = None
                     if current_closed_date_str != 'nan' and current_closed_date_str != '':
                          try:
                              current_closed_date_dt = datetime.strptime(current_closed_date_str, DATE_FORMAT).date()
                          except ValueError:
-                             current_closed_date_dt = None
+                             pass
+                    
+                    # Logika Default Value: Jika Closed Date Kosong, isi dengan tanggal hari ini.
+                    closed_date_default_value = current_closed_date_dt if current_closed_date_dt else datetime.now().date()
                              
                     new_closed_date = col_status_date.date_input("Tgl Selesai (Jika Closed)", 
-                                                                 value=current_closed_date_dt, 
+                                                                 value=closed_date_default_value, 
                                                                  key=key_prefix + 'closed_date')
                 
                 # --- ACTION BUTTONS (SIMPAN & BATAL) ---
@@ -375,6 +398,8 @@ else:
                     df_master_all.loc[target_row_index, 'Closed Date'] = closed_date_val if closed_date_val else pd.NA
                     
                     save_data(df_master_all)
+                    
+                    # Clear state
                     st.session_state.edit_id = None
                     st.success(f"✅ Laporan ID {unique_id} berhasil diperbarui.")
                     st.rerun()
