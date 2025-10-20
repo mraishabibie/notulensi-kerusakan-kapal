@@ -2,36 +2,18 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 import os
+import numpy as np 
 
 # --- Konfigurasi ---
 USERNAME = "staffdpagls" 
 PASSWORD = "gls@123" 
+DATA_FILE = 'notulensi_kerusakan.csv'
+DATE_FORMAT = '%d/%m/%Y'
 
 st.set_page_config(
     page_title="Sistem Laporan Kerusakan Kapal",
     layout="wide"
 )
-
-# --- CSS untuk Memusatkan Konten ---
-# Blok CSS ini juga memastikan judul 'Homepage' muncul di sidebar jika file utamanya adalah 'streamlit_app.py'
-st.markdown("""
-    <style>
-    /* Styling untuk Container Login */
-    .login-container {
-        background-color: #FFFFFF;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        max-width: 450px; /* Batasi lebar kotak login */
-        margin: 0 auto; /* Memusatkan secara horizontal jika tidak di dalam st.columns */
-        margin-top: 10vh; /* Jarak dari atas layar */
-    }
-    .stForm {
-        padding: 0; /* Hapus padding default form Streamlit */
-    }
-    </style>
-""", unsafe_allow_html=True)
-# ------------------------------------
 
 # --- Inisialisasi Session State ---
 if 'logged_in' not in st.session_state:
@@ -39,43 +21,61 @@ if 'logged_in' not in st.session_state:
 if 'selected_ship_code' not in st.session_state:
     st.session_state.selected_ship_code = None
     
+# Inisialisasi data master (Penting untuk Cache Lintas Halaman)
+if 'data_master_df' not in st.session_state:
+    COLUMNS = ['Day', 'Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Issued Date', 'Closed Date', 'Keterangan', 'Status'] 
+    st.session_state['data_master_df'] = pd.DataFrame(columns=COLUMNS + ['Date_Day'])
+
+
 # --- MAIN LOGIC ---
-
-# Trik untuk mengubah judul di sidebar (walaupun file ini hanya gerbang)
-# Ini adalah judul yang akan dilihat user saat belum login
-if 'logged_in' not in st.session_state or not st.session_state.logged_in:
+if not st.session_state.logged_in:
+    st.title("🚢 Login Sistem Laporan Kerusakan")
     
-    # 1. Gunakan kolom untuk memusatkan secara horizontal
-    col1, col2, col3 = st.columns([1, 1.5, 1]) # 1.5 untuk kolom login, 1 dan 1 sebagai spacer
-    
-    with col2:
-        st.markdown('<div class="login-container">', unsafe_allow_html=True)
-        
-        st.markdown('<h3 style="text-align: center; color: #005691;">🚢 Login Sistem Laporan</h3>', unsafe_allow_html=True)
-        
-        with st.form("login_form"):
-            st.subheader("Masukkan ID dan Password Anda")
-            
-            username_input = st.text_input("ID Pengguna", key="user_input")
-            password_input = st.text_input("Password", type="password", key="pass_input")
-            
-            st.markdown("---")
-            submitted = st.form_submit_button("Login", use_container_width=True)
+    # --- CSS Kustom untuk Tampilan Login ---
+    st.markdown("""
+        <style>
+            .stApp {
+                background-color: #F0F2F6; /* Light Grayish Background */
+            }
+            /* Menargetkan formulir login */
+            .stForm {
+                background-color: #FFFFFF;
+                border-radius: 12px;
+                padding: 30px;
+                margin: 50px auto;
+                width: 400px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            }
+            /* Tombol login */
+            .stForm .stButton>button {
+                background-color: #005691;
+                color: white;
+                border-radius: 8px;
+                height: 40px;
+                margin-top: 15px;
+            }
+            .stForm .stButton>button:hover {
+                background-color: #004070;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    # ------------------------------------------
 
-            if submitted:
-                if username_input == USERNAME and password_input == PASSWORD:
-                    st.session_state.logged_in = True
-                    st.session_state.username = username_input
-                    st.success("Login Berhasil! Mengalihkan ke Homepage...")
-                    
-                    # Dialihkan ke 1_Homepage.py
-                    st.switch_page("1_Homepage") 
-                    
-                else:
-                    st.error("ID atau Password salah.")
-        
-        st.markdown('</div>', unsafe_allow_html=True)
-        
+    with st.form("login_form"): 
+        st.subheader("Masukkan ID dan Password Anda")
+        username_input = st.text_input("ID Pengguna", key="user_input")
+        password_input = st.text_input("Password", type="password", key="pass_input")
+        submitted = st.form_submit_button("Login")
+
+        if submitted:
+            if username_input == USERNAME and password_input == PASSWORD:
+                st.session_state.logged_in = True
+                st.session_state.username = username_input
+                st.success("Login Berhasil! Mengalihkan ke Homepage...")
+                # PENTING: Redirect ke halaman Home
+                st.switch_page("pages/Home.py") 
+            else:
+                st.error("ID atau Password salah.")
 else:
-    # Jika sudah login, langsung alihkan ke Homepage
-    st.switch_page("1_Homepage")
+    # Jika sudah login, langsung redirect ke Home
+    st.switch_page("pages/1_Homepage.py")
