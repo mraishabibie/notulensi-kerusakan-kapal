@@ -48,6 +48,7 @@ def load_data():
             df['Vessel'] = df['Vessel'].astype(str).str.upper().str.strip() 
             df['Unit'] = df['Unit'].astype(str).str.upper().str.strip() 
             
+            # Kolom Day digunakan untuk Date_Day
             df['Date_Day'] = pd.to_datetime(df['Day'], format=DATE_FORMAT, errors='coerce')
             
             df = df.reindex(columns=COLUMNS + ['Date_Day']) 
@@ -69,7 +70,6 @@ def load_data():
 
 def get_report_stats(df, year=None):
     """Menghitung total, open, dan closed report, difilter berdasarkan tahun."""
-    # (Fungsi ini tidak perlu diubah, karena ia menerima df yang sudah difilter)
     df_filtered = df.copy()
     
     if year and year != 'All':
@@ -121,7 +121,6 @@ unit_options = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
 
 # =========================================================
 # === DASHBOARD STATISTIK DENGAN FILTER TAHUN ===
-# (Menggunakan df_filtered_ship)
 # =========================================================
 
 valid_years = df_filtered_ship['Date_Day'].dt.year.dropna().astype(int).unique()
@@ -133,20 +132,69 @@ with st.container(border=True):
     with col_filter:
         selected_year = st.selectbox("Filter Tahun Kejadian", year_options, key="filter_tahun_aktif")
         
-    total_reports, open_reports, closed_reports, _ = get_report_stats(df_filtered_ship, selected_year) # Menggunakan df_filtered_ship
+    total_reports, open_reports, closed_reports, _ = get_report_stats(df_filtered_ship, selected_year)
 
     st.markdown("##### Ringkasan Status Laporan")
     
     col_total, col_open, col_closed, col_spacer = st.columns([1, 1, 1, 3]) 
+    
+    # --- CSS KUSTOM UNTUK METRIK ---
+    st.markdown("""
+        <style>
+            .metric-box-custom {
+                background-color: #F0F2F6; /* Background light */
+                border-radius: 8px;
+                padding: 10px;
+                text-align: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                min-height: 80px;
+            }
+            .metric-value-total {
+                font-size: 2em;
+                font-weight: bold;
+                color: #005691; /* Dark Blue for Total/Neutral */
+            }
+            .metric-value-open {
+                font-size: 2em;
+                font-weight: bold;
+                color: #FF4B4B; /* Red for Open */
+            }
+            .metric-value-closed {
+                font-size: 2em;
+                font-weight: bold;
+                color: #00BA38; /* Green for Closed */
+            }
+            .metric-label-custom {
+                font-size: 0.9em;
+                color: #555555;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    # -------------------------------
 
     with col_total:
-        st.metric("Total Seluruh Laporan", total_reports)
+        st.markdown(f"""
+            <div class="metric-box-custom" style="border-left: 5px solid #005691;">
+                <div class="metric-label-custom">Total Seluruh Laporan</div>
+                <div class="metric-value-total">{total_reports}</div>
+            </div>
+        """, unsafe_allow_html=True)
 
     with col_open:
-        st.metric("Laporan Masih OPEN", open_reports)
+        st.markdown(f"""
+            <div class="metric-box-custom" style="border-left: 5px solid #FF4B4B;">
+                <div class="metric-label-custom">Laporan Masih OPEN</div>
+                <div class="metric-value-open">{open_reports}</div>
+            </div>
+        """, unsafe_allow_html=True)
         
     with col_closed:
-        st.metric("Laporan Sudah CLOSED", closed_reports)
+        st.markdown(f"""
+            <div class="metric-box-custom" style="border-left: 5px solid #00BA38;">
+                <div class="metric-label-custom">Laporan Sudah CLOSED</div>
+                <div class="metric-value-closed">{closed_reports}</div>
+            </div>
+        """, unsafe_allow_html=True)
 
 st.markdown("---") 
 
@@ -188,6 +236,7 @@ else:
             required=True,
             help="Pilih dari daftar unit yang sudah ada."
         ),
+        # PERBAIKAN: Issued Date dibuat disable/readonly karena nilainya mengikuti Day
         'Issued Date': st.column_config.TextColumn("Issued Date", disabled=True), 
         'Closed Date': st.column_config.TextColumn("Closed Date (DD/MM/YYYY)"),
         'Status': st.column_config.SelectboxColumn(
@@ -227,6 +276,7 @@ else:
                     closed_date_val = str(edited_row['Closed Date']).strip()
                     current_status = edited_row['Status'].upper().strip()
                     
+                    # 1. Validasi dan Update Status/Closed Date
                     if current_status == 'OPEN':
                         df_master_all.loc[idx, 'Closed Date'] = pd.NA
                     elif current_status == 'CLOSED':
@@ -242,16 +292,23 @@ else:
                     
                     df_master_all.loc[idx, 'Status'] = current_status
                         
+                    # 2. Validasi dan Update Day & Issued Date
                     day_val = str(edited_row['Day']).strip()
                     try:
                         date_dt = datetime.strptime(day_val, DATE_FORMAT)
                         df_master_all.loc[idx, 'Day'] = day_val
                         df_master_all.loc[idx, 'Date_Day'] = date_dt
+                        # PERBAIKAN: Issued Date = Day
+                        df_master_all.loc[idx, 'Issued Date'] = day_val 
                     except ValueError:
                         st.error(f"Baris ke-{i+1}: Format Tanggal Kejadian (Day) salah. Gunakan DD/MM/YYYY.")
                         st.stop()
                         
+                    # 3. Update Kolom Lain
                     for col in ['Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Keterangan']:
+                        # Kolom Issued Date sudah diupdate di langkah 2
+                        if col == 'Issued Date': continue 
+                            
                         val = edited_row[col]
                         if col in ['Vessel', 'Unit']:
                             df_master_all.loc[idx, col] = str(val).upper().strip()
@@ -274,21 +331,48 @@ if st.button("➕ Tambah Laporan Kerusakan Baru", use_container_width=True):
 if st.session_state.get('show_new_report_form_v2'):
     st.subheader("Formulir Laporan Baru")
     
+    # --- CSS KUSTOM UNTUK FORMULIR INPUT BARU ---
+    st.markdown("""
+        <style>
+            /* Target stForm container */
+            .stForm {
+                background-color: #FFFFFF; /* Latar belakang putih */
+                border-radius: 12px;
+                padding: 20px;
+                /* Shadow tipis */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+                border-top: 5px solid #005691; /* Border aksen biru */
+                margin-bottom: 20px;
+            }
+            /* Styling untuk tombol submit di dalam form */
+            .stForm .stButton>button {
+                background-color: #00BA38; /* Hijau untuk tombol Simpan */
+                color: white;
+                border: none;
+                border-radius: 8px;
+                margin-top: 10px;
+            }
+            .stForm .stButton>button:hover {
+                background-color: #00992C;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    # ---------------------------------------------
+    
     with st.form("new_report_form_v2", clear_on_submit=True):
         col1, col2 = st.columns(2)
         
-        # Opsi kapal difilter untuk meminimalisir input salah, namun tetap membolehkan input unit baru
         vessel_options_new = [SELECTED_SHIP_CODE] 
         unit_options_new = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
         
         with col1:
-            # Gunakan st.selectbox untuk Vessel dengan nilai default kapal yang dipilih
+            st.markdown("<h5 style='color:#005691;'>Informasi Dasar</h5>", unsafe_allow_html=True)
             vessel_select = st.selectbox("Nama Kapal (Vessel)*", 
                                          options=vessel_options_new, 
                                          key="vessel_select_new",
                                          index=0,
                                          disabled=True)
-            vessel = vessel_select # Kapal sudah pasti kapal yang dipilih
+            vessel = vessel_select 
                 
             unit_select = st.selectbox("Unit/Sistem yang Rusak", options=[''] + unit_options_new + ['--- Input Baru ---'], key="unit_select") 
             if unit_select == '--- Input Baru ---' or unit_select == '':
@@ -299,6 +383,7 @@ if st.session_state.get('show_new_report_form_v2'):
             day = st.date_input("Tanggal Kejadian (Day)*", datetime.now().date(), key="day_input")
         
         with col2:
+            st.markdown("<h5 style='color:#005691;'>Detail Laporan & Status</h5>", unsafe_allow_html=True)
             permasalahan = st.text_area("Detail Permasalahan*", height=100)
             penyelesaian = st.text_area("Langkah Penyelesaian Sementara/Tindakan")
             keterangan = st.text_input("Keterangan Tambahan")
@@ -330,16 +415,16 @@ if st.session_state.get('show_new_report_form_v2'):
                     st.stop()
                 closed_date_val = closed_date_input.strftime(DATE_FORMAT)
                 
-            
-            today_date_str = datetime.now().strftime(DATE_FORMAT)
+            # PERBAIKAN: Issued Date mengambil nilai dari Day
+            issued_date_val = day.strftime(DATE_FORMAT)
             
             new_row = {
-                'Day': day.strftime(DATE_FORMAT),
+                'Day': issued_date_val, # Day
                 'Vessel': final_vessel, 
                 'Permasalahan': permasalahan,
                 'Penyelesaian': penyelesaian,
                 'Unit': final_unit,
-                'Issued Date': today_date_str,
+                'Issued Date': issued_date_val, # Issued Date = Day
                 'Closed Date': closed_date_val, 
                 'Keterangan': keterangan,
                 'Status': default_status.upper() 
