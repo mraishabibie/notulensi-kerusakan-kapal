@@ -200,6 +200,14 @@ with st.container(border=True):
                 font-size: 0.9em;
                 color: #555555;
             }
+            /* CSS BARU UNTUK MENGATUR TINGGI BARIS LAPORAN AKTIF */
+            .st-emotion-cache-12fm5q6 { /* Selector untuk kolom Streamlit */
+                padding-top: 1px !important; /* Diubah menjadi 1px */
+                padding-bottom: 1px !important; /* Diubah menjadi 1px */
+            }
+            .row-content {
+                line-height: 1.2;
+            }
         </style>
     """, unsafe_allow_html=True)
     # -------------------------------
@@ -272,8 +280,9 @@ else:
             
             cols[0].write(f"**{int(unique_id)}**")
             
-            # Masalah dan Solusi
-            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<br><small>Solusi: {str(row['Penyelesaian'])}</small>"
+            # Masalah dan Solusi (Dibuat lebih ringkas)
+            # Menghapus <br> dan menggunakan "|" untuk pemisah
+            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<small> | Solusi: {str(row['Penyelesaian'])}</small>"
             cols[1].markdown(problem_text, unsafe_allow_html=True)
             
             cols[2].write(row['Unit'])
@@ -326,12 +335,6 @@ else:
                 default_status_idx = 1 if row['Status'] == 'CLOSED' else 0
                 
                 # Logika status selectbox agar tetap dalam edit mode
-                # Kita perlu menentukan status yang sedang dipilih (baik dari DB atau dari interaksi user)
-                
-                # --- State Management untuk Status Closed/Open di Edit Mode ---
-                # Menggunakan trik session state agar status berubah tanpa rerunning form
-                
-                # Default status untuk selectbox
                 status_options = ['OPEN', 'CLOSED']
                 if status_key not in st.session_state:
                      st.session_state[status_key] = status_options[default_status_idx]
