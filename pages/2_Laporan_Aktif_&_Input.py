@@ -24,6 +24,8 @@ if 'show_new_report_form_v2' not in st.session_state:
     st.session_state.show_new_report_form_v2 = False
 if 'edit_id' not in st.session_state:
     st.session_state.edit_id = None # Menyimpan unique_id laporan yang sedang di edit
+if 'confirm_delete_id' not in st.session_state:
+    st.session_state.confirm_delete_id = None # Menyimpan unique_id yang menunggu konfirmasi hapus
 # --------------------------------------------------------
 
 # --- Konfigurasi ---
@@ -131,8 +133,14 @@ def delete_data(index_to_delete):
     # PENTING: Hapus cache agar pemuatan data berikutnya mengambil yang sudah dihapus
     st.cache_data.clear()
     save_data(df_deleted)
+    st.session_state.confirm_delete_id = None # Clear state setelah berhasil
     st.success(f"✅ Laporan dengan ID {index_to_delete} berhasil dihapus.")
     time.sleep(1)
+    st.rerun()
+
+def start_delete_confirmation(unique_id):
+    """Setel state untuk menampilkan modal konfirmasi."""
+    st.session_state.confirm_delete_id = unique_id
     st.rerun()
 
 
@@ -228,6 +236,10 @@ st.markdown("---")
 
 st.subheader("📋 Laporan Kerusakan Aktif (OPEN)")
 
+# --- CONTAINER TEMPAT MODAL KONFIRMASI DITAMPILKAN ---
+confirmation_placeholder = st.empty()
+# ---------------------------------------------------
+
 if df_filtered_ship.empty:
     st.info("Belum ada data notulensi kerusakan tersimpan untuk kapal ini.")
 else:
@@ -277,8 +289,9 @@ else:
                 st.session_state.edit_id = unique_id
                 st.rerun()
                 
+            # Ganti panggilan delete_data dengan start_delete_confirmation
             if btn_delete.button("🗑️ Hapus", key=f"delete_{unique_id}", use_container_width=True):
-                delete_data(unique_id) 
+                start_delete_confirmation(unique_id) 
 
         # --- EDIT MODE (INLINE FORM) ---
         else:
@@ -371,6 +384,35 @@ else:
                     st.rerun()
         
         st.markdown("---") 
+
+
+# =========================================================
+# === LOGIKA MODAL KONFIRMASI HAPUS ===
+# =========================================================
+
+if st.session_state.confirm_delete_id is not None:
+    delete_id = st.session_state.confirm_delete_id
+    
+    # Ambil detail laporan untuk ditampilkan di modal
+    report_to_delete = df_filtered_ship[df_filtered_ship['unique_id'] == delete_id].iloc[0]
+    masalah = report_to_delete['Permasalahan']
+    unit = report_to_delete['Unit']
+    
+    # Tampilkan modal
+    with confirmation_placeholder.container():
+        st.error(f"⚠️ **KONFIRMASI PENGHAPUSAN**")
+        st.warning(f"Anda yakin ingin menghapus laporan ID **{delete_id}**?")
+        
+        st.info(f"**Detail:** {masalah} ({unit})")
+        
+        col_yes, col_no = st.columns([1, 4])
+        
+        if col_yes.button("🗑️ Ya, Hapus Permanen", key="confirm_yes"):
+            delete_data(delete_id) # Panggil fungsi hapus
+        
+        if col_no.button("❌ Batal", key="confirm_no"):
+            st.session_state.confirm_delete_id = None
+            st.rerun()
 
 # =========================================================
 # === TOMBOL INPUT & FORMULIR ===
