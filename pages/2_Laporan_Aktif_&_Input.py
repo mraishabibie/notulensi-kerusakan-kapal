@@ -19,9 +19,11 @@ SELECTED_SHIP_CODE = st.session_state.selected_ship_code
 SELECTED_SHIP_NAME = st.session_state.selected_ship_name
 # -------------------------------------------------------------------
 
-# --- PERBAIKAN: INISIALISASI SESSION STATE YANG HILANG ---
+# --- INISIALISASI SESSION STATE UNTUK INPUT DAN EDIT ---
 if 'show_new_report_form_v2' not in st.session_state:
     st.session_state.show_new_report_form_v2 = False
+if 'edit_id' not in st.session_state:
+    st.session_state.edit_id = None # Menyimpan unique_id laporan yang sedang di edit
 # --------------------------------------------------------
 
 # --- Konfigurasi ---
@@ -221,7 +223,7 @@ with st.container(border=True):
 st.markdown("---") 
 
 # =========================================================
-# === DATA AKTIF (EDITABLE DAN DELETABLE) ===
+# === DATA AKTIF (CUSTOM DISPLAY, INLINE EDIT, & HAPUS) ===
 # =========================================================
 
 st.subheader("📋 Laporan Kerusakan Aktif (OPEN)")
@@ -229,137 +231,146 @@ st.subheader("📋 Laporan Kerusakan Aktif (OPEN)")
 if df_filtered_ship.empty:
     st.info("Belum ada data notulensi kerusakan tersimpan untuk kapal ini.")
 else:
-    # Filter status OPEN
     df_active = df_filtered_ship[df_filtered_ship['Status'].str.upper() == 'OPEN'].copy()
 
     if selected_year and selected_year != 'All':
           df_active = df_active[df_active['Date_Day'].dt.year == int(selected_year)]
           
-    # Pindahkan kolom unique_id ke index untuk memudahkan
-    df_active = df_active.set_index('unique_id', drop=False)
-
-    df_display = df_active.drop(columns=['Date_Day', 'unique_id'], errors='ignore')
+    df_active = df_active.sort_values(by='Date_Day', ascending=False)
     
-    # 1. Edit Data (Tetap menggunakan st.data_editor untuk kemudahan inline edit)
-    st.caption("Klik dua kali pada sel di tabel untuk **Edit Inline**. Tanggal harus dalam format **DD/MM/YYYY**.")
-    
-    edited_df = st.data_editor(
-        df_display,
-        column_config={
-            'Day': st.column_config.TextColumn("Day (DD/MM/YYYY)", required=True),
-            'Vessel': st.column_config.SelectboxColumn("Vessel", options=vessel_options, required=True, help="Nama kapal sudah difilter."),
-            'Unit': st.column_config.SelectboxColumn("Unit", options=unit_options, required=True, help="Pilih dari daftar unit yang sudah ada."),
-            'Issued Date': st.column_config.TextColumn("Issued Date", disabled=True), 
-            'Closed Date': st.column_config.TextColumn("Closed Date (DD/MM/YYYY)"),
-            'Status': st.column_config.SelectboxColumn("Status", options=['OPEN', 'CLOSED'], required=True)
-        },
-        column_order=COLUMNS,
-        hide_index=False, # Tampilkan Index (unique_id) untuk debugging/referensi
-        use_container_width=True,
-        key='active_report_editor' 
-    )
-    
-    # Logika Penyimpanan Data
-    if not df_display.equals(edited_df):
-        st.warning("⚠️ Perubahan terdeteksi. Silakan klik tombol 'Simpan Perubahan' untuk menyimpan data.")
-        
-    # --- MENAMBAH TOMBOL SIMPAN DI BAWAH TABEL (LEBIH MENONJOL) ---
-    col_save_bottom, col_spacer_bottom = st.columns([1, 5])
-    
-    with col_save_bottom:
-        if st.button("💾 SIMPAN SEMUA PERUBAHAN", key='save_button_bottom', use_container_width=True, help="Klik ini untuk menyimpan semua perubahan inline di tabel di atas."):
-            
-            if df_display.equals(edited_df):
-                 st.info("Tidak ada perubahan data yang terdeteksi untuk disimpan.")
-                 st.stop()
-                 
-            df_master_all = st.session_state['data_master_df'].copy()
-
-            # Loop melalui baris yang diedit dan update di df_master_all
-            for unique_id, edited_row in edited_df.iterrows():
-                
-                closed_date_val = str(edited_row['Closed Date']).strip()
-                current_status = edited_row['Status'].upper().strip()
-                
-                # Update Status/Closed Date
-                if current_status == 'OPEN':
-                    df_master_all.loc[df_master_all['unique_id'] == unique_id, 'Closed Date'] = pd.NA
-                elif current_status == 'CLOSED':
-                    if closed_date_val == '' or pd.isna(closed_date_val):
-                         st.error(f"Baris ID {unique_id}: Status CLOSED membutuhkan Tanggal Selesai (Closed Date).")
-                         st.stop()
-                    try:
-                        datetime.strptime(closed_date_val, DATE_FORMAT)
-                        df_master_all.loc[df_master_all['unique_id'] == unique_id, 'Closed Date'] = closed_date_val
-                    except ValueError:
-                        st.error(f"Baris ID {unique_id}: Format Tanggal Selesai (Closed Date) salah. Gunakan DD/MM/YYYY.")
-                        st.stop()
-                
-                df_master_all.loc[df_master_all['unique_id'] == unique_id, 'Status'] = current_status
-                    
-                # Update Day & Issued Date
-                day_val = str(edited_row['Day']).strip()
-                try:
-                    date_dt = datetime.strptime(day_val, DATE_FORMAT)
-                    df_master_all.loc[df_master_all['unique_id'] == unique_id, 'Day'] = day_val
-                    df_master_all.loc[df_master_all['unique_id'] == unique_id, 'Date_Day'] = date_dt
-                    df_master_all.loc[df_master_all['unique_id'] == unique_id, 'Issued Date'] = day_val 
-                except ValueError:
-                    st.error(f"Baris ID {unique_id}: Format Tanggal Kejadian (Day) salah. Gunakan DD/MM/YYYY.")
-                    st.stop()
-                    
-                # Update Kolom Lain
-                for col in ['Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Keterangan']:
-                    if col == 'Issued Date': continue 
-                        
-                    val = edited_row[col]
-                    if col in ['Vessel', 'Unit']:
-                        df_master_all.loc[df_master_all['unique_id'] == unique_id, col] = str(val).upper().strip()
-                    else:
-                        df_master_all.loc[df_master_all['unique_id'] == unique_id, col] = val
-                        
-            save_data(df_master_all) 
-            st.success("✅ Data berhasil diperbarui!")
-            time.sleep(1)
-            st.rerun()
-
-    # 2. Hapus Data (Ditempatkan di kolom terpisah, di samping tabel edit)
-    st.markdown("---")
-    st.subheader("🗑️ Hapus Laporan Aktif")
-    st.warning("PERHATIAN: Penghapusan bersifat permanen. Klik tombol Hapus pada baris yang sesuai.")
-
-    df_deletable = df_active.copy()
-    
-    # Hanya tampilkan kolom yang relevan untuk konfirmasi penghapusan
-    df_deletable = df_deletable[['unique_id', 'Day', 'Unit', 'Permasalahan']].rename(columns={'unique_id': 'ID', 'Day': 'Tgl', 'Permasalahan': 'Detail Masalah'})
-    
-    # --- HEADER TABEL HAPUS ---
-    col_id, col_masalah, col_tgl, col_unit, col_delete = st.columns([0.5, 3, 1, 1.5, 1.5])
+    # ------------------- HEADER CUSTOM TABLE ----------------------
+    col_id, col_masalah, col_unit, col_status_date, col_action = st.columns([0.5, 3, 1, 1.5, 1.5])
     col_id.markdown('**ID**', unsafe_allow_html=True)
-    col_masalah.markdown('**DETAIL MASALAH**', unsafe_allow_html=True)
-    col_tgl.markdown('**TGL**', unsafe_allow_html=True)
+    col_masalah.markdown('**PERMASALAHAN / PENYELESAIAN**', unsafe_allow_html=True)
     col_unit.markdown('**UNIT**', unsafe_allow_html=True)
-    col_delete.markdown('**TINDAKAN**', unsafe_allow_html=True)
+    col_status_date.markdown('**TGL KEJADIAN**', unsafe_allow_html=True)
+    col_action.markdown('**AKSI**', unsafe_allow_html=True)
     st.markdown("---")
-    
-    # Loop untuk menampilkan setiap baris dengan tombol hapus
-    for i, row in df_deletable.iterrows():
-        col_id, col_masalah, col_tgl, col_unit, col_delete = st.columns([0.5, 3, 1, 1.5, 1.5])
+    # -------------------------------------------------
+
+    for index, row in df_active.iterrows():
+        unique_id = row['unique_id']
+        is_editing = st.session_state.edit_id == unique_id
         
-        col_id.write(f"**{int(row['ID'])}**")
-        col_tgl.write(row['Tgl'])
-        col_unit.write(row['Unit'])
+        # --- DISPLAY MODE (READ-ONLY) ---
+        if not is_editing:
+            
+            # Tampilan dalam kolom
+            cols = st.columns([0.5, 3, 1, 1.5, 1.5])
+            
+            cols[0].write(f"**{int(unique_id)}**")
+            
+            # Masalah dan Solusi
+            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<br><small>Solusi: {str(row['Penyelesaian'])}</small>"
+            cols[1].markdown(problem_text, unsafe_allow_html=True)
+            
+            cols[2].write(row['Unit'])
+            
+            date_text = f"**Tgl:** {row['Day']}"
+            cols[3].markdown(date_text, unsafe_allow_html=True)
+
+            # --- ACTION BUTTONS (EDIT & HAPUS) ---
+            action_col = cols[4]
+            btn_edit, btn_delete = action_col.columns(2)
+            
+            if btn_edit.button("✏️ Edit", key=f"edit_{unique_id}", use_container_width=True):
+                st.session_state.edit_id = unique_id
+                st.rerun()
+                
+            if btn_delete.button("🗑️ Hapus", key=f"delete_{unique_id}", use_container_width=True):
+                delete_data(unique_id) 
+
+        # --- EDIT MODE (INLINE FORM) ---
+        else:
+            with st.container(border=True):
+                
+                # Setup the form keys unique to the row ID
+                key_prefix = f"edit_form_{unique_id}_"
+                
+                st.markdown(f"**Mengedit Laporan ID: {int(unique_id)}**", unsafe_allow_html=True)
+                
+                col_id, col_masalah_solusi, col_unit, col_status_date, col_action = st.columns([0.5, 3, 1, 1.5, 1.5])
+                
+                # ID (Readonly)
+                col_id.write(f"**{int(unique_id)}**") 
+                
+                # Masalah/Penyelesaian
+                new_permasalahan = col_masalah_solusi.text_area("Masalah", value=row['Permasalahan'], height=50, key=key_prefix + 'permasalahan')
+                new_penyelesaian = col_masalah_solusi.text_area("Solusi", value=row['Penyelesaian'], height=50, key=key_prefix + 'penyelesaian')
+                new_keterangan = col_masalah_solusi.text_input("Keterangan Tambahan", value=row['Keterangan'], key=key_prefix + 'keterangan')
+                
+                # Unit (Selectbox)
+                default_unit_idx = unit_options.index(row['Unit']) if row['Unit'] in unit_options else 0
+                new_unit = col_unit.selectbox("Unit", options=unit_options, index=default_unit_idx, key=key_prefix + 'unit')
+
+                # Status & Date
+                # Pastikan Tanggal Kejadian (Day) di-parse dengan benar
+                default_day_dt = datetime.strptime(row['Day'], DATE_FORMAT).date()
+                new_day = col_status_date.date_input("Tgl Kejadian (Day)", value=default_day_dt, key=key_prefix + 'day')
+                
+                default_status_idx = 1 if row['Status'] == 'CLOSED' else 0
+                new_status = col_status_date.selectbox("Status", options=['OPEN', 'CLOSED'], index=default_status_idx, key=key_prefix + 'status')
+                
+                # Conditional Closed Date input
+                new_closed_date = None
+                if new_status == 'CLOSED':
+                    
+                    # Convert existing Closed Date string to date object if valid, else None
+                    current_closed_date_str = str(row['Closed Date'])
+                    current_closed_date_dt = None
+                    if current_closed_date_str != 'nan' and current_closed_date_str != '':
+                         try:
+                             current_closed_date_dt = datetime.strptime(current_closed_date_str, DATE_FORMAT).date()
+                         except ValueError:
+                             current_closed_date_dt = None
+                             
+                    new_closed_date = col_status_date.date_input("Tgl Selesai (Jika Closed)", 
+                                                                 value=current_closed_date_dt, 
+                                                                 key=key_prefix + 'closed_date')
+                
+                # --- ACTION BUTTONS (SIMPAN & BATAL) ---
+                action_col = col_action
+                action_col.write("<br>", unsafe_allow_html=True) # Spacer
+                btn_save, btn_cancel = action_col.columns(2)
+                
+                if btn_save.button("✅ Simpan", key=key_prefix + 'save', use_container_width=True):
+                    
+                    closed_date_val = None
+                    if new_status == 'CLOSED':
+                        if new_closed_date is None:
+                             st.error("Status CLOSED membutuhkan Tanggal Selesai.")
+                             st.stop()
+                        closed_date_val = new_closed_date.strftime(DATE_FORMAT)
+                    
+                    df_master_all = st.session_state['data_master_df'].copy()
+
+                    # Find the row in the master DF based on unique_id
+                    target_row_index = df_master_all[df_master_all['unique_id'] == unique_id].index[0]
+                    
+                    # Update all fields
+                    df_master_all.loc[target_row_index, 'Permasalahan'] = new_permasalahan
+                    df_master_all.loc[target_row_index, 'Penyelesaian'] = new_penyelesaian
+                    df_master_all.loc[target_row_index, 'Keterangan'] = new_keterangan
+                    df_master_all.loc[target_row_index, 'Unit'] = new_unit
+                    df_master_all.loc[target_row_index, 'Status'] = new_status
+                    
+                    # Update Tanggal
+                    day_str = new_day.strftime(DATE_FORMAT)
+                    df_master_all.loc[target_row_index, 'Day'] = day_str
+                    df_master_all.loc[target_row_index, 'Date_Day'] = new_day
+                    df_master_all.loc[target_row_index, 'Issued Date'] = day_str # Issued Date = Day
+                    df_master_all.loc[target_row_index, 'Closed Date'] = closed_date_val if closed_date_val else pd.NA
+                    
+                    save_data(df_master_all)
+                    st.session_state.edit_id = None
+                    st.success(f"✅ Laporan ID {unique_id} berhasil diperbarui.")
+                    st.rerun()
+
+                if btn_cancel.button("❌ Batal", key=key_prefix + 'cancel', use_container_width=True):
+                    st.session_state.edit_id = None
+                    st.rerun()
         
-        # Tampilkan detail masalah yang dipotong
-        problem_detail = str(row['Detail Masalah'])
-        if len(problem_detail) > 100:
-            problem_detail = problem_detail[:97] + '...'
-        col_masalah.write(problem_detail)
-        
-        # Tombol Hapus
-        if col_delete.button("Hapus", key=f"delete_btn_{int(row['ID'])}", use_container_width=True):
-             # Logika konfirmasi dan hapus
-             delete_data(int(row['ID']))
+        st.markdown("---") 
 
 # =========================================================
 # === TOMBOL INPUT & FORMULIR ===
