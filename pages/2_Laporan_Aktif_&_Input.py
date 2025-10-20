@@ -200,6 +200,18 @@ with st.container(border=True):
                 font-size: 0.9em;
                 color: #555555;
             }
+            /* CSS BARU UNTUK MENGATUR TINGGI BARIS LAPORAN AKTIF */
+            .st-emotion-cache-12fm5q6 { /* Selector untuk kolom Streamlit */
+                padding-top: 1px !important; 
+                padding-bottom: 1px !important; 
+            }
+            .row-content {
+                line-height: 1.2;
+            }
+            /* PERUBAHAN: Target tag small untuk ukuran font yang lebih besar */
+            small {
+                font-size: 0.9em !important; /* Dibuat sedikit lebih besar dari default <small> */
+            }
         </style>
     """, unsafe_allow_html=True)
     # -------------------------------
@@ -273,7 +285,8 @@ else:
             cols[0].write(f"**{int(unique_id)}**")
             
             # Masalah dan Solusi
-            problem_text = f"**Masalah:** {str(row['Permasalahan'])}<br><small>Solusi: {str(row['Penyelesaian'])}</small>"
+            # Perubahan: Mengganti <br><small> menjadi | <small> dan menaikkan font size tag <small>
+            problem_text = f"**Masalah:** {str(row['Permasalahan'])} | <small>Solusi: {str(row['Penyelesaian'])}</small>"
             cols[1].markdown(problem_text, unsafe_allow_html=True)
             
             cols[2].write(row['Unit'])
