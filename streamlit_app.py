@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 import os
-import numpy as np 
 
 # --- Konfigurasi ---
 USERNAME = "staffdpagls" 
@@ -72,10 +71,11 @@ if not st.session_state.logged_in:
                 st.session_state.logged_in = True
                 st.session_state.username = username_input
                 st.success("Login Berhasil! Mengalihkan ke Homepage...")
-                # PENTING: Redirect ke halaman Home
-                st.switch_page("pages/Home.py") 
+                # PERBAIKAN PANGGILAN 1: Gunakan nama file tanpa ekstensi atau folder
+                st.switch_page("1_Homepage") 
             else:
                 st.error("ID atau Password salah.")
 else:
     # Jika sudah login, langsung redirect ke Home
-    st.switch_page("pages/1_Homepage.py")
+    # PERBAIKAN PANGGILAN 2: Gunakan nama file tanpa ekstensi atau folder
+    st.switch_page("1_Homepage")
