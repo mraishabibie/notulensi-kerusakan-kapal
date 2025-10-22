@@ -366,10 +366,9 @@ else:
                     
                     closed_date_val = None
                     if new_status == 'CLOSED':
-                        if new_closed_date is None:
-                             st.error("Status CLOSED membutuhkan Tanggal Selesai.")
-                             st.stop()
-                        closed_date_val = new_closed_date.strftime(DATE_FORMAT)
+                        if new_closed_date is not None:
+                           closed_date_val = new_closed_date.strftime(DATE_FORMAT)
+                        # TIDAK ADA st.error/st.stop() DI SINI AGAR BISA CLOSED TANPA TANGGAL
                     
                     df_master_all = st.session_state['data_master_df'].copy()
 
@@ -521,9 +520,10 @@ if st.session_state.get('show_new_report_form_v2'):
             closed_date_val = pd.NA
             if default_status == 'CLOSED':
                 if closed_date_input is None:
-                    st.error("Status CLOSED memerlukan Tanggal Selesai (Closed Date) diisi.")
-                    st.stop()
-                closed_date_val = closed_date_input.strftime(DATE_FORMAT)
+                    # TIDAK ADA st.error DI SINI, BIARKAN TANGGAL KOSONG JIKA DIINPUT CLOSED
+                    pass 
+                else:
+                    closed_date_val = closed_date_input.strftime(DATE_FORMAT)
                 
             # PERBAIKAN: Issued Date mengambil nilai dari Day
             issued_date_val = day.strftime(DATE_FORMAT)
@@ -610,17 +610,17 @@ with st.expander("📁 Lihat Riwayat Laporan (CLOSED)"):
                         if current_status == 'OPEN':
                             # Jika status diubah menjadi OPEN, kita hapus Closed Date
                             df_master_all.loc[target_row_index, 'Closed Date'] = pd.NA
-                            # LOGIKA INTI: Biarkan laporan ini muncul di list ACTIVE saat rerun
                         elif current_status == 'CLOSED':
                             if closed_date_val == '' or pd.isna(closed_date_val) or closed_date_val == 'nan':
-                                st.error(f"Baris ID {unique_id}: Status CLOSED membutuhkan Tanggal Selesai (Closed Date).")
-                                st.stop()
-                            try:
-                                datetime.strptime(closed_date_val, DATE_FORMAT)
-                                df_master_all.loc[target_row_index, 'Closed Date'] = closed_date_val
-                            except ValueError:
-                                st.error(f"Baris ID {unique_id}: Format Tanggal Selesai (Closed Date) salah. Gunakan DD/MM/YYYY.")
-                                st.stop()
+                                # TIDAK ADA st.error/st.stop() DI SINI AGAR BISA CLOSED TANPA TANGGAL
+                                df_master_all.loc[target_row_index, 'Closed Date'] = pd.NA # Set sebagai NA jika kosong
+                            else:
+                                try:
+                                    datetime.strptime(closed_date_val, DATE_FORMAT)
+                                    df_master_all.loc[target_row_index, 'Closed Date'] = closed_date_val
+                                except ValueError:
+                                    st.error(f"Baris ID {unique_id}: Format Tanggal Selesai (Closed Date) salah. Gunakan DD/MM/YYYY.")
+                                    st.stop()
                         
                         df_master_all.loc[target_row_index, 'Status'] = current_status
                             
