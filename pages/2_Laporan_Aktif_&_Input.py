@@ -23,7 +23,7 @@ SELECTED_SHIP_NAME = st.session_state.selected_ship_name
 if 'show_new_report_form_v2' not in st.session_state:
     st.session_state.show_new_report_form_v2 = False
 if 'edit_id' not in st.session_state:
-    st.session_state.edit_id = None # Menyimpan unique_id laporan yang sedang di edit
+    st.session_state.edit_id = None # Menyimpan unique_id laporan yang sedang di edit (hanya dipakai di bagian ACTIVE)
 if 'confirm_delete_id' not in st.session_state:
     st.session_state.confirm_delete_id = None # Menyimpan unique_id yang menunggu konfirmasi hapus
 # --------------------------------------------------------
@@ -71,7 +71,6 @@ def load_data():
     df_all = st.session_state['data_master_df'].copy()
     
     # PERBAIKAN KRITIS: Paksa konversi Date_Day ke datetime di DataFrame yang diakses dari Session State
-    # Ini mengatasi masalah Streamlit/Pandas yang kehilangan tipe data di session state
     df_all['Date_Day'] = pd.to_datetime(df_all['Date_Day'], errors='coerce')
 
     df_filtered_ship = df_all[
@@ -85,7 +84,6 @@ def get_report_stats(df, year=None):
     df_filtered = df.copy()
     
     if year and year != 'All':
-        # Kita dropna() di sini juga untuk memastikan tidak ada NaT yang mengganggu filter
         df_filtered = df_filtered[df_filtered['Date_Day'].dropna().dt.year == int(year)]
         
     total = len(df_filtered)
@@ -147,6 +145,57 @@ def start_delete_confirmation(unique_id):
     """Setel state untuk menampilkan modal konfirmasi."""
     st.session_state.confirm_delete_id = unique_id
     st.rerun()
+
+def handle_save_edited_row(unique_id, edited_row, df_master_all, is_closed_report=False):
+    """Logika terpusat untuk memvalidasi dan menyimpan baris yang diedit."""
+    
+    closed_date_val = str(edited_row['Closed Date']).strip()
+    current_status = edited_row['Status'].upper().strip()
+    
+    target_row_index = df_master_all[df_master_all['unique_id'] == unique_id].index[0]
+
+    # 1. Validasi dan Update Status/Closed Date
+    if current_status == 'OPEN':
+        df_master_all.loc[target_row_index, 'Closed Date'] = pd.NA
+    elif current_status == 'CLOSED':
+        if closed_date_val == '' or pd.isna(closed_date_val) or closed_date_val == 'nan':
+             if is_closed_report:
+                 # Jika CLOSED, tapi tanggal selesai kosong, set tanggal hari ini jika dalam edit mode tabel closed
+                 closed_date_val = datetime.now().strftime(DATE_FORMAT)
+             else:
+                 st.error(f"Baris ID {unique_id}: Status CLOSED membutuhkan Tanggal Selesai (Closed Date).")
+                 st.stop()
+        try:
+            datetime.strptime(closed_date_val, DATE_FORMAT)
+            df_master_all.loc[target_row_index, 'Closed Date'] = closed_date_val
+        except ValueError:
+            st.error(f"Baris ID {unique_id}: Format Tanggal Selesai (Closed Date) salah. Gunakan DD/MM/YYYY.")
+            st.stop()
+    
+    df_master_all.loc[target_row_index, 'Status'] = current_status
+        
+    # 2. Validasi dan Update Day & Issued Date
+    day_val = str(edited_row['Day']).strip()
+    try:
+        date_dt = datetime.strptime(day_val, DATE_FORMAT)
+        df_master_all.loc[target_row_index, 'Day'] = day_val
+        df_master_all.loc[target_row_index, 'Date_Day'] = date_dt
+        df_master_all.loc[target_row_index, 'Issued Date'] = day_val 
+    except ValueError:
+        st.error(f"Baris ID {unique_id}: Format Tanggal Kejadian (Day) salah. Gunakan DD/MM/YYYY.")
+        st.stop()
+        
+    # 3. Update Kolom Lain
+    for col in ['Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Keterangan']:
+        if col == 'Issued Date': continue 
+            
+        val = edited_row[col]
+        if col in ['Vessel', 'Unit']:
+            df_master_all.loc[target_row_index, col] = str(val).upper().strip()
+        else:
+            df_master_all.loc[target_row_index, col] = val
+            
+    return df_master_all
 
 
 # --- Tampilan Utama ---
