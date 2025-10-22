@@ -71,6 +71,7 @@ def load_data():
     df_all = st.session_state['data_master_df'].copy()
     
     # PERBAIKAN KRITIS: Paksa konversi Date_Day ke datetime di DataFrame yang diakses dari Session State
+    # Ini mengatasi masalah Streamlit/Pandas yang kehilangan tipe data di session state
     df_all['Date_Day'] = pd.to_datetime(df_all['Date_Day'], errors='coerce')
 
     df_filtered_ship = df_all[
@@ -159,7 +160,6 @@ unit_options = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
 # =========================================================
 # === DASHBOARD STATISTIK DENGAN FILTER TAHUN ===
 # =========================================================
-# PERBAIKAN BUG: Menggunakan dropna() sebelum mengakses .dt.year
 valid_years = df_filtered_ship['Date_Day'].dropna().dt.year.astype(int).unique()
 year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
 
