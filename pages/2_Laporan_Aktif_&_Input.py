@@ -146,56 +146,6 @@ def start_delete_confirmation(unique_id):
     st.session_state.confirm_delete_id = unique_id
     st.rerun()
 
-def handle_save_edited_row_closed(df_master_all, original_indices_closed, edited_df_closed):
-    """Logika terpusat untuk menyimpan data dari st.data_editor (untuk data CLOSED)."""
-    
-    for i, original_index in enumerate(original_indices_closed):
-        edited_row = edited_df_closed.iloc[i]
-        unique_id = original_index # unique_id adalah original_index karena hide_index=True digunakan
-
-        closed_date_val = str(edited_row['Closed Date']).strip()
-        current_status = edited_row['Status'].upper().strip()
-        
-        target_row_index = df_master_all[df_master_all['unique_id'] == unique_id].index[0]
-
-        # 1. Validasi dan Update Status/Closed Date
-        if current_status == 'OPEN':
-            df_master_all.loc[target_row_index, 'Closed Date'] = pd.NA
-        elif current_status == 'CLOSED':
-            if closed_date_val == '' or pd.isna(closed_date_val) or closed_date_val == 'nan':
-                 st.error(f"Baris ID {unique_id}: Status CLOSED membutuhkan Tanggal Selesai (Closed Date).")
-                 st.stop()
-            try:
-                datetime.strptime(closed_date_val, DATE_FORMAT)
-                df_master_all.loc[target_row_index, 'Closed Date'] = closed_date_val
-            except ValueError:
-                st.error(f"Baris ID {unique_id}: Format Tanggal Selesai (Closed Date) salah. Gunakan DD/MM/YYYY.")
-                st.stop()
-        
-        df_master_all.loc[target_row_index, 'Status'] = current_status
-            
-        # 2. Validasi dan Update Day & Issued Date
-        day_val = str(edited_row['Day']).strip()
-        try:
-            date_dt = datetime.strptime(day_val, DATE_FORMAT)
-            df_master_all.loc[target_row_index, 'Day'] = day_val
-            df_master_all.loc[target_row_index, 'Date_Day'] = date_dt
-            df_master_all.loc[target_row_index, 'Issued Date'] = day_val 
-        except ValueError:
-            st.error(f"Baris ID {unique_id}: Format Tanggal Kejadian (Day) salah. Gunakan DD/MM/YYYY.")
-            st.stop()
-            
-        # 3. Update Kolom Lain
-        for col in ['Vessel', 'Permasalahan', 'Penyelesaian', 'Unit', 'Keterangan']:
-            if col == 'Issued Date': continue 
-                
-            val = edited_row[col]
-            if col in ['Vessel', 'Unit']:
-                df_master_all.loc[target_row_index, col] = str(val).upper().strip()
-            else:
-                df_master_all.loc[target_row_index, col] = val
-                
-    return df_master_all
 
 # --- Tampilan Utama ---
 st.title(f'📝 Laporan Kerusakan Aktif & Input Data: {SELECTED_SHIP_NAME} ({SELECTED_SHIP_CODE})')
@@ -208,7 +158,6 @@ unit_options = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
 # =========================================================
 # === DASHBOARD STATISTIK DENGAN FILTER TAHUN ===
 # =========================================================
-# PERBAIKAN BUG: Menggunakan dropna() sebelum mengakses .dt.year
 valid_years = df_filtered_ship['Date_Day'].dropna().dt.year.astype(int).unique()
 year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
 
@@ -659,7 +608,9 @@ with st.expander("📁 Lihat Riwayat Laporan (CLOSED)"):
 
                         # 1. Validasi dan Update Status/Closed Date
                         if current_status == 'OPEN':
+                            # Jika status diubah menjadi OPEN, kita hapus Closed Date
                             df_master_all.loc[target_row_index, 'Closed Date'] = pd.NA
+                            # LOGIKA INTI: Biarkan laporan ini muncul di list ACTIVE saat rerun
                         elif current_status == 'CLOSED':
                             if closed_date_val == '' or pd.isna(closed_date_val) or closed_date_val == 'nan':
                                 st.error(f"Baris ID {unique_id}: Status CLOSED membutuhkan Tanggal Selesai (Closed Date).")
