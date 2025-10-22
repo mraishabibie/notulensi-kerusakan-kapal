@@ -23,7 +23,7 @@ SELECTED_SHIP_NAME = st.session_state.selected_ship_name
 if 'show_new_report_form_v2' not in st.session_state:
     st.session_state.show_new_report_form_v2 = False
 if 'edit_id' not in st.session_state:
-    st.session_state.edit_id = None # Menyimpan unique_id laporan yang sedang di edit
+    st.session_state.edit_id = None # Menyimpan unique_id laporan yang sedang di edit (hanya dipakai di bagian ACTIVE)
 if 'confirm_delete_id' not in st.session_state:
     st.session_state.confirm_delete_id = None # Menyimpan unique_id yang menunggu konfirmasi hapus
 # --------------------------------------------------------
@@ -84,7 +84,6 @@ def get_report_stats(df, year=None):
     df_filtered = df.copy()
     
     if year and year != 'All':
-        # Kita dropna() di sini juga untuk memastikan tidak ada NaT yang mengganggu filter
         df_filtered = df_filtered[df_filtered['Date_Day'].dropna().dt.year == int(year)]
         
     total = len(df_filtered)
@@ -159,7 +158,6 @@ unit_options = sorted(df_filtered_ship['Unit'].dropna().unique().tolist())
 # =========================================================
 # === DASHBOARD STATISTIK DENGAN FILTER TAHUN ===
 # =========================================================
-# PERBAIKAN BUG: Menggunakan dropna() sebelum mengakses .dt.year
 valid_years = df_filtered_ship['Date_Day'].dropna().dt.year.astype(int).unique()
 year_options = ['All'] + sorted(valid_years.tolist(), reverse=True)
 
@@ -565,13 +563,68 @@ with st.expander("📁 Lihat Riwayat Laporan (CLOSED)"):
     if df_closed.empty:
         st.info("Belum ada laporan yang berstatus CLOSED untuk kapal ini.")
     else:
-        st.caption("Gunakan ikon corong/search bar untuk memfilter riwayat.")
-        
-        # Hapus kolom unique_id, Date_Day sebelum ditampilkan
+        st.caption("Klik dua kali pada sel di tabel untuk **Edit Inline**. Tanggal harus dalam format **DD/MM/YYYY**.")
+
+        # Buat salinan DataFrame untuk diedit (tanpa Date_Day dan unique_id)
         df_closed_display = df_closed.drop(columns=['Date_Day', 'unique_id'], errors='ignore')
         
-        st.dataframe(df_closed_display, 
-                     hide_index=True, 
-                     use_container_width=True,
-                     column_order=COLUMNS,
-                     )
+        # Simpan indeks asli (unique_id) untuk dicocokkan saat menyimpan
+        original_indices_closed = df_closed_display.index.to_list()
+        
+        editable_columns_closed = {
+            'Day': st.column_config.TextColumn("Day (DD/MM/YYYY)", required=True),
+            'Vessel': st.column_config.TextColumn("Vessel", disabled=True),
+            'Unit': st.column_config.SelectboxColumn("Unit", options=unit_options, required=True, help="Pilih dari daftar unit yang sudah ada."),
+            'Issued Date': st.column_config.TextColumn("Issued Date", disabled=True), 
+            'Closed Date': st.column_config.TextColumn("Closed Date (DD/MM/YYYY)", required=True),
+            'Status': st.column_config.SelectboxColumn("Status", options=['OPEN', 'CLOSED'], required=True)
+        }
+        
+        edited_df_closed = st.data_editor(
+            df_closed_display,
+            column_config=editable_columns_closed,
+            column_order=COLUMNS,
+            hide_index=True,
+            use_container_width=True,
+            key='closed_report_editor' 
+        )
+        
+        if not df_closed_display.equals(edited_df_closed):
+            st.warning("⚠️ Perubahan riwayat terdeteksi. Silakan klik tombol 'Simpan Perubahan Riwayat' untuk menyimpan data.")
+            
+            col_save, col_spacer_save = st.columns([1, 5])
+            with col_save:
+                if st.button("💾 Simpan Perubahan Riwayat", key='save_button_closed'):
+                    
+                    df_master_all = st.session_state['data_master_df'].copy()
+
+                    # Loop melalui baris yang diedit dan update di df_master_all
+                    for i, original_index in enumerate(original_indices_closed):
+                        edited_row = edited_df_closed.iloc[i]
+                        unique_id = original_index
+                        
+                        # Data yang diupdate
+                        data_to_save = edited_row.to_dict()
+                        data_to_save['unique_id'] = unique_id
+                        
+                        # Panggil fungsi penanganan penyimpanan terpusat
+                        try:
+                            updated_df_master = handle_save_edited_row(
+                                unique_id=unique_id, 
+                                edited_row=data_to_save, 
+                                df_master_all=df_master_all, 
+                                is_closed_report=True
+                            )
+                            df_master_all = updated_df_master
+                        except st.runtime.EarlyExitException:
+                             # Jika handle_save_edited_row memanggil st.stop(), kita re-raise
+                             raise
+                        except Exception as e:
+                             st.error(f"Gagal memproses baris ID {unique_id}: {e}")
+                             st.stop()
+
+
+                    save_data(df_master_all) 
+                    st.success("✅ Riwayat laporan berhasil diperbarui!")
+                    time.sleep(1)
+                    st.rerun()
