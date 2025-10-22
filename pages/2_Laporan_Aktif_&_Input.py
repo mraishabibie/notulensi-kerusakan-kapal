@@ -610,6 +610,7 @@ with st.expander("📁 Lihat Riwayat Laporan (CLOSED)"):
                         if current_status == 'OPEN':
                             # Jika status diubah menjadi OPEN, kita hapus Closed Date
                             df_master_all.loc[target_row_index, 'Closed Date'] = pd.NA
+                            # LOGIKA INTI: Biarkan laporan ini muncul di list ACTIVE saat rerun
                         elif current_status == 'CLOSED':
                             if closed_date_val == '' or pd.isna(closed_date_val) or closed_date_val == 'nan':
                                 # TIDAK ADA st.error/st.stop() DI SINI AGAR BISA CLOSED TANPA TANGGAL
